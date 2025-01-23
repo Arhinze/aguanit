@@ -166,11 +166,13 @@ class Index_Segments{
             <div class="faq"> <a name="#faqs"></a>
                 <div class="header_text" style="color:#2b8eeb">Frequently Asked Questions</div>
                 
+                <!--
                 <div class="faq_divs">Where can I mine the airdrop?</div>
                 You can mine $site_name Airdrop from our telegram mini app. Click the Mine button below to mine now.
                 <div class="faq_divs">What blockchain is $site_name Token in?</div>
                 <div class="faq_divs">When is $site_name token Listing?</div>
                 <div class="faq_divs">Will there be presale?</div>
+                -->
             </div>
 
             <div class="white_background" style="text-align:center;padding-bottom:60px">
