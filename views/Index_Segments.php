@@ -1,5 +1,5 @@
 <?php
-
+ini_set("display_errors", '1'); //for testing purposes
 include_once("php/connection.php");
 
 class Index_Segments{
