@@ -46,7 +46,7 @@ class Index_Segments{
         <body>
             <div class="headers">  
                 <div style="margin:-16px 19px 0px 14px">
-                    <a href="/" style="color:#2b8eeb"><h3 class="site_name">$site_name</h3></a>
+                    <a href="/" style="color:#059625cc"><h3 class="site_name">$site_name</h3></a>
                 </div>
             
                 <div class="menu-icon">
@@ -137,7 +137,7 @@ class Index_Segments{
 
 
             <div class="token_distribution">
-                <div class="token_distribution_head" style="color:#2b8eeb">Token Distribution</div>
+                <div class="token_distribution_head" style="color:#059625cc">Token Distribution</div>
                 
                 <ul class ="token_distribution_list">
                     <li><span class="token_percentages">32%</span> liquidity pool</li>
@@ -164,7 +164,7 @@ class Index_Segments{
             </div>
 
             <div class="faq"> <a name="#faqs"></a>
-                <div class="header_text" style="color:#2b8eeb">Frequently Asked Questions</div>
+                <div class="header_text" style="color:#059625cc">Frequently Asked Questions</div>
                 
                 <!--
                 <div class="faq_divs">Where can I mine the airdrop?</div>
