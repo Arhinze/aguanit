@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a{
-    color: #ff9100; /*#2b8eeb; #070125; rgb(255, 94, 0);*/
+    color: #ff9100; 
     text-decoration:none;
 }
 
@@ -52,7 +52,6 @@ a{
     float:right;
     margin:21px;
     color:#fff;
-   /* background-color:#2b8eeb; */
     padding:2px 10px;
     border-radius:4px;
 }
@@ -61,7 +60,7 @@ a{
     font-size:21px;
     margin:16px;
     color:#fff;
-    background-color:#2b8eeb;
+    background-color: #059625cc; /*#059625cc*/
     padding:2px 10px;
     border-radius:4px;
 }
@@ -77,7 +76,7 @@ a{
 }
 
 .headers a{
-    color:#2b8eeb;
+    color:#059625cc;
 }
 
 .headers:after, .headers:before{
@@ -224,7 +223,7 @@ a{
 }
 
 .what_is_body {
-    font-size: 16px; /*color: #2b8eeb;*/
+    font-size: 16px; /*color: #059625cc;*/
     margin:15px 0;
 }
 
@@ -248,7 +247,7 @@ a{
 .token_distribution_head{
     margin: 24px 6px;
     text-align: center;
-    color:#2b8eeb;
+    color:#059625cc;
     font-size: 30px;
 }
 
@@ -261,7 +260,7 @@ a{
 }
 
 .token_percentages{
-    color:#2b8eeb;
+    color:#059625cc;
 }
 
 .login, .sign-up{
@@ -471,7 +470,7 @@ a{
 
 .certificate_button{
     padding: 16px;
-    background-color: #2b8eeb;
+    background-color: #059625cc;
     letter-spacing: 2px;
     font-size:11px;
     color:#fff;
@@ -600,7 +599,7 @@ a{
 }
 
 .footer_fa_links{
-    border-bottom: 1px dotted #2b8eeb;
+    border-bottom: 1px dotted #059625cc;
 }
 
 .search-input{
@@ -711,7 +710,7 @@ a{
 }
 
 .sign-in-welcome a{
-    color:#2b8eeb;
+    color:#059625cc;
 }
 
 .code1, .code2, .code3, .code4, .code5, .code0{
@@ -763,20 +762,20 @@ a{
 
 .investor_input, .investor_input2{
     height:24px;
-    border:1px solid #2b8eeb;
-    border-right:49px solid #2b8eeb;
+    border:1px solid #059625cc;
+    border-right:49px solid #059625cc;
     width:70%;
     border-radius:4px;
     margin-top:12px;
 }
 
 .investor_input2{
-    border-right:71px solid #2b8eeb !important;
+    border-right:71px solid #059625cc !important;
 }
 
 .calculator{
     border-radius:6px;
-    box-shadow:0px 0px 9px 0px #2b8eeb;
+    box-shadow:0px 0px 9px 0px #059625cc;
     padding:5px 0px 16px 8px;
     margin:6% 3%;
 }
@@ -841,13 +840,13 @@ a{
     width:35px;
     height:35px;
     color:#fff;
-    background-color:#2b8eeb;
+    background-color:#059625cc;
     border-radius:100%;
 }
 
 .hidden-menu-div{
     display:none;
-    background-color:#2b8eeb; 
+    background-color:#059625cc; 
     border-radius:6px;
     padding:6px;
     line-height:25px;
@@ -868,7 +867,7 @@ a{
     padding:6px 12px;
     color:#fff;
     border-radius:6px;
-    background-color:#2b8eeb;
+    background-color:#059625cc;
     font-size:17px;
     border:none;
 }
