@@ -1,6 +1,6 @@
 body{
     /* background-color: #042c06 #042c06 */ 
-    background-color:#042c06; test-colour: #042c06;
+    background-color:#042c06; /*test-colour: #042c06;*/
     color:#fff;   
     overflow-x:hidden; 
     animation:bugfix infinite 1s;
