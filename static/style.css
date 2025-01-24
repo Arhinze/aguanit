@@ -1,5 +1,5 @@
 body{
-    /* background-color: #01123c*/
+    /* background-color: #014905*/
     background-color:#014905; 
     color:#fff;   
     overflow-x:hidden; 
@@ -33,7 +33,7 @@ a{
 }
 
 .button{
-    background-color:#01123c;
+    background-color:#014905;
     font-weight:bold;
     color:#fff;
     font-size:18px;
@@ -73,7 +73,7 @@ a{
     position:fixed;
     width:100%;
     height:49px;
-    background-color:#01123c;
+    background-color:#014905;
 }
 
 .headers a{
@@ -96,7 +96,7 @@ a{
 .menu-list, .admin_menu_list{
     /*display:none;display:grid;*/ 
     /*right:-92%;*/
-    background-color: #01123c;
+    background-color: #014905;
     color:#fff;
     
     list-style-type:none !important;
@@ -165,7 +165,7 @@ a{
     font-size:18px;
     margin:25px 12px; 
     float:left;
-    background-color: #01123c;
+    background-color: #014905;
 }
 
 .site_top_page{
@@ -187,7 +187,7 @@ a{
 
 .buy_presale:hover, .buy_presale2:hover{
     border:1px solid #0000ff;
-    background-color: #01123c;
+    background-color: #014905;
     animation: fade 1s 1 .0s normal;
 }
 
@@ -203,7 +203,7 @@ a{
 
 @keyframes fade{
     from{background-color:#0000ff;}
-    to{background-color: #01123c;}
+    to{background-color: #014905;}
 }
 
 @keyframes fade2{
@@ -218,7 +218,7 @@ a{
 
 .header_text{
     margin-top: 24px;
-    color:#01123c;
+    color:#014905;
     font-size: 30px;
     text-align:center;
 }
@@ -285,7 +285,7 @@ a{
 
 .long-action-button{
     padding:10px;
-    background-color: #01123c;
+    background-color: #014905;
     border-radius:6px;
     width:fit-content;
     color:#fff;
@@ -327,7 +327,7 @@ a{
 }
 
 .new-dashboard-head{
-    background-color: #01123c;
+    background-color: #014905;
     color:#fff;
     padding:6px;
 }
@@ -361,7 +361,7 @@ a{
 }
 
 .about_us{
-   background-color:#01123c;
+   background-color:#014905;
    color: #fff;
    padding:5% 3%;    
 }
@@ -393,10 +393,10 @@ a{
     height:fit-content;
     /*
     color:#fff;
-    background-color: #01123c;
+    background-color: #014905;
     */
     
-    color:#01123c;
+    color:#014905;
     background-color: #fff;
     border-radius: 6px;
 }
@@ -415,14 +415,14 @@ a{
     font-size: 26px;
   /*  
     padding: 80px 17px; 
-    background-color: #01123c;
+    background-color: #014905;
   */
     font-weight: bold;
 
    /* background-image: url("../static/images/investement_plans_bg.png");
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: #01123c;
+    background-color: #014905;
     padding:45px 17px 120px 17px;
 }
 
@@ -439,7 +439,7 @@ a{
     border-bottom:1px solid #f0eeee;
     padding: 21px 17px;
     color:#fff;
-    background-color: #01123c;
+    background-color: #014905;
 }
 
 .plan_list_bottom{
@@ -450,7 +450,7 @@ a{
 
 .plan_list_bottom .sign_up{
     font-size: 18px;
-    background-color:#01123c;
+    background-color:#014905;
     padding: 12px 30px ;
     color:#fff;
 }
@@ -699,7 +699,7 @@ a{
 }
 
 .sign-in-box a{
-    color:#01123c;
+    color:#014905;
 }
 
 .sign-in-welcome{
@@ -737,7 +737,7 @@ a{
 .main{
     margin:12px 1% ;
     padding:12px;
-    box-shadow: 0px 0px 9px 1px #01123c;
+    box-shadow: 0px 0px 9px 1px #014905;
     border-radius:6px;
     overflow:hidden;
 }
