@@ -184,6 +184,10 @@ a{
     font-size: 16px;
 }
 
+.buy_presale{
+    background-color: #0bee3ccc;
+}
+
 .buy_presale:hover, .buy_presale2:hover{
     border:1px solid #0bee3ccc;
     background-color: #042c06;
@@ -203,13 +207,13 @@ a{
 }
 
 @keyframes fade{
-    from{background-color:#0000ff;}
-    to{background-color: #042c06;}
+    from{background-color:#042c06;}
+    to{background-color: #0bee3ccc;}
 }
 
 @keyframes fade2{
-    from{background-color:#0000ff;color:#fff}
-    to{background-color: #fff;color:#0000ff}
+    from{background-color:#042c06;color:#fff}
+    to{background-color: #fff;color:#042c06}
 }
 
 @keyframes rotate {
