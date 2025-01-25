@@ -1,5 +1,5 @@
 <?php
 
-include_once("https://aguanit.com/views/mine.php");
+include_once("http://aguanit.com/views/mine.php");
 
 ?>
