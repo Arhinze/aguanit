@@ -46,7 +46,7 @@ class Index_Segments{
         <body>
             <div class="headers">  
                 <div style="margin:-16px 19px 0px 14px">
-                    <a href="/" style="color:#059625cc"><h3 class="site_name">$site_name</h3></a>
+                    <a href="/"><h3 class="site_name">$site_name</h3></a>
                 </div>
             
                 <div class="menu-icon">
@@ -104,7 +104,7 @@ class Index_Segments{
                     $site_name token is a revolutionary project that merges the expertise of $site_name Cybersecurity, a leading cybersecurity firm, with the innovative potential of crypto currency. Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities designed to enhance online security, empower users, and foster a thriving community.
                 </div>
                 
-                <a href="/white-paper" class="buy_presale">DOWNLOAD WHITE PAPER</a>
+                <a href="/white-paper" class="buy_presale2">DOWNLOAD WHITE PAPER</a>
                 
                 <div class="header_text" style="text-align:center">Project Features</div>
 
@@ -137,7 +137,7 @@ class Index_Segments{
 
 
             <div class="token_distribution">
-                <div class="token_distribution_head" style="color:#059625cc">Token Distribution</div>
+                <div class="token_distribution_head">Token Distribution</div>
                 
                 <ul class ="token_distribution_list">
                     <li><span class="token_percentages">100%</span> liquidity pool</li>
@@ -163,7 +163,7 @@ class Index_Segments{
             </div>
 
             <div class="faq"> <a name="#faqs"></a>
-                <div class="header_text" style="color:#059625cc">Frequently Asked Questions</div>
+                <div class="header_text">Frequently Asked Questions</div>
                 
                 <!--
                 <div class="faq_divs">Where can I mine the airdrop?</div>

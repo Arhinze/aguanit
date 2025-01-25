@@ -161,6 +161,7 @@ a{
 }*/
 
 .site_name{
+    color:#0bee3ccc;
     font-size:18px;
     margin:25px 12px; 
     float:left;
@@ -749,14 +750,6 @@ a{
     overflow:hidden;
 }
 
-.faqs, .contact_us{
-    margin:81px 1% -8% 1%;
-    padding:12px;
-    box-shadow: 0px 0px 9px 1px #fff;
-    border-radius:6px;
-    overflow:hidden;
-}
-
 .invalid {
     position:fixed;
     top:0;
@@ -1055,10 +1048,6 @@ a{
 
     .input{
         margin-left:18px
-    }
-
-    .faqs, .contact_us{
-        margin: 81px 16% -10% 16%;
     }
 
     .main{
