@@ -72,11 +72,11 @@ class Index_Segments{
                     <li><a href="">Smart Contract</a></li>
                 </ul> 
             </div> 
+       HTML;
+       }
 
-            <!-- id ajax utilizes this for pop up notices on users' investments -->    
-            <div id="invest"></div>
-            <!-- end of ajax pop up div -->
-
+       public static function body(){
+            echo <<<HTML
             <div class="site_top_page">
                 <div class="intro">
                 $site_name is a revolutionary project that merges the expertise of $site_name Cybersecurity.
@@ -180,7 +180,11 @@ class Index_Segments{
                 <div class="header_text" style="font-size:24px;padding-bottom:24px">$site_name token presale is now live</div>
                 <a href="" class="buy_presale2">Buy presale</a>
             </div>
+        HTML;
+       }
 
+        public static function footer(){
+            echo <<<HTML
             <div class="footer">
                 <div class="footer_fa_links">
                     <a href="https://youtube.com/@aguanittoken?si=2UPwkGxROq7WpLAO"><i class="fa fa-youtube-play"></i></a>
