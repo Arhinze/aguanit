@@ -75,7 +75,7 @@ class Index_Segments{
        HTML;
        }
 
-       public static function body(){
+       public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
             echo <<<HTML
             <div class="site_top_page">
                 <div class="intro">
