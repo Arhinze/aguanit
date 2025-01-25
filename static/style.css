@@ -177,7 +177,7 @@ a{
 }
 
 .buy_presale, .buy_presale2 {
-    background-color:#0bee3ccc;/*#0000ff*/
+    background-color:#042c06;/*#0000ff*/
     padding:8px 15px;
     border-radius: 6px;
     color:#fff;
@@ -185,7 +185,7 @@ a{
 }
 
 .buy_presale:hover, .buy_presale2:hover{
-    border:1px solid #0000ff;
+    border:1px solid #0bee3ccc;
     background-color: #042c06;
     animation: fade 1s 1 .0s normal;
 }
@@ -603,7 +603,7 @@ a{
 .footer_fa_links{
     border-bottom: 1px dotted #0bee3ccc;
     letter-spacing: 12px;
-    font-size: 30px;
+    font-size: 21px;
 }
 
 .search-input{
