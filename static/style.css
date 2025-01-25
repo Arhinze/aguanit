@@ -270,6 +270,10 @@ a{
     color:#0bee3ccc;
 }
 
+.faq .header_text{
+    color:#0bee3ccc;
+}
+
 .login, .sign-up{
     float:left;
     margin-left:12px;
