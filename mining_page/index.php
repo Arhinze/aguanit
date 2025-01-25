@@ -1,6 +1,5 @@
 <?php
 
-//include_once($_SERVER["DOCUMENT_ROOT"]."/views/mine.php");
-echo $_SERVER["DOCUMENT_ROOT"];
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/mine.php");
 
 ?>
