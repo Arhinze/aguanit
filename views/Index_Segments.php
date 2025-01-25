@@ -85,7 +85,7 @@ class Index_Segments{
                 Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities.
                 
                 <br /><br />
-                <a href="/buy-presale" class="buy_presale">BUY PRESALE</a>
+                <a href="/buy-presale" class="buy_presale">START MINING</a>
                 <br /><br />
 
                 <div>
@@ -140,13 +140,12 @@ class Index_Segments{
                 <div class="token_distribution_head" style="color:#059625cc">Token Distribution</div>
                 
                 <ul class ="token_distribution_list">
-                    <li><span class="token_percentages">32%</span> liquidity pool</li>
-                    <li><span class="token_percentages">10%</span> Airdrop and community rewards</li>
-                    <li><span class="token_percentages">3% </span>Pre-sale</li>
-                    <li><span class="token_percentages">10%</span> Team and advisors (vested for 5 years)</li>
-                    <li><span class="token_percentages">15%</span> Cybersecurity research and development</li>
-                    <li><span class="token_percentages">15%</span> Partnerships, marketing and collaborations</li>
-                    <li><span class="token_percentages">20%</span> Reserved for future initiatives</li>
+                    <li><span class="token_percentages">100%</span> liquidity pool</li>
+                    <li><span class="token_percentages">12.5%</span> Airdrop and community rewards</li>
+                    <li><span class="token_percentages">25% </span>Pre-sale</li>
+                    <li><span class="token_percentages">25% </span>Mining Pool</li>
+                    <li><span class="token_percentages">12.5% </span>Partnerships and collaborations</li>
+                    <li><span class="token_percentages">25% </span>Founding Team</li>
                 </ul>
 
                 <div style="width:100%">
@@ -182,9 +181,12 @@ class Index_Segments{
 
             <div class="footer">
                 <div class="footer_fa_links">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-telegram"></i></a>
+                    <a href="https://youtube.com/@aguanittoken?si=2UPwkGxROq7WpLAO"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61553828145828"><i class="fa fa-facebook"></i></a>
+                    <a href="https://t.me/aguanit"><i class="fa fa-telegram"></i></a>
+                    <a href="https://x.com/AguanitToken?t=VwVfUCIOP1xBa9KRrfPHkg&s=09"><i class="fa fa-twitter"></i></a>
                 </div>
+
                 <div class="footer_copyright">
                     © 2024 $site_name Token.
                 </div>
