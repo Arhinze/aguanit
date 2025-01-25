@@ -603,6 +603,7 @@ a{
 .footer_fa_links{
     border-bottom: 1px dotted #059625cc;
     letter-spacing: 12px;
+    font-size: 18px;
 }
 
 .search-input{
