@@ -85,7 +85,7 @@ class Index_Segments{
                 Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities.
                 
                 <br /><br />
-                <a href="/buy-presale" class="buy_presale">START MINING</a>
+                <a href="$site_mining_page_url" class="buy_presale">START MINING</a>
                 <br /><br />
 
                 <div>
