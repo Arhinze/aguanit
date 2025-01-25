@@ -101,7 +101,9 @@ class Index_Segments{
                 <div class="header_text">What is $site_name Token?</div>
 
                 <div class="what_is_body">
-                    $site_name token is a revolutionary project that merges the expertise of $site_name Cybersecurity, a leading cybersecurity firm, with the innovative potential of crypto currency. Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities designed to enhance online security, empower users, and foster a thriving community.
+                    <p>$site_name token is a revolutionary project that merges the expertise of $site_name Cybersecurity, a leading cybersecurity firm, with the innovative potential of crypto currency.</p> 
+                    
+                    <p>Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities designed to enhance online security, empower users, and foster a thriving community.</p>
                 </div>
                 
                 <a href="/white-paper" class="buy_presale2">DOWNLOAD WHITE PAPER</a>
