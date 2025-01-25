@@ -1,6 +1,6 @@
 <?php
 ini_set("display_errors", '1'); //for testing purposes..
-include_once("php/connection.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
 
 class Index_Segments{
     public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
