@@ -197,6 +197,8 @@ a{
 }
 
 .coin_image{
+    width:60px;
+    height:60px;
     animation: rotate .5s infinite .0s alternate;
 }
 

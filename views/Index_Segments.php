@@ -89,7 +89,7 @@ class Index_Segments{
                 <br /><br />
 
                 <div>
-                    <!--<img src = "/static/images/coin_image.png" class="coin_image"/>-->
+                    <img src = "/static/images/coin_image.png" class="coin_image"/>
                 </div>
             </div>
 
