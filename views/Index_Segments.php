@@ -1,5 +1,6 @@
 <?php
 ini_set("display_errors", '1'); //for testing purposes..
+echo $_SERVER["DOCUMENT_ROOT"];
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
 
 class Index_Segments{
