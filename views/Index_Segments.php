@@ -24,15 +24,14 @@ class Index_Segments{
         <html lang="en">
         <head>
           
-            <link rel="stylesheet" href="/home/u590828029/domains/aguanit.com/public_html/static/style.css?$css_version"/>
+            <link rel="stylesheet" href="https://aguanit.com/static/style.css?$css_version"/>
+            <!--<link rel="stylesheet" href="/home/u590828029/domains/aguanit.com/public_html/static/style.css?$css_version"/>-->
             <!--<link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Arimo|Prompt"/>
-    
-            <link rel="stylesheet" href="/static/themify-icons.css"/>
     
     
             <meta charset="UTF-8">
