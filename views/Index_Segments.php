@@ -17,7 +17,7 @@ class Index_Segments{
             setcookie("ref", $ref, time()+(12*3600), "/");
         }
 
-        $css_version = filemtime($_SERVER["DOCUMENT_ROOT"]."/static/style.css");
+        $css_version = filemtime("/home/u590828029/domains/aguanit.com/public_html/static/style.css");
 
         echo <<<HTML
         <!doctype html>
