@@ -183,7 +183,7 @@ class Index_Segments{
         HTML;
        }
 
-        public static function footer(){
+        public static function footer($site_name = SITE_NAME_SHORT){
             echo <<<HTML
             <div class="footer">
                 <div class="footer_fa_links">
