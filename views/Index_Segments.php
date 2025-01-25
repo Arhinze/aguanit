@@ -1,6 +1,11 @@
 <?php
 ini_set("display_errors", '1'); //for testing purposes..
-include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
+if (include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php")) {
+    (include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php"));
+} else {
+    include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.php");
+}
+
 
 class Index_Segments{
     public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
