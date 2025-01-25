@@ -1,5 +1,5 @@
 body{
-    /* background-color: #042c06 #042c06 */ 
+    /*SITE COLOURS: #042c06 #0bee3ccc former-lighter-color: #059625cc*/ 
     background-color:#042c06; /*test-colour: #042c06;*/
     color:#fff;   
     overflow-x:hidden; 
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a{
-    color: #ff9100; 
+    color: #0bee3ccc; /*#ff9100*/
     text-decoration:none;
 }
 
@@ -60,7 +60,7 @@ a{
     font-size:21px;
     margin:16px;
     color:#fff;
-    background-color: #059625cc; /*#059625cc*/
+    background-color: #0bee3ccc; /*#0bee3ccc*/
     padding:2px 10px;
     border-radius:4px;
 }
@@ -76,7 +76,7 @@ a{
 }
 
 .headers a{
-    color:#059625cc;
+    color:#0bee3ccc;
 }
 
 .headers:after, .headers:before{
@@ -177,7 +177,7 @@ a{
 }
 
 .buy_presale, .buy_presale2 {
-    background-color:#059625cc;/*#0000ff*/
+    background-color:#0bee3ccc;/*#0000ff*/
     padding:8px 15px;
     border-radius: 6px;
     color:#fff;
@@ -225,7 +225,7 @@ a{
 }
 
 .what_is_body {
-    font-size: 16px; /*color: #059625cc;*/
+    font-size: 16px; /*color: #0bee3ccc;*/
     margin:15px 0;
 }
 
@@ -249,7 +249,7 @@ a{
 .token_distribution_head{
     margin: 24px 6px;
     text-align: center;
-    color:#059625cc;
+    color:#0bee3ccc;
     font-size: 30px;
 }
 
@@ -262,7 +262,7 @@ a{
 }
 
 .token_percentages{
-    color:#059625cc;
+    color:#0bee3ccc;
 }
 
 .login, .sign-up{
@@ -472,7 +472,7 @@ a{
 
 .certificate_button{
     padding: 16px;
-    background-color: #059625cc;
+    background-color: #0bee3ccc;
     letter-spacing: 2px;
     font-size:11px;
     color:#fff;
@@ -601,7 +601,7 @@ a{
 }
 
 .footer_fa_links{
-    border-bottom: 1px dotted #059625cc;
+    border-bottom: 1px dotted #0bee3ccc;
     letter-spacing: 12px;
     font-size: 30px;
 }
@@ -714,7 +714,7 @@ a{
 }
 
 .sign-in-welcome a{
-    color:#059625cc;
+    color:#0bee3ccc;
 }
 
 .code1, .code2, .code3, .code4, .code5, .code0{
@@ -766,20 +766,20 @@ a{
 
 .investor_input, .investor_input2{
     height:24px;
-    border:1px solid #059625cc;
-    border-right:49px solid #059625cc;
+    border:1px solid #0bee3ccc;
+    border-right:49px solid #0bee3ccc;
     width:70%;
     border-radius:4px;
     margin-top:12px;
 }
 
 .investor_input2{
-    border-right:71px solid #059625cc !important;
+    border-right:71px solid #0bee3ccc !important;
 }
 
 .calculator{
     border-radius:6px;
-    box-shadow:0px 0px 9px 0px #059625cc;
+    box-shadow:0px 0px 9px 0px #0bee3ccc;
     padding:5px 0px 16px 8px;
     margin:6% 3%;
 }
@@ -844,13 +844,13 @@ a{
     width:35px;
     height:35px;
     color:#fff;
-    background-color:#059625cc;
+    background-color:#0bee3ccc;
     border-radius:100%;
 }
 
 .hidden-menu-div{
     display:none;
-    background-color:#059625cc; 
+    background-color:#0bee3ccc; 
     border-radius:6px;
     padding:6px;
     line-height:25px;
@@ -871,7 +871,7 @@ a{
     padding:6px 12px;
     color:#fff;
     border-radius:6px;
-    background-color:#059625cc;
+    background-color:#0bee3ccc;
     font-size:17px;
     border:none;
 }
