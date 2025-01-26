@@ -18,7 +18,7 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
 
     $remember_username = $_POST["username_or_email"];
 
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE (username = ? OR email = ?) AND `password` = ?");
+    $stmt = $pdo->prepare("SELECT * FROM miners WHERE (username = ? OR user_email = ?) AND `password` = ?");
     $stmt->execute([$user_id, $user_id, $password]);
     
     $data = $stmt->fetchAll(PDO::FETCH_OBJ);
