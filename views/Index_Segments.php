@@ -184,7 +184,7 @@ class Index_Segments{
         HTML;
        }
 
-        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
+        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $scripts = ""){
             echo <<<HTML
             <div class="footer">
                 <div class="footer_fa_links">
@@ -198,6 +198,8 @@ class Index_Segments{
                     © 2024 $site_name Token.
                 </div>
             </div>
+
+            $scripts
         </body>
         </html>
             
