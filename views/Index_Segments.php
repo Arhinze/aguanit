@@ -25,7 +25,7 @@ class Index_Segments{
         <head>
           
             <link rel="stylesheet" href="$site_url/static/style.css?$css_version"/>
-            <link rel="icon" type="image/x-icon" href="$site_url/static/images/favicon.ico"/>
+            <link rel="icon" type="image/x-icon" href="$site_url/static/images/favicon.png"/>
             <!--<link rel="stylesheet" href="/home/u590828029/domains/aguanit.com/public_html/static/style.css?$css_version"/>-->
             <!--<link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
