@@ -12,7 +12,7 @@ class Dashboard_Segments extends Index_Segments{
         $Hi_user = $_COOKIE["username"];
     } 
 
-    $css_version = filemtime($_SERVER["DOCUMENT_ROOT"]."/static/style.css");
+    $css_version = filemtime("/home/u590828029/domains/aguanit.com/public_html/static/style.css");
 
     echo <<<HTML
     <!doctype html>
