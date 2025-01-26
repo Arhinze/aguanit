@@ -7,7 +7,8 @@ if ($data) {
     echo "<br /><br /><br /><br /><br /><br />Everything goes here...<br /><br /><br /><br /><br /><br />";
     Dashboard_Segments::dashboard_footer(); 
 } else {
-    header("location:$site_url/login");
+    //header("location:$site_url/login");
+    echo "Data no dey here o";
 }
 
 ?>
