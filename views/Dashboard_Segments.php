@@ -95,7 +95,7 @@ HTML;
 
 
     public static function dashboard_footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
-        
+
         Index_Segments::footer();
         echo <<<HTML
         
@@ -147,10 +147,6 @@ HTML;
     <noscript> 
         Texts won't display well. please enable Javascript.
     </noscript>
-
-</body>  <!-- The end -->
-</html>
-
 HTML;
     }
 }

@@ -198,31 +198,11 @@ class Index_Segments{
                     © 2024 $site_name Token.
                 </div>
             </div>
+        </body>
+        </html>
             
     HTML;
     }
 }
 
 ?>
-
-<script>
-function ajax_invest(){
-obj = new XMLHttpRequest;
-obj.onreadystatechange = function(){
-    if(obj.readyState == 4){
-        document.getElementById("invest").innerHTML = obj.responseText;
-    }
-}
-
-obj.open("GET","/ajax_invest.php");
-obj.send(null);
-}  
-
-
-<!-- Smartsupp Live Chat script -->
-
-<!--End of smartsupp Script-->
-</script>
-
-</body>
-</html>
