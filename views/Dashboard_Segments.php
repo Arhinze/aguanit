@@ -94,9 +94,9 @@ HTML;
     }
 
 
-
-    public static function dashboard_footer($site_name = SITE_NAME, $site_url = SITE_URL){
-        footer();
+    public static function dashboard_footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
+        
+        Index_Segments::footer();
         echo <<<HTML
         
         <!-- Footer -->
