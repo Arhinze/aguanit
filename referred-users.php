@@ -1,20 +1,20 @@
 <?php
 
-include_once("views/Dashboard_Segments.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
 Dashboard_Segments::header();
 if((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
     $username = $_COOKIE["username"];
     $password = $_COOKIE["password"];
 
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ? AND `password` = ?");
+    $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
     $stmt->execute([$username, $password]);
     $data = $stmt->fetch(PDO::FETCH_OBJ);
 
     if($data){
     //that means user is logged in
         echo "<div class='dashboard_div' style='padding:8px'><h1>Referrals: </h1> <hr />";
-        $refstmt = $pdo->prepare("SELECT * FROM investors WHERE referred_by = ?");
+        $refstmt = $pdo->prepare("SELECT * FROM miners WHERE referred_by = ?");
         $refstmt->execute([$data->username]);
         $refdata = $refstmt->fetchAll(PDO::FETCH_OBJ);
 
