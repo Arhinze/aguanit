@@ -1,5 +1,5 @@
 <?php
-
+ini_set("session.use_only_cookies", 1);
 include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.php");
 
 if(isset($_COOKIE["username_or_email"]) && ((isset($_COOKIE["password"])))){
@@ -13,4 +13,6 @@ if(isset($_COOKIE["username_or_email"]) && ((isset($_COOKIE["password"])))){
         
     } else {
         header("location:/login");
-    }
+}
+
+// then call 'if data(){ ... }' for all necessary dashboard related page.

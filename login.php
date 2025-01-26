@@ -1,30 +1,15 @@
 <?php
 
-ini_set("session.use_only_cookies", 1);
-include_once($_SERVER["DOCUMENT_ROOT"]."/views/Index_Segments.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/php/account-manager.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
 
 Index_Segments::header();
-?>
-
-<?php
 
 $remember_username = "";
 
-if(isset($_COOKIE["user_id"]) && isset($_COOKIE["password"])) {
-    $user_id = $_COOKIE["username_or_email"];
-    $password = $_COOKIE["password"];
-
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE (username = ? OR email = ?) AND `password` = ?");
-    $stmt->execute([$user_id, $user_id, $password]);
-    
-    $data = $stmt->fetchAll(PDO::FETCH_OBJ);
-
-    if(count($data)>0){
-        header("location:/dashboard");
-    }
-} 
-
-
+if($data){ //data from php/account-manager.php ~ if true, that means user is already logged in.
+    header("location:$site_mining_page_url");
+}
 
 if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
     $user_id = $_POST["username_or_email"];
@@ -42,7 +27,7 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
         setcookie("password", $_POST["password"], time()+(24*3600), "/");
 
         //redirect to dashboard
-        header("location:/dashboard");
+        header("location:$site_mining_page_url");
 
     } else {
 ?>
