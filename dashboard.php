@@ -6,8 +6,8 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         // that means user is logged in:
 
         //cookie variables:
-        $f_user_id = $_COOKIE["username_or_email"];
-        $f_password = $_COOKIE["password"];
+        $form_user_id = $_COOKIE["username_or_email"];
+        $form_password = $_COOKIE["password"];
 
 
         //Get Last seen:
@@ -48,8 +48,8 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 <!--Start Mining Form Starts--> 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <form method="post" action="<?=$site_mining_page_url?>">
-    <input type="hidden" name="f_username_or_email" value=""/>
-    <input type="hidden" name="f_password" value=""/>
+    <input type="hidden" name="f_username_or_email" value="<?=$form_user_id?>"/>
+    <input type="hidden" name="f_password" value="<?=$form_password?>"/>
 
     <button type="submit" style="background-color:green;padding:45px;border-radius:100px;color:#000">Start Mining</button>
 </form>
