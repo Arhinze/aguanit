@@ -52,7 +52,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
     <input type="hidden" name="f_password" value=""/>
 </form>
 -->
-<a href="/test" style="background-color:green;padding:45px;border-radius:100px;color:#000">Start Mining</a>
+<a href="<?=$site_mining_page_url?>" style="background-color:green;padding:45px;border-radius:100px;color:#000">Start Mining</a>
 
 <!--Start Mining Form ends--> 
 
