@@ -4,7 +4,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.ph
 
 $data = false;
 
-if(isset($_COOKIE["username_or_email"]) && ((isset($_COOKIE["password"])))){
+if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
     $user_id = $_COOKIE["username_or_email"];
     $password = $_COOKIE["password"];
 
