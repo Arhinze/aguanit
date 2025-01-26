@@ -1,7 +1,8 @@
 <?php 
-include_once($_SERVER["DOCUMENT_ROOT"]."/views/Segments.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/php/account-manager.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
 
-Segments::header();
+Index_Segments::header();
 
 $referer = "";
 $remember_name = "";
@@ -368,5 +369,5 @@ if(isset($_POST["user_code"])){
 </div>    <!-- dashboard_div class ends -->
 
 <?php
-    Segments::footer();
+    Index_Segments::footer();
 ?>

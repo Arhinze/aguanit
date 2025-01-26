@@ -7,7 +7,7 @@ Index_Segments::header();
 $remember_username = "";
 
 if($data){ //data from php/account-manager.php ~ if true, that means user is already logged in.
-    header("location:$site_mining_page_url");
+    header("location:/dashboard");
     //echo "Data dey oo";
 }
 
@@ -27,7 +27,7 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
         setcookie("password", $_POST["password"], time()+(24*3600), "/");
 
         //redirect to dashboard
-        header("location:$site_mining_page_url");
+        header("location:/dashboard");
 
     } else {
 ?>
@@ -46,7 +46,7 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
     </div>
 
     <div class="sign-in-box">
-        <form method="post" action="/login"> 
+        <form method="post" action="$site_mining_page_url"> 
             <div class="flex-div">
                 <div class="new-input-div">
                     <input type="text" name="username_or_email" placeholder="Username" value="<?=$remember_username?>" class="new-input" style="margin-bottom:6px"/>    
