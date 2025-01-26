@@ -22,7 +22,7 @@ if (((isset($_POST["f_username_or_email"])) && ((isset($_POST["f_password"])))))
 } 
 
 if ($data) {
-    Dashboard_Segments::header(); 
+    Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username); 
     echo "<br /><br /><br /><br /><br /><br />Everything about the mining page goes here...<br /><br /><br /><br /><br /><br />";
     Dashboard_Segments::dashboard_footer(); 
 } else {
