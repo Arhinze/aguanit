@@ -2,17 +2,10 @@
 
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
-if((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
-    $username = $_COOKIE["username"];
-    $password = $_COOKIE["password"];
-
-    $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
-    $stmt->execute([$username, $password]);
-    $data = $stmt->fetch(PDO::FETCH_OBJ);
-
-    if($data){
+if($data){
     //that means user is logged in
-        Dashboard_Segments::header();
+    Dashboard_Segments::header();
+    
         echo "<div class='dashboard_div' style='padding:12px'><h1>Referred Commissions: </h1><hr /><div style='line-height:23px;font-size:18px'>";
 
         $ref_com_stmt = $pdo->prepare("SELECT * FROM transactions WHERE user_id = ? AND tr_type=?");
@@ -44,6 +37,3 @@ if((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
     }else {
         header("location:/login");
     }
-}else {
-    header("location:/login");
-}
