@@ -184,7 +184,56 @@ class Index_Segments{
         HTML;
        }
 
-        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $scripts = ""){
+
+       public static function index_scripts(){
+
+        echo <<<HTML
+        
+        <!-- Footer -->
+        <script>
+            function show_div(vari) {
+                if (document.getElementById(vari).style.display == "none") {
+                    document.getElementById(vari).style.display = "block";
+                } else if (document.getElementById(vari).style.display == "block") {
+                    document.getElementById(vari).style.display = "none";
+                }
+            }
+
+            const collection = document.getElementsByClassName("invalid");
+
+            for (let i=0; i < collection.length; i++){
+                collection[i].style = "display:block";
+                //collection[i].style = "color:pink";
+                
+                var innerHT = collection[i].innerHTML;
+
+                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span>";
+
+                collection[i].innerHTML = newInnerHT;
+            }
+
+            function show_class_div() {
+                const collection = document.getElementsByClassName("invalid");
+                i = 0;
+
+                for (i=0; i<collection.length; i++){
+                    collection[i].style.display = "none";
+                }
+                  
+            }
+            
+        </script>
+
+        <noscript> 
+            Texts won't display well. please enable Javascript.
+        </noscript>
+
+        HTML;
+        }
+
+
+        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $scripts = ""){ 
+            $index_scripts = Index_Segments::index_scripts();
             echo <<<HTML
             <div class="footer">
                 <div class="footer_fa_links">
@@ -200,6 +249,7 @@ class Index_Segments{
             </div>
 
             $scripts
+            $index_scripts
         </body>
         </html>
             
