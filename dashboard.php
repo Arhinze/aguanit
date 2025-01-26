@@ -25,22 +25,9 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         $stmt = $pdo->prepare("UPDATE miners SET last_seen = ? WHERE (username = ? OR user_email = ?) AND `password` = ?");
         $stmt->execute([date("Y-m-d h:i:s", time()), $user_id, $user_id, $password]);
 
-
-        //get pending withdrawals value:
-        $pending_withdraw_stmt = $pdo->prepare("SELECT * FROM user_requests WHERE user_id = ? AND rq_type = ?");
-        $pending_withdraw_stmt->execute([$data->user_id, "Withdraw"]);
-        $pending_withdraw_data = $pending_withdraw_stmt->fetchAll(PDO::FETCH_OBJ);
-        
-        $pending_withdraw_amt = 0;
-        if (count($pending_withdraw_data) > 0) {
-            foreach ($pending_withdraw_data as $pd) {
-                $pending_withdraw_amt = $pd->rq_amount;
-            }
-        }
-        
           
         //display header:
-        Dashboard_Segments::header();
+        Dashboard_Segments::header($Hi_user = $data->username);
         
 ?>
 
