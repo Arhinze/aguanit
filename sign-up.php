@@ -50,7 +50,7 @@ if(isset($_POST["user_code"])){
                     echo '<div class="invalid"><i class="fa fa-warning"></i> Only letters, numbers and _ are accepted for username</div>';
                 }else {
      
-                    $stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ? OR user_email = ? LIMIT ?, ?");
+                    $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? OR user_email = ? LIMIT ?, ?");
                     $stmt->execute([$_POST["username"], $_POST["email"], 0, 1]);
     
                     $data = $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -90,7 +90,7 @@ if(isset($_POST["user_code"])){
 
 
                         //conditions are met -- Insert User
-                        $p_stmt = $pdo->prepare("INSERT INTO investors(real_name, username, user_email, `password`,referred_by,entry_date) VALUES(?, ?, ?, ?, ?,?)");
+                        $p_stmt = $pdo->prepare("INSERT INTO miners(real_name, username, user_email, `password`,referred_by,entry_date) VALUES(?, ?, ?, ?, ?,?)");
                         $p_stmt->execute([$_POST["name"], $_POST['username'],$_POST["email"],$_POST['password1'],$referer,date("Y-m-d h:i:s", time())]);
                         
                         //header("location:/dashboard");
@@ -163,7 +163,7 @@ if(isset($_POST["user_code"])){
                             if(isset($_GET["referer"]))$referer = $_GET["referer"];
                             if(isset($_COOKIE["ref"]))$referer = $_COOKIE["ref"];
                             
-                            $ref_stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ?");
+                            $ref_stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ?");
                             $ref_stmt->execute([$referer]);
                             $ref_data = $ref_stmt->fetch(PDO::FETCH_OBJ);
 
