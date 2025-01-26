@@ -29,7 +29,7 @@ if(isset($_POST["email"])){
     $remember_email = htmlentities($_POST["email"]);
 }
 
-$ref_stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ?");
+$ref_stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ?");
 $ref_stmt->execute([$referer]);
 $ref_data = $ref_stmt->fetch(PDO::FETCH_OBJ);
 
