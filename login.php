@@ -46,7 +46,7 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
     </div>
 
     <div class="sign-in-box">
-        <form method="post" action="$site_mining_page_url"> 
+        <form method="post" action=""> 
             <div class="flex-div">
                 <div class="new-input-div">
                     <input type="text" name="username_or_email" placeholder="Username" value="<?=$remember_username?>" class="new-input" style="margin-bottom:6px"/>    
