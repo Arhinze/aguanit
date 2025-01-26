@@ -1,5 +1,4 @@
 <?php
-
 include_once("/home/u590828029/domains/aguanit.com/public_html/php/account-manager.php");
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
 
@@ -8,8 +7,8 @@ Index_Segments::header();
 $remember_username = "";
 
 if($data){ //data from php/account-manager.php ~ if true, that means user is already logged in.
-    //header("location:$site_mining_page_url");
-    echo "Data dey oo";
+    header("location:$site_mining_page_url");
+    //echo "Data dey oo";
 }
 
 if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
