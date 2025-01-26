@@ -57,11 +57,11 @@ if(isset($_POST["user_code"])){
 
                     if(count($data)>0){
                         //--find a way to not repeat yourself again
-                        if(isset($_COOKIE["username"])){
-                            setcookie("username", $_POST["username"], time()-(24*3600), "/");
-                            setcookie("username", $_POST["username"], time()+(24*3600), "/");
+                        if(isset($_COOKIE["username_or_email"])){
+                            setcookie("username_or_email", $_POST["username"], time()-(24*3600), "/");
+                            setcookie("username_or_email", $_POST["username"], time()+(24*3600), "/");
                         }else{
-                            setcookie("username", $_POST["username"], time()+(24*3600), "/");
+                            setcookie("username_or_email", $_POST["username"], time()+(24*3600), "/");
                         }
                         if(isset($_COOKIE["password"])){
                             setcookie("password", $_POST["password1"], time()-(24*3600), "/");
@@ -75,16 +75,20 @@ if(isset($_POST["user_code"])){
                     } else{
                         //input the fields
                          //--find a way to not repeat yourself again
-                         if(isset($_COOKIE["username"])){
-                            setcookie("username", htmlentities($_POST["username"]), time()-(24*3600), "/");
-                            setcookie("username", htmlentities($_POST["username"]), time()+(24*3600), "/");
+                         if(isset($_COOKIE["username_or_email"])){
+                            //destroy existing one before setting a new one
+                            setcookie("username_or_email", htmlentities($_POST["username"]), time()-(24*3600), "/");
+                            setcookie("username_or_email", htmlentities($_POST["username"]), time()+(24*3600), "/");
                         }else{
-                            setcookie("username", $_POST["username"], time()+(24*3600), "/");
+                            //just set new cookie ~ no need to destroy old one since it's not set anyway..
+                            setcookie("username_or_email", $_POST["username"], time()+(24*3600), "/");
                         }
                         if(isset($_COOKIE["password"])){
+                            //destroy existing one before setting a new one
                             setcookie("password", $_POST["password1"], time()-(24*3600), "/");
                             setcookie("password", $_POST["password1"], time()+(24*3600), "/");
                         }else {
+                            //just set new cookie ~ no need to destroy old one since it's not set anyway..
                             setcookie("password", $_POST["password1"], time()+(24*3600), "/");
                         }
 
@@ -92,12 +96,6 @@ if(isset($_POST["user_code"])){
                         //conditions are met -- Insert User
                         $p_stmt = $pdo->prepare("INSERT INTO miners(real_name, username, user_email, `password`,referred_by,entry_date) VALUES(?, ?, ?, ?, ?,?)");
                         $p_stmt->execute([$_POST["name"], $_POST['username'],$_POST["email"],$_POST['password1'],$referer,date("Y-m-d h:i:s", time())]);
-                        
-                        //header("location:/dashboard");
-                        //echo "<div class='pop_up' style='display:block'>
-                        //  <h3>Sign UP Successful, Kindly <a href='/login' style='color:#ff3c00'>Login</a></h3>
-                        //  </div>";
-                    
                     
                         //Mail User:
                         $e_name = $_POST["name"];
