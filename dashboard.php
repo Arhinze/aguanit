@@ -46,19 +46,19 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 
 <!--Start Mining Form Starts--> 
-<!--
-<form method="post" action="/test">
+<form method="post" action="<?=$site_mining_page_url?>">
     <input type="hidden" name="f_username_or_email" value=""/>
     <input type="hidden" name="f_password" value=""/>
-</form>
--->
 
+    <button type="submit" style="background-color:green;padding:45px;border-radius:100px;color:#000">Start Mining</button>
+</form>
+<!--Start Mining Form ends--> 
+
+<!--
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <a href="https://mine.aguanit.com" style="background-color:green;padding:45px;border-radius:100px;color:#000">Start Mining</a>
 <br /><br /><br />
-
-<!--Start Mining Form ends--> 
-
+-->
 
 <!-- Referral Link section starts -->
 <div style="padding:12px">
