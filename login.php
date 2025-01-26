@@ -1,22 +1,21 @@
 <?php
 
 ini_set("session.use_only_cookies", 1);
-include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
-include_once($_SERVER["DOCUMENT_ROOT"]."/views/Segments.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/views/Index_Segments.php");
 
-Segments::header();
+Index_Segments::header();
 ?>
 
 <?php
 
 $remember_username = "";
 
-if(isset($_COOKIE["username"]) && isset($_COOKIE["password"])) {
-    $username = $_COOKIE["username"];
+if(isset($_COOKIE["user_id"]) && isset($_COOKIE["password"])) {
+    $user_id = $_COOKIE["username_or_email"];
     $password = $_COOKIE["password"];
 
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ? AND `password` = ?");
-    $stmt->execute([$username, $password]);
+    $stmt = $pdo->prepare("SELECT * FROM investors WHERE (username = ? OR email = ?) AND `password` = ?");
+    $stmt->execute([$user_id, $user_id, $password]);
     
     $data = $stmt->fetchAll(PDO::FETCH_OBJ);
 
@@ -27,19 +26,19 @@ if(isset($_COOKIE["username"]) && isset($_COOKIE["password"])) {
 
 
 
-if (isset($_POST["username"]) && isset($_POST["password"])) {
-    $username = $_POST["username"];
+if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
+    $user_id = $_POST["username_or_email"];
     $password = $_POST["password"];
 
-    $remember_username = $_POST["username"];
+    $remember_username = $_POST["username_or_email"];
 
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ? AND `password` = ?");
-    $stmt->execute([$username, $password]);
+    $stmt = $pdo->prepare("SELECT * FROM investors WHERE (username = ? OR email = ?) AND `password` = ?");
+    $stmt->execute([$user_id, $user_id, $password]);
     
     $data = $stmt->fetchAll(PDO::FETCH_OBJ);
 
     if(count($data)>0){
-        setcookie("username", $_POST["username"], time()+(24*3600), "/");
+        setcookie("username_or_email", $_POST["username_or_email"], time()+(24*3600), "/");
         setcookie("password", $_POST["password"], time()+(24*3600), "/");
 
         //redirect to dashboard
@@ -65,7 +64,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         <form method="post" action="/login"> 
             <div class="flex-div">
                 <div class="new-input-div">
-                    <input type="text" name="username" placeholder="Username" value="<?=$remember_username?>" class="new-input" style="margin-bottom:6px"/>    
+                    <input type="text" name="username_or_email" placeholder="Username" value="<?=$remember_username?>" class="new-input" style="margin-bottom:6px"/>    
                     <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
                 </div>
 

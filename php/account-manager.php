@@ -1,11 +1,13 @@
 <?php
 
-if((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
-    $username = $_COOKIE["username"];
+include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.php");
+
+if(isset($_COOKIE["username_or_email"]) && ((isset($_COOKIE["password"])))){
+    $user_id = $_COOKIE["username_or_email"];
     $password = $_COOKIE["password"];
 
-    $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
-    $stmt->execute([$username, $password]);
+    $stmt = $pdo->prepare("SELECT * FROM miners WHERE (username = ? or email = ?) AND `password` = ?");
+    $stmt->execute([$user_id, $user_id, $password]);
     
     $data = $stmt->fetch(PDO::FETCH_OBJ);
         
