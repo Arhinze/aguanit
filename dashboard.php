@@ -46,6 +46,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 
 <!--Start Mining Form Starts--> 
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <form method="post" action="<?=$site_mining_page_url?>">
     <input type="hidden" name="f_username_or_email" value=""/>
     <input type="hidden" name="f_password" value=""/>
