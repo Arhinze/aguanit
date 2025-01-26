@@ -32,7 +32,7 @@ class Dashboard_Segments extends Index_Segments{
         <div class="headers" style="height:36px;padding:16px 16px 8px 8px"> 
             <div style="font-size:18px;margin:-16px 19px 0px 14px;float:left">
                 <h3 class="site_name">
-                    <a href="/">$site_name</a>
+                    <a href="$site_url">$site_name</a>
                 </h3>
             </div>
 
