@@ -22,8 +22,8 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         }
 
         //update last seen:
-        $stmt = $pdo->prepare("UPDATE miners SET last_seen = ? WHERE username = ? AND `password` = ?");
-        $stmt->execute([date("Y-m-d h:i:s", time()), $username, $password]);
+        $stmt = $pdo->prepare("UPDATE miners SET last_seen = ? WHERE (username = ? OR user_email = ?) AND `password` = ?");
+        $stmt->execute([date("Y-m-d h:i:s", time()), $user_id, $user_id, $password]);
 
 
         //get pending withdrawals value:
@@ -61,7 +61,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
     <input style="height:24px;border:1px solid #2b8eeb;
         border-right:30px solid #2b8eeb;width:80%;
         border-radius:4px;margin-top:8px" id = 'referral_link'
-        value="https://<?=$site_url_short?>/?ref=<?=$_COOKIE['username']?>"/>
+        value="https://<?=$site_url_short?>/?ref=<?=$_COOKIE['username_or_email']?>"/>
         
     <i style="margin-left:-27px" class="fa fa-copy" onclick="copyText('referral_link')"></i>
     <br /> 
