@@ -1,10 +1,11 @@
 <?php
 
-include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
-Index_Segments::header(); 
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
+ 
+Dashboard_Segments::header(); 
+Dashboard_Segments::dashboard_footer(); 
 
-echo "<br /><br /><br />Everything goes here...<br /><br /><br />";
-
-Index_Segments::footer();
-
+if (isset($data)) {
+    echo "<br /><br /><br />Everything goes here...<br /><br /><br />";
+}
 ?>
