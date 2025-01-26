@@ -72,4 +72,4 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
     </div>
 </div>
     
-<?php Segments::footer(); ?>
+<?php Index_Segments::footer(); ?>
