@@ -8,11 +8,11 @@ if(($data) || ((isset($_POST["username_or_email"])) && ((isset($_POST["password"
     Dashboard_Segments::dashboard_footer(); 
 
     if ((isset($_POST["username_or_email"])) && ((isset($_POST["password"])))) {
-        
+
     }
 } else {
-    //header("location:$site_url/login");
-    echo "Data no dey here o";
+    header("location:$site_url/login");
+    //echo "Data no dey here o";
 }
 
 ?>
