@@ -11,7 +11,7 @@ if(($data) || ((isset($_POST["username_or_email"])) && ((isset($_POST["password"
 
     //}
 } else {
-//    header("location:$site_url/login");
+//  header("location:$site_url/login");
     echo "Data no dey here o";
 }
 
