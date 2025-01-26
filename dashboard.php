@@ -11,7 +11,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 
         //Get Last seen:
-        $last_seen_stmt = $pdo->prepare("SELECT * FROM investors WHERE user_id = ?");
+        $last_seen_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ?");
         $last_seen_stmt->execute([$data->user_id]);
         $last_seen_data = $last_seen_stmt->fetch(PDO::FETCH_OBJ);
 
