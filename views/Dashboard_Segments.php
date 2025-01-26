@@ -67,11 +67,11 @@ class Dashboard_Segments extends Index_Segments{
             
             <li class="x"><label for="menu-box"><i class="fa fa-times"></i></label></li>
             
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/deposit">Deposit</a></li>
-            <li><a href="/withdraw">Withdraw</a></li>
-            <li><a href="/transactions">Transactions</a></li>
-            <li><a href="/settings">Settings</a></li>
+            <li><a href="$site_url/dashboard">Dashboard</a></li>
+            <li><a href="$site_url/deposit">Deposit</a></li>
+            <li><a href="$site_url/withdraw">Withdraw</a></li>
+            <li><a href="$site_url/transactions">Transactions</a></li>
+            <li><a href="$site_url/settings">Settings</a></li>
 
             <li class="clear" style="padding-bottom:16px">
                 <label for="hidden-menu-item">
@@ -81,13 +81,13 @@ class Dashboard_Segments extends Index_Segments{
 
             <input type="checkbox" style="display:none" id="hidden-menu-item" class="hidden-menu-item"/>
             <div class="hidden-menu-div">
-                <a href="/referred-users">Referred Users</a><br />
-                <a href="/referred-commissions">Referred Commissions</a>
+                <a href="$site_url/referred-users">Referred Users</a><br />
+                <a href="$site_url/referred-commissions">Referred Commissions</a>
             </div>
             
-            <li><a href="/reset-password">Reset Password</a></li>
+            <li><a href="$site_url/reset-password">Reset Password</a></li>
 
-            <li><a href="/logout" style="color:#fff;font-weight:bold;background-color:#2b8eeb;padding:6px;border-radius:12px">Log out</a></li>
+            <li><a href="$site_url/logout" style="color:#fff;font-weight:bold;background-color:#2b8eeb;padding:6px;border-radius:12px">Log out</a></li>
 
         </ul>     
 HTML;
