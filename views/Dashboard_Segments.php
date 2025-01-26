@@ -64,9 +64,6 @@ class Dashboard_Segments extends Index_Segments{
             <li class="x"><label for="menu-box"><i class="fa fa-times"></i></label></li>
             
             <li><a href="$site_url/dashboard">Dashboard</a></li>
-            <li><a href="$site_url/deposit">Deposit</a></li>
-            <li><a href="$site_url/withdraw">Withdraw</a></li>
-            <li><a href="$site_url/transactions">Transactions</a></li>
             <li><a href="$site_url/settings">Settings</a></li>
 
             <li class="clear" style="padding-bottom:16px">
