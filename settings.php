@@ -1,7 +1,6 @@
 <?php
 
-
-include_once("views/Dashboard_Segments.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
 //Reset password
 
@@ -9,7 +8,7 @@ if ((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
     $username = $_COOKIE["username"];
     $password = $_COOKIE["password"];
 
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ? AND `password` = ?");
+    $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
     $stmt->execute([$username, $password]);
     
     $data = $stmt->fetch(PDO::FETCH_OBJ);
@@ -22,11 +21,11 @@ if ((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
 
         if (isset($_POST["edit_account_data"])){
             //Update Data:
-            $us = $pdo->prepare("UPDATE investors SET real_name = ?, user_email = ?, btc_wallet_address = ?, eth_wallet_address = ?, btc_cash_wallet_address = ?, usdt_trc20_wallet_address = ?, usdt_erc20_wallet_address = ?, bnb_wallet_address = ?, bnb_p20_wallet_address = ?, bsc_wallet_address = ? WHERE user_id = ?");
+            $us = $pdo->prepare("UPDATE miners SET real_name = ?, user_email = ?, btc_wallet_address = ?, eth_wallet_address = ?, btc_cash_wallet_address = ?, usdt_trc20_wallet_address = ?, usdt_erc20_wallet_address = ?, bnb_wallet_address = ?, bnb_p20_wallet_address = ?, bsc_wallet_address = ? WHERE user_id = ?");
 
             $us->execute([htmlentities($_POST["full_name"]),htmlentities($_POST["email"]),htmlentities($_POST["bitcoin_wallet_address"]), htmlentities($_POST["ethereum_wallet_address"]), htmlentities($_POST["bitcoin_cash_wallet_address"]), htmlentities($_POST["usdt_trc20_wallet_address"]), htmlentities($_POST["usdt_erc20_wallet_address"]), htmlentities($_POST["bnb_wallet_address"]), htmlentities($_POST["bnb_p20_wallet_address"]), htmlentities($_POST["bsc_wallet_address"]), $data->user_id]);
 
-            $stmt = $pdo->prepare("SELECT * FROM investors WHERE username = ? AND `password` = ?");
+            $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
             $stmt->execute([$username, $password]);
             
             $data = $stmt->fetch(PDO::FETCH_OBJ);
