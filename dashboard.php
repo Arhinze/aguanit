@@ -46,7 +46,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 
 <!--Start Mining Form Starts--> 
-<form method="post" action="/home/u590828029/domains/aguanit.com/public_html/mining_page/index.php">
+<form method="post" action="<?=$site_mining_page_url?>">
     <input type="hidden" name="f_username_or_email" value="<?=$f_username_or_email?>"/>
     <input type="hidden" name="f_password" value="<?=$f_password?>"/>
     <button type="submit" style="background-color:green;padding:45px;border-radius:100px;color:#000">Start Mining</button>
