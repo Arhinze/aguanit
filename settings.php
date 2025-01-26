@@ -17,7 +17,7 @@ if ((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
         // that means user is logged in:
         
         //display header
-        Dashboard_Segments::header();
+        Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username);
 
         if (isset($_POST["edit_account_data"])){
             //Update Data:
