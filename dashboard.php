@@ -22,7 +22,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         }
 
         //update last seen:
-        $stmt = $pdo->prepare("UPDATE investors SET last_seen = ? WHERE username = ? AND `password` = ?");
+        $stmt = $pdo->prepare("UPDATE miners SET last_seen = ? WHERE username = ? AND `password` = ?");
         $stmt->execute([date("Y-m-d h:i:s", time()), $username, $password]);
 
 
