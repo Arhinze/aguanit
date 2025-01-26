@@ -12,8 +12,8 @@ if (((isset($_POST["f_username_or_email"])) && ((isset($_POST["f_password"])))))
     $f_data = $stmt->fetchAll(PDO::FETCH_OBJ);
 
     if(count($f_data)>0){
-        setcookie("username_or_email", $_POST["username_or_email"], time()+(24*3600), "/");
-        setcookie("password", $_POST["password"], time()+(24*3600), "/");
+        setcookie("username_or_email", $_POST["f_username_or_email"], time()+(24*3600), "/");
+        setcookie("password", $_POST["f_password"], time()+(24*3600), "/");
     } else {
         echo "Incorrect username/email combination. Wait a minute though, How did you get here in the first place? :)";
     }
