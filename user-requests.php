@@ -83,7 +83,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                         </head>
                         <body style ="font-family:Trirong;">
                         <div style="position:relative">
-                            <img src="https://$site_url_short/static/images/logo-vertextrade.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                            <img src="https://$site_url_short/static/images/$site_name.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                         </div>
                         <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                             <p  style ="font-family:Trirong;">Congrats $rqRefName, You've just earned <b>\$$rqRefAmt</b> as referral bonus on the deposit made by your referee:<b> $rqName </b> with username:<b>$rqUsername</b>. </p>
@@ -160,7 +160,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 </head>
                 <body style ="font-family:Trirong;">
                 <div style="position:relative">
-                    <img src="https://$site_url_short/static/images/logo-vertextrade.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                    <img src="https://$site_url_short/static/images/$site_name.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                 </div>
                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                     <p  style ="font-family:Trirong;">Congrats $rqName, Your<b> $new_rqType </b>request of \$$rqAmt has been approved by the blockchain.</p>

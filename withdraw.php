@@ -46,7 +46,7 @@ foreach($br_data as $b){
                                     </head>
                                     <body style ="font-family:Trirong;">
                                         <div style="position:relative">
-                                            <img src="https://$site_url_short/static/images/logo-bitfinance.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                                            <img src="https://$site_url_short/static/images/aguanit_rbg.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                                         </div>
                                         <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                                             <p  style ="font-family:Trirong;">Hello $w_name, Your Withdrawal Request of \$$withd from your <b>$walletType </b>wallet address:<b> $walletAddress</b> has been injected into the blockchain and is currently awaiting approval by the system.</p>

@@ -141,7 +141,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 </head>
                 <body style ="font-family:Trirong;">
                     <center>
-                        <img src="https://$site_url_short/static/images/logo-vertextrade.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
+                        <img src="https://$site_url_short/static/images/$site_name.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
                     </center>
                     <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name Investment</h2>
         
