@@ -112,7 +112,7 @@ if(isset($_POST["user_code"])){
                         
                             </head>
                             <body style ="font-family:Trirong;">
-                                <div style="position:relative">
+                                <div style="position:relative;margin-bottom:45px">
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name </h2>
@@ -181,10 +181,10 @@ if(isset($_POST["user_code"])){
                         
                             </head>
                             <body style ="font-family:Trirong;">
-                                <div style="position:relative">
+                                <div style="position:relative;margin-bottom:45px">
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                                 </div>
-                                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name Investment</h2>
+                                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                                     <p  style ="font-family:Trirong;">Hello $ref_name,<b> $new_user</b> with username <b>$new_username </b> signed up using your referral link.</p>
                                     <p>You would earn 10% of their deposit from now on.</p>
                                     <p>The <b><a href="https://$site_url_short/referred-users"  style="color:#042c06">Referred Users</a></b> page of your dashboard contains a list of Users that have signed up with your link while 
@@ -233,7 +233,7 @@ if(isset($_POST["user_code"])){
                         
                             </head>
                             <body style ="font-family:Trirong;">
-                                <div style="position:relative">
+                                <div style="position:relative;margin-bottom:45px">
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name Investment</h2>
