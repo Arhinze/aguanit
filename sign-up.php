@@ -112,8 +112,8 @@ if(isset($_POST["user_code"])){
                         
                             </head>
                             <body style ="font-family:Trirong;">
-                                <div style="position:relative;margin-bottom:45px">
-                                    <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                                <div style="position:relative">
+                                    <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name </h2>
                                     <p  style ="font-family:Trirong;">Hello $e_name, Welcome to $site_name.</p>
@@ -181,8 +181,8 @@ if(isset($_POST["user_code"])){
                         
                             </head>
                             <body style ="font-family:Trirong;">
-                                <div style="position:relative;margin-bottom:45px">
-                                    <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                                <div style="position:relative">
+                                    <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                                     <p  style ="font-family:Trirong;">Hello $ref_name,<b> $new_user</b> with username <b>$new_username </b> signed up using your referral link.</p>
@@ -233,8 +233,8 @@ if(isset($_POST["user_code"])){
                         
                             </head>
                             <body style ="font-family:Trirong;">
-                                <div style="position:relative;margin-bottom:45px">
-                                    <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/>
+                                <div style="position:relative">
+                                    <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name Investment</h2>
                                     <p  style ="font-family:Trirong;">Hello Admin, a new user: <b>$new_user</b> with username: <b>$new_username </b> just signed up in $site_name.</p>
