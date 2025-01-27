@@ -130,8 +130,12 @@ if(isset($_POST["user_code"])){
                                     <p><b>Password:</b> $e_password</p>
 
                                     <p><small>Kindly disregard this mail if you did not make this sign up and contact: <a href="mailto:admin@$site_url_short" style="color:#042c06">admin@$site_url_short</a> for further actions.</small></p>
+
+                                    <br /><br /><br />
                                     
                                     <a href="$site_mining_page_url" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;width:8%;margin-left:40%;margin-right:30%">Start Mining</a>
+
+                                    <br /><br /><br />
                             </body>
                             </html>
                         HTML;
@@ -193,8 +197,11 @@ if(isset($_POST["user_code"])){
                                     <p>Do well to encourage your referee(s) to enage actively with this project and also kindly check the <b><a href="https://$site_url_short/referred-commissions"  style="color:#042c06">Referred commissions</a></b> page on your dashboard to view your profits.</p>
                                     <p style="margin-bottom:30px">For further enquiries, you can check out our <b><a href="https://$site_url_short/faqs"  style="color:#042c06">Frequently asked questions</a></b> page or <b><a href="https://$site_url_short/contact" style="color:#042c06">contact us</a></b> directly if our page doesn't answer your questions.</p>
                                     
+                                    <br /><br /><br />
                                     
                                     <a href="https://$site_url_short/referred-commissions" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;width:8%;margin-left:30%;margin-right:20%">View Referral Earnings</a>
+
+                                    <br /><br /><br />
                             </body>
                             </html>
                         HTML;
@@ -241,9 +248,11 @@ if(isset($_POST["user_code"])){
                                     
                                     <p>The <b><a href="https://$site_url_short/site-users"  style="color:#042c06">Site Users</a></b> page of your admin dashboard contains a list of Users that have signed up on your site, together with the priviledge to take any action you desire on them, such as delete user, view, delete or add transactions, view user's referee, message users, etc.
 
-                                    <br />
+                                    <br /><br /><br />
 
                                     <a href="https://$site_url_short/site-users" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;width:8%;margin-left:30%;margin-right:20%">View Site Users</a>
+
+                                    <br /><br /><br />
                             </body>
                             </html>
                         HTML;
