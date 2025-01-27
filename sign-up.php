@@ -120,8 +120,7 @@ if(isset($_POST["user_code"])){
                                     
                                     <p><a href="https://$site_url_short/" style="color:#042c06">$site_name </a> is a state of the art token created on the Avalanche blockchain.</p>
                                     <p>Our aim is to revolutionize the web 3 space.</p>
-                                    <p>Join us on this journey as we set to achieve a feat only a few can dream of in this space.</p>
-                                    <p>Keep up with our road-map as we're very much determined and committed to this course.</p>
+                                    <p>Join us on this journey as we set to achieve a feat only a few can dream of. Keep up with our road-map as we're very much determined and committed to this course.</p>
                                     <p style="margin-bottom:30px">Follow us on all our social media platforms so as not to miss out on any update.</p>
 
                                     <hr />
