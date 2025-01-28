@@ -50,10 +50,10 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 <!-- Referral Link section starts -->
 <div style="padding:12px">
-    <!-- style="color:#afabab" --><h3 style="color:#000">Your Referral Link</h3>
+    <!-- style="color:#afabab" --><h3 style="color:#fff">Your Referral Link</h3>
         
     <input style="height:24px;border:1px solid #2b8eeb;
-        border-right:30px solid #2b8eeb;width:80%;
+        border-right:30px solid #0bee3ccc;width:80%;
         border-radius:4px;margin-top:8px" id = 'referral_link'
         value="https://<?=$site_url_short?>/?ref=<?=$_COOKIE['username_or_email']?>"/>
         
