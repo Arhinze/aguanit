@@ -48,10 +48,10 @@ class Dashboard_Segments extends Index_Segments{
             
             <!-- Hi user --> 
             
-            <span style="float:right;background-color:#01123c;border-radius:6px;margin:3px;font-size:12px;padding:1px 0 6px 9px">
+            <span style="float:right;background-color:#042c06;border-radius:6px;margin:3px;font-size:12px;padding:1px 0 6px 9px">
                 Hi $Hi_user
 
-                <i style="background-color:#2b8eeb;color:#fff; border-radius:6px;padding:6px 8px;text-align:center;margin:6px 9px 0px 6px;" class="fa fa-user"></i> 
+                <i style="background-color:#0bee3ccc;color:#fff; border-radius:6px;padding:6px 8px;text-align:center;margin:6px 9px 0px 6px;" class="fa fa-user"></i> 
             </span>
         </div>
     
@@ -80,7 +80,7 @@ class Dashboard_Segments extends Index_Segments{
             
             <li><a href="$site_url/reset-password">Reset Password</a></li>
 
-            <li><a href="$site_mining_page_url/logout.php" style="color:#fff;font-weight:bold;background-color:#2b8eeb;padding:6px;border-radius:12px">Log out</a></li>
+            <li><a href="$site_mining_page_url/logout.php" style="color:#fff;font-weight:bold;background-color:#0bee3ccc;padding:6px;border-radius:12px">Log out</a></li>
 
         </ul>     
 HTML;
