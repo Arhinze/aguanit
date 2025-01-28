@@ -1,8 +1,8 @@
 <?php
 
 ini_set("session.use_only_cookies", 1);
-include_once($_SERVER["DOCUMENT_ROOT"]."/views/Segments.php");
-Segments::header();
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
+Index_Segments::header();
 
 $check_email = '';
 $c = false;
@@ -38,39 +38,39 @@ if (isset($_POST["email"])) {
             <html>
             <head>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Arimo"/>
-                        <link rel="stylesheet" href="https://bitfinanceinvestment.com/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+                        <link rel="stylesheet" href="https://$site_url_short/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
         
                 <style>
                     a {
-                        color:#ff3c00
+                        color:#042c06
                     }
                 </style>
             </head>
             <body style ="font-family:Trirong;">
                 <center>
-                    <img src="https://bitfinanceinvestment.com/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
+                    <img src="https://$site_url_short/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
                 </center>
-                <h2 style="color:#00008b;font-family:Arimo;text-align:center">Bit Finance Investment</h2>
+                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                 Your Password reset code is <b>$code</b>. Enter it on the website to continue your password 
                 reset process. Kindly disregard this mail if this request wasn't from you. 
-                <p>Learn more about us on <b><a href="https://bitfinanceinvestment.com/about-us">
-                    https://bitfinanceinvestment.com/about-us</a></b></p>
+                <p>Learn more about us on <b><a href="https://$site_url_short/about-us">
+                    https://$site_url_short/about-us</a></b></p>
                 
-                <p>Contact admin on: <b><a href="mailto: admin@bitfinanceinvestment.com">
-                    Admin@bitfinanceinvestment.com</a></b></p>
+                <p>Contact admin on: <b><a href="mailto: admin@$site_url_short">
+                    Admin@$site_url_short</a></b></p>
             </body>
             </html>
         
         HTML;
 
-        $sender = "admin@bitfinanceinvestment.com";
+        $sender = "admin@$site_url_short";
 
         $headers = "From: $sender \r\n";
         $headers .="Reply-To: $sender \r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-        $mail = mail($_POST["email"],"Reset Password on Bit Finance Investment",$message, $headers);
+        $mail = mail($_POST["email"],"Reset Password on $site_name",$message, $headers);
 
         if($mail){
         ?>
@@ -123,43 +123,43 @@ if (isset($_POST["code"])) {
                 <html>
                 <head>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Arimo"/>
-                    <link rel="stylesheet" href="https://bitfinanceinvestment.com/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+                    <link rel="stylesheet" href="https://$site_url_short/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
                     <style>
                         a {
-                            color:#ff3c00
+                            color:#042c06
                         }
                     </style>
                 </head>
                 <body style ="font-family:Trirong;">
                     <center>
-                        <img src="https://bitfinanceinvestment.com/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
+                        <img src="https://$site_url_short/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
                     </center>
-                    <h2 style="color:#00008b;font-family:Arimo;text-align:center">Bit Finance Investment</h2>
+                    <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
                                        
-                    Your Password has been reset on <b><a href="https://bitfinanceinvestment.com">
-                    https://bitfinanceinvestment.com</a></b>. You can now proceed to <b>
-                        <a href="https://bitfinanceinvestment.com/login">Login</a></b> with your new Password.
+                    Your Password has been reset on <b><a href="https://$site_url_short">
+                    https://$site_url_short</a></b>. You can now proceed to <b>
+                        <a href="https://$site_url_short/login">Login</a></b> with your new Password.
                     
                     <p>If this change wasn't requested from you, kindly contact our <b>Support Team</b> on 
-                    <b><a href="mailto: support@bitfinanceinvestment.com">Support@bitfinanceinvestment.com</a></b> 
+                    <b><a href="mailto: support@$site_url_short">Support@$site_url_short</a></b> 
                     for immediate reversal of this change and tips on how to make your account more secure. </p>
-                    <p>Learn more about us on <b><a href="https://bitfinanceinvestment.com/about-us">
-                        https://bitfinanceinvestment.com/about-us</a></b></p>
+                    <p>Learn more about us on <b><a href="https://$site_url_short/about-us">
+                        https://$site_url_short/about-us</a></b></p>
                     
-                    <p>Contact admin on: <b><a href="mailto: admin@bitfinanceinvestment.com">
-                        Admin@bitfinanceinvestment.com</a></b></p>
+                    <p>Contact admin on: <b><a href="mailto: admin@$site_url_short">
+                        Admin@$site_url_short</a></b></p>
                 </body>
                 </html>
             HTML;
 
-            $sender = "admin@bitfinanceinvestment.com";
+            $sender = "admin@$site_url_short";
 
             $headers = "From: $sender \r\n";
             $headers .="Reply-To: $sender \r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-            $mail = mail($_POST["inputed_email"],"Reset Password on Bit Finance Investment",$message, $headers);
+            $mail = mail($_POST["inputed_email"],"Reset Password on $site_name",$message, $headers);
 
             if(!$mail){
                 echo "Sorry, an error occurred, Mail not sent";
@@ -211,19 +211,12 @@ if (isset($_POST["code"])) {
 
 <div class="dashboard_div" style="padding:2% 3% 5% 3%">
 
-<!--
-
-<h1 style="margin:-3px 0px -2px 0px"><br />Reset Password</h1>
-<hr/>
-
--->
-
 <h2><?=$check_email?></h2> 
 
 <div class="sign-in-box">
     <div class="sign-in-welcome">
         <span style="color:#01123c;font-size:30px">Reset Login Password on</span><br />
-        <b style="color:#2b8eeb">Bit Finance Investment</b>
+        <b style="color:#2b8eeb"><?=$site_name?></b>
     </div>
 
     <form method="post" action="" id="email"> 
@@ -295,4 +288,4 @@ if (isset($_POST["code"])) {
     }
 </script>
 
-<?php Segments::footer(); ?>
+<?php Index_Segments::footer(); ?>
