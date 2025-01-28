@@ -3,17 +3,7 @@
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
 //Reset password
-
-if ((isset($_COOKIE["username"])) && ((isset($_COOKIE["password"])))){
-    $username = $_COOKIE["username"];
-    $password = $_COOKIE["password"];
-
-    $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
-    $stmt->execute([$username, $password]);
-    
-    $data = $stmt->fetch(PDO::FETCH_OBJ);
-
-    if($data){
+    if($data){ //$data variable from php/account-manager.php
         // that means user is logged in:
         
         //display header
@@ -139,7 +129,4 @@ Dashboard_Segments::footer();
     } /*end of count($data) for cookie name and pass*/ else {
         header("location:/login");
     } 
-} else {
-    header("location:/login");
-}
 ?>
