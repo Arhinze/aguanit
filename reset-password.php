@@ -50,7 +50,7 @@ if (isset($_POST["email"])) {
                 <center>
                     <img src="https://$site_url_short/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
                 </center>
-                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
+                <h2 style="color:#042c06;font-family:Arimo;text-align:center">$site_name</h2>
                 Your Password reset code is <b>$code</b>. Enter it on the website to continue your password 
                 reset process. Kindly disregard this mail if this request wasn't from you. 
                 <p>Learn more about us on <b><a href="https://$site_url_short/about-us">
@@ -75,7 +75,7 @@ if (isset($_POST["email"])) {
         if($mail){
         ?>
 
-            <div id="message_success" style="background-color:#ff9100;color:#fff;
+            <div id="message_success" style="background-color:#042c06;color:#fff;
             border-radius:3px;padding:4px;margin:8px 8px;display:block;position:fixed;top:40%;width:80%;
             box-shadow:0px 0px 9px 0px #fff">
                     
@@ -134,7 +134,7 @@ if (isset($_POST["code"])) {
                     <center>
                         <img src="https://$site_url_short/static/images/logo.png" style="margin-left:36%;margin-right:36%;width:25%;"/>
                     </center>
-                    <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
+                    <h2 style="color:#042c06;font-family:Arimo;text-align:center">$site_name</h2>
                                        
                     Your Password has been reset on <b><a href="https://$site_url_short">
                     https://$site_url_short</a></b>. You can now proceed to <b>
