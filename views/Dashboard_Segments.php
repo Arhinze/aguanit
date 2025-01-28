@@ -80,7 +80,7 @@ class Dashboard_Segments extends Index_Segments{
             
             <li><a href="$site_url/reset-password">Reset Password</a></li>
 
-            <li><a href="$site_mining_page_url/logout" style="color:#fff;font-weight:bold;background-color:#2b8eeb;padding:6px;border-radius:12px">Log out</a></li>
+            <li><a href="$site_mining_page_url/logout.php" style="color:#fff;font-weight:bold;background-color:#2b8eeb;padding:6px;border-radius:12px">Log out</a></li>
 
         </ul>     
 HTML;
