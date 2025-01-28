@@ -38,7 +38,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
     <input type="hidden" name="f_username_or_email" value="<?=$form_user_id?>"/>
     <input type="hidden" name="f_password" value="<?=$form_password?>"/>
 
-    <button type="submit" style="background-color:#0bee3ccc;padding:45px;border-radius:100%;color:#000"><b>Start Mining</b></button>
+    <button type="submit" style="background-color:#0bee3ccc;padding:45px;border-radius:600px;color:#000"><b>Start Mining</b></button>
 </form>
 <!--Start Mining Form ends--> 
 
