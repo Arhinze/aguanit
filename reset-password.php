@@ -215,8 +215,8 @@ if (isset($_POST["code"])) {
 
 <div class="sign-in-box">
     <div class="sign-in-welcome">
-        <span style="color:#01123c;font-size:30px">Reset Login Password on</span><br />
-        <b style="color:#2b8eeb"><?=$site_name?></b>
+        <span style="color:#042c06;font-size:30px">Reset Login Password on</span><br />
+        <b style="color:#0bee3ccc"><?=$site_name?></b>
     </div>
 
     <form method="post" action="" id="email"> 
