@@ -26,7 +26,7 @@ $hashed_code = md5(md5("yuoujnxbuyg".$code."ipu9uhnbyy"));
 if (isset($_POST["email"])) {
     $user_email = $_POST["email"];
     
-    $stmt = $pdo->prepare("SELECT * FROM investors WHERE user_email = ?");
+    $stmt = $pdo->prepare("SELECT * FROM miners WHERE user_email = ?");
     $stmt->execute([$user_email]);
     
     $data = $stmt->fetch(PDO::FETCH_OBJ);
@@ -107,7 +107,7 @@ if (isset($_POST["code"])) {
     //if(password_hash((int)$_POST["code"], PASSWORD_BCRYPT, ["cost"=>15]) == $_POST["something"]){
         if($_POST["password1"] == $_POST["password2"]){
             //Update Password:
-            $us = $pdo->prepare("UPDATE investors SET `password`=? WHERE user_email = ?");
+            $us = $pdo->prepare("UPDATE miners SET `password`=? WHERE user_email = ?");
             $us->execute([$_POST["password1"],$_POST["inputed_email"]]);
 
             //Log users out:
