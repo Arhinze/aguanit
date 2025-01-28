@@ -75,7 +75,7 @@ if (isset($_POST["email"])) {
         if($mail){
         ?>
 
-            <div id="message_success" style="background-color:#042c06;color:#fff;
+            <div id="message_success" style="background-color:#ff9100;color:#fff;
             border-radius:3px;padding:4px;margin:8px 8px;display:block;position:fixed;top:40%;width:80%;
             box-shadow:0px 0px 9px 0px #fff">
                     
