@@ -136,6 +136,22 @@ HTML;
             }
         </script>
 
+
+
+        <!-- Mining Scripts -->
+        <script>
+            function start_mining() {
+                setInterval(() => {
+                    var amount = document.getElementById("amount_mined").innerHtml;
+                    var new_amount = amount + 0.209
+
+                    document.getElementById("amount_mined").innerHtml = new_amount;
+                }, 1000);
+            }
+
+        </script>
+        <!-- Mining Script ends -->
+
     <noscript> 
         Texts won't display well. please enable Javascript.
     </noscript>
