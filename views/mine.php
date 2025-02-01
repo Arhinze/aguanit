@@ -26,7 +26,7 @@ if ($data) {
 ?>
     <br /><br /><br /><br /><br />
     <div id="amount_mined">100</div>
-    <div class="mining_button" onclick="start_mining()" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</div>
+    <button class="mining_button" onclick="start_mining()" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
     <br /><br /><br /><br /><br />
 <?php
     Dashboard_Segments::dashboard_footer(); 

@@ -141,12 +141,13 @@ HTML;
         <!-- Mining Scripts -->
         <script>
             function start_mining() {
-                setInterval(() => {
+                alert("Active !!!")
+                /*setInterval(() => {
                     var amount = document.getElementById("amount_mined").innerHtml;
                     var new_amount = amount + 0.209
 
                     document.getElementById("amount_mined").innerHtml = new_amount;
-                }, 1000);
+                }, 1000);*/
             }
 
         </script>
