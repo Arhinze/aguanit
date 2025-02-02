@@ -14,9 +14,9 @@ if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
             $update_stmt = $pdo->prepare("UPDATE miners SET mining_start_time = ? AND mining_status = ?");
             $stmt->execute([date("Y-m-d h:i:s", time()), "active"]);
 
-            "Congrats, you've successfully initiated the mining cycle.";
+            echo "<br /><br /><br /><br /><br /><br /><br /><br />Congrats, you've successfully initiated the mining cycle.";
         } else {
-            echo "Your mining cycle is already on.";
+            echo "<br /><br /><br /><br /><br /><br /><br /><br />Your mining cycle is already on.";
         }
     }
 }
