@@ -92,7 +92,7 @@ HTML;
         //Index_Segments::index_scripts();
 
         echo <<<HTML
-        <!-- Footer -->
+        <!-- Footer - dashboard_script -->
         <script>
             function show_div(vari) {
                 if (document.getElementById(vari).style.display == "none") {
