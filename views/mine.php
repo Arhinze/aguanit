@@ -25,12 +25,13 @@ if ($data) {
     Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username); 
 
     $amount_mined = $data->total_amount_mined;
-    if ($data->mining_status == "active") {
+    $mining_stat = $data->mining_status;
+    if ($mining_stat == "active") {
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.00000058);   
     }
 ?>
     <br /><br /><br /><br /><br />
-    <div id="mining_status" style=""><?=$data->mining_status?></div>
+    <div id="mining_status" style=""><?=$mining_stat?></div>
     
     <div id="ajax_mine"></div>
     <div id="amount_mined"><?=$amount_mined?></div>
