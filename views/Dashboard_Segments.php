@@ -154,20 +154,12 @@ HTML;
                 obj.open("GET","/ajax_mining_page.php?un="+u_name+"&up="+u_password);
                 obj.send(null);
 
-                if ((mining_status).innerHTML == "active"){
-                    setInterval(() => {
-                        var amount = document.getElementById("amount_mined").innerHTML;
-                        var new_amount = Number(amount) + 0.000058;
-                        //alert("Active !!!");
-                        document.getElementById("amount_mined").innerHTML = new_amount;
-                    }, 1000);
-                }
             }
 
             setInterval(() => {
                 if (document.getElementById("mining_status").innerHTML == "active"){
                     var amount = document.getElementById("amount_mined").innerHTML;
-                    var new_amount = Number(amount) + 0.000058;
+                    var new_amount = Number(amount) + 0.0000058;
                     //alert("Active !!!");
                     document.getElementById("amount_mined").innerHTML = new_amount;
                 }
