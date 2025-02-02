@@ -221,7 +221,7 @@ a{
     to{background-color: #fff;color:#042c06}
 }
 
-@keyframes rotate {
+@keyframes rotate_100{
     from{rotate:0deg;}
     to{rotate:30deg;}
 }
