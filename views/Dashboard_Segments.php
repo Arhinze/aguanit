@@ -107,7 +107,7 @@ HTML;
                 pop_up_collection[i].innerHTML = newInnerHT;
             }
                            
-            function pop_up() {
+            function close_pop_up() {
                 //const pop_up_collection = document.getElementsByClassName("pop_up");
                 i = 0;
                                
