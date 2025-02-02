@@ -25,7 +25,7 @@ if ($data) {
     Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username); 
 ?>
     <br /><br /><br /><br /><br />
-    <div id="amount_mined">100</div>
+    <div id="amount_mined">0</div>
     <button class="mining_button" onclick="start_mining()" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
     <br /><br /><br /><br /><br />
 <?php
