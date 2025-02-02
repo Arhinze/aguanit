@@ -43,7 +43,7 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
 
             echo "<div class='pop_up'> Congrats, you've successfully initiated the mining cycle.</div>";
         } else {
-            echo "<div class='invalid'>Your mining cycle is already on.</div>";
+            echo "<div class='pop_up'>Your mining cycle is already on.</div>";
         }
     } else {
         echo "<div class='invalid'>stop that nonsense !!!</div>";

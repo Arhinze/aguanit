@@ -33,8 +33,6 @@ if ($data){//$data from account-manager.php
 ?>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div id="mining_status" style=""><?=$mining_stat?></div>
-
-    <div class="invalid"></div>
     
     <div id="ajax_mine"></div>
 
