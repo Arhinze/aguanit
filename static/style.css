@@ -211,7 +211,7 @@ a{
     font-size:105px;
     width:120px;
     height:120px;
-    box-shadow:0px 0px 9px 0px #042c06; 
+    /*box-shadow:0px 0px 9px 0px #042c06;*/
 }
 
 .rotate_360 {
