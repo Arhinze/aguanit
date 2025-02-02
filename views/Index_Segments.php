@@ -225,7 +225,7 @@ class Index_Segments{
 
         public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $additional_scripts = ""){ 
             
-            //$index_scripts = ;    
+            $index_scripts = Index_Segments::index_scripts();    
 
             echo <<<HTML
             <div class="footer">
@@ -241,17 +241,12 @@ class Index_Segments{
                 </div>
             </div>
             
-        HTML;
-            Index_Segments::index_scripts();
-           
-    echo <<<HTML
+            $index_scripts
             $additional_scripts
             <br /><br /><br />
         </body>
         </html>    
     HTML;
-    
-
     }
 }
 
