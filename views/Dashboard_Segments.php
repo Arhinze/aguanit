@@ -143,6 +143,7 @@ HTML;
             function start_mining(u_name, u_password) {
                 //alert("Active !!!")
                 document.getElementById("mining_status").innerHTML = "active";
+                
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
                     if(obj.readyState == 4){
@@ -154,7 +155,6 @@ HTML;
         
                 obj.open("GET","/ajax_mining_page.php?un="+u_name+"&up="+u_password);
                 obj.send(null);
-
             }
 
             setInterval(() => {
