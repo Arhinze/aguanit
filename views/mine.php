@@ -44,7 +44,7 @@ if ($data){//$data from account-manager.php
                 <img src="<?=$site_url?>/static/images/logo.png" style="width:39px;height:39px"/>
             </div>
             <div>
-                <span id="amount_mined"><?=$amount_mined?></span>
+                <span id="amount_mined"><?=round($amount_mined, 6)?></span>
             </div>
         </div>
 
