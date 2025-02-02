@@ -38,7 +38,7 @@ if ($data){//$data from account-manager.php
 
     <div id="amount_mined"><?=$amount_mined?></div>
 
-    <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:300px;width:300px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
+    <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:300px;width:300px;background-color:#0bee3ccc;border-radius:600px">Click me to start mining</button>
 
 <?php
     Dashboard_Segments::dashboard_footer(); 
