@@ -226,6 +226,7 @@ class Index_Segments{
         public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $additional_scripts = ""){ 
             
             Index_Segments::index_scripts();
+            $a = $additional_scripts;
 
             echo <<<HTML
             <div class="footer">
@@ -240,8 +241,9 @@ class Index_Segments{
                     © 2025 $site_name Token.
                 </div>
             </div>
-
-            $additional_scripts
+            
+            <br /><br /><br />
+            $a
         </body>
         </html>    
     HTML;
