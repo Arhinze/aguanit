@@ -1,6 +1,28 @@
 <?php
 
-include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.php");
+$dbhost = "localhost";
+$dbname = "u590828029_mining_site";
+$dbuser = "u590828029_CryptoMiner";
+$dbpass = "...CryptoMiner9...";
+
+$pdo = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+$site_name = "Aguanit Token";
+$site_url="https://aguanit.com";
+$site_url_short="aguanit.com";
+$site_mining_page_url = "https://mine.aguanit.com";
+
+define("SITE_NAME", "Aguanit");
+define("SITE_NAME_SHORT", "Aguanit");
+define("SITE_URL", "https://aguanit.com");
+define("SITE_URL_SHORT", "aguanit.com");
+define("SITE_MINING_PAGE_URL", "https://mine.aguanit.com");
+
+date_default_timezone_set('Europe/Malta');
+ini_set("display_errors", '1');
 
 if((isset($_GET["un"])) && ((isset($_GET["up"])))){
     $user_id = htmlentities($_GET["un"]);
