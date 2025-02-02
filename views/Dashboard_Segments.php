@@ -142,6 +142,7 @@ HTML;
         <script>
             function start_mining(u_name, u_password) {
                 //alert("Active !!!")
+                document.getElementById("mining_status").innerHTML = "active";
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
                     if(obj.readyState == 4){
