@@ -207,6 +207,10 @@ a{
     animation: rotate .5s infinite .0s alternate;
 }
 
+.rotate {
+    animation: rotate .5s infinite .0s alternate;
+}
+
 @keyframes fade{
     from{background-color:#042c06;}
     to{background-color: #0bee3ccc;}
