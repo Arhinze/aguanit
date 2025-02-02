@@ -211,10 +211,11 @@ a{
     font-size:105px;
     width:120px;
     height:120px;
+    box-shadow:0px 0px 9px 0px #042c06; 
 }
 
 .rotate {
-    animation: rotate_360 6s infinite .2s normal ease-out;
+    animation: rotate_360 6s infinite .2s normal;
 }
 
 @keyframes fade{
