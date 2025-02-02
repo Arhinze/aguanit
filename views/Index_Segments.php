@@ -184,7 +184,7 @@ class Index_Segments{
 
         echo <<<HTML
                                  
-        <!-- Footer -->
+        <!-- Footer - index_scripts -->
         <script>
             function show_div(vari) {
                 if (document.getElementById(vari).style.display == "none") {
@@ -198,7 +198,6 @@ class Index_Segments{
                                  
             for (let i=0; i < collection.length; i++){
                 collection[i].style = "display:block";
-                //collection[i].style = "color:pink";
                                             
                 var innerHT = collection[i].innerHTML;
                             
