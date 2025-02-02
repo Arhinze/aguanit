@@ -165,15 +165,13 @@ HTML;
             }
 
             setInterval(() => {
-                if ((mining_status).innerHTML == "active"){
-                    setInterval(() => {
-                        var amount = document.getElementById("amount_mined").innerHTML;
-                        var new_amount = Number(amount) + 0.000058;
-                        //alert("Active !!!");
-                        document.getElementById("amount_mined").innerHTML = new_amount;
-                    }, 1000);
+                if (document.getElementById(mining_status).innerHTML == "active"){
+                    var amount = document.getElementById("amount_mined").innerHTML;
+                    var new_amount = Number(amount) + 0.000058;
+                    //alert("Active !!!");
+                    document.getElementById("amount_mined").innerHTML = new_amount;
                 }
-            }, 3000);
+            }, 1500);
 
         </script>
         <!-- Mining Script ends -->
