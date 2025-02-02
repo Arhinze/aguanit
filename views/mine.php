@@ -33,7 +33,7 @@ if ($data){//$data from account-manager.php
 ?>
     <div style="margin-top:300px">
     <center>
-        <div id="mining_status" style=""><?=$mining_stat?></div>
+        <div id="mining_status" style="margin-bottom:45px"><?=$mining_stat?></div>
         
         <div id="ajax_mine"></div>
 
