@@ -21,7 +21,7 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
 
             echo "<div class='pop_up'> Congrats, you've successfully initiated the mining cycle.</div>";
         } else {
-            echo "<div class='invalid'>Your mining cycle is already on. <span style='float:left;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span></div>";
+            echo "<div class='invalid'>Your mining cycle is already on. <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span></div>";
         }
     } else {
         echo "<div class='invalid'>stop that nonsense !!!</div>";
