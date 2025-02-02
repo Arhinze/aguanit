@@ -115,7 +115,7 @@ HTML;
             }
 
             function show_class_div() {
-                const collection = document.getElementsByClassName("invalid");
+                //const collection = document.getElementsByClassName("invalid");
                 i = 0;
 
                 for (i=0; i<collection.length; i++){

@@ -27,6 +27,11 @@ if ($data) {
     $amount_mined = $data->total_amount_mined;
     if ($data->mining_status == "active") {
         $amount_mined += (time() - strtotime($data->mining_start_time))*0.00000058;
+?>
+    <script>
+        start_mining(u_name='<?=$data->user_name?>', u_password='<?=$data->password?>');
+    </script>
+<?php    
     }
 ?>
     <br /><br /><br /><br /><br />
@@ -36,11 +41,7 @@ if ($data) {
     <button class="mining_button" onclick="start_mining(u_name='<?=$data->user_name?>', u_password='<?=$data->password?>')" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
     <br /><br /><br /><br /><br />
 
-    <script>
-        if (document.getElementById("mining_status").innerHTML == "active") {
-            start_mining(u_name='<?=$data->user_name?>', u_password='<?=$data->password?>');
-        }
-    </script>
+    
 <?php
     Dashboard_Segments::dashboard_footer(); 
 } else {
