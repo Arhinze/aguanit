@@ -46,8 +46,10 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
             //    echo "<br /><br /><br /><br /><br /><br /> User Exists".$data->mining_status;
             //}
 
-            $update_stmt = $pdo->prepare("UPDATE miners SET mining_status = ? AND mining_start_time = ? WHERE `username` = ?");
-            $update_stmt->execute(["active", date("Y-m-d h:i:s", time()), $data->username]);
+            $update_stmt = $pdo->prepare("UPDATE miners SET mining_status = ? WHERE `username` = ?");
+            $update_stmt->execute(["active", $data->username]);
+
+            //date("Y-m-d h:i:s", time())
 
             echo "<br /><br /><br /><br /><br /><br /> User Exists - ".$data->mining_status." ".$data->mining_start_time." ".$data->username;
 
