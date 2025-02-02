@@ -154,7 +154,7 @@ HTML;
                     var amount = document.getElementById("amount_mined").innerHTML;
                     var new_amount = Number(amount) + 0.0000058;
                     //alert("Active !!!");
-                    document.getElementById("amount_mined").innerHTML = new_amount;
+                    document.getElementById("amount_mined").innerHTML = new_amount.toFixed(6);
                 }
             }, 1000);
 
