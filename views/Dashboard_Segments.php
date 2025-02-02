@@ -134,6 +134,7 @@ HTML;
             function start_mining(u_name, u_password) {
                 //alert("Active !!!")
                 document.getElementById("mining_status").innerHTML = "active";
+                document.getElementById("inner_button").style = "animation-name:rotate";
 
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
