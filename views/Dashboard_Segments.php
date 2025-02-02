@@ -94,68 +94,11 @@ HTML;
         echo <<<HTML
         <!-- Footer - dashboard_script -->
         <script>
-            /*
-            function show_div(vari) {
-                if (document.getElementById(vari).style.display == "none") {
-                    document.getElementById(vari).style.display = "block";
-                } else if (document.getElementById(vari).style.display == "block") {
-                    document.getElementById(vari).style.display = "none";
-                }
-            }
-
-            const collection = document.getElementsByClassName("invalid");
-
-            for (let i=0; i < collection.length; i++){
-                collection[i].style = "display:block";
-                //collection[i].style = "color:pink";
-                
-                var innerHT = collection[i].innerHTML;
-
-                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'>X<i class='fa fa-times' onclick='show_class_div()'></i></span>";
-
-                collection[i].innerHTML = newInnerHT;
-            }
-
-            function show_class_div() {
-                const collection = document.getElementsByClassName("invalid");
-                i = 0;
-
-                for (i=0; i<collection.length; i++){
-                    collection[i].style.display = "none";
-                }      
-            }
-            */
-
-            /*
-            const pop_up_collection = document.getElementsByClassName("message_success");
-
-            for (let i=0; i < pop_up_collection.length; i++){
-                pop_up_collection[i].style = "display:block";
-                
-                var innerHT = pop_up_collection[i].innerHTML;
-
-                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span>";
-
-                pop_up_collection[i].innerHTML = newInnerHT;
-            }
-
-            function close_pop_up() {
-                //const collection = document.getElementsByClassName("invalid");
-                i = 0;
-
-                for (i=0; i<pop_up_collection.length; i++){
-                    pop_up_collection[i].style.display = "none";
-                }      
-            }
-            */
-
             function copyText(linkText){
                 x = document.getElementById(linkText);
-        
                 x.select();
                 x.setSelectionRange(0, 99999);
         
-                //navigator.clipboard.writeText(x.value);
                 document.execCommand('copy');
                 alert("copied text: " + x.value);
             }
