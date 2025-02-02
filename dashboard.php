@@ -8,24 +8,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         //cookie variables:
         $form_user_id = $_COOKIE["username_or_email"];
         $form_password = $_COOKIE["password"];
-
-
-        //Get Last seen:
-        $last_seen_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ?");
-        $last_seen_stmt->execute([$data->user_id]);
-        $last_seen_data = $last_seen_stmt->fetch(PDO::FETCH_OBJ);
-
-        $last_seen = $last_seen_data->last_seen;
-
-        if($last_seen == null) {
-            $last_seen = date("Y-m-d h:i:s", time());
-        }
-
-        //update last seen:
-        $stmt = $pdo->prepare("UPDATE miners SET last_seen = ? WHERE (username = ? OR user_email = ?) AND `password` = ?");
-        $stmt->execute([date("Y-m-d h:i:s", time()), $user_id, $user_id, $password]);
-
-          
+     
         //display header:
         Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username);
         
