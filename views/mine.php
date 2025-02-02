@@ -23,9 +23,16 @@ if (((isset($_POST["f_username_or_email"])) && ((isset($_POST["f_password"])))))
 
 if ($data) {
     Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username); 
+
+    $amount_mined = $data->total_amount_mined;
+    if ($data->mining_status == "active") {
+        $amount_mined += (time() - strtotime($data->mining_start_time))*0.00000058;
+    }
 ?>
     <br /><br /><br /><br /><br />
-    <div id="amount_mined">0</div>
+    <div id="mining_status" style="display:hidden"><?=$data->mining_status?></div>
+    <div id="ajax_mine"></div>
+    <div id="amount_mined"><?=$amount_mined?></div>
     <button class="mining_button" onclick="start_mining()" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
     <br /><br /><br /><br /><br />
 <?php
