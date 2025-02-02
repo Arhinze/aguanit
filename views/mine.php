@@ -31,7 +31,7 @@ if ($data){//$data from account-manager.php
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.0000058);   
     }
 ?>
-    <div style="margin-top:120px">
+    <div style="margin-top:135px">
     <center>
         <div id="mining_status" style="display:none"><?=$mining_stat?></div>
         
