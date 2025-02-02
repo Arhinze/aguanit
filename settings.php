@@ -49,7 +49,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 </div>
 
 <div class="clear" style="padding:18px 8px 10px 8px;border-top:1px solid #888;margin:12px" >
-&nbsp; <a class = "button" href="/reset-password">Reset Password <i class="fa fa-pencil"></i></a>
+&nbsp; <a class = "button" style="background-color:#0bee3ccc" href="/reset-password">Reset Password <i class="fa fa-pencil"></i></a>
 </div>
 
 <!--
