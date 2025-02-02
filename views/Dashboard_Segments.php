@@ -151,7 +151,7 @@ HTML;
                     }
                 }
         
-                obj.open("GET","/ajax_mining_page.php");
+                obj.open("GET","/ajax_mining_page.php?un="+u_name+"&up="+u_password);
                 obj.send(null);
 
                 setInterval(() => {
