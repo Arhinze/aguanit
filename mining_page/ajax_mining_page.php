@@ -1,5 +1,7 @@
 <?php
 
+include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.php");
+
 if((isset($_GET["un"])) && ((isset($_GET["up"])))){
     $user_id = htmlentities($_GET["un"]);
     $password = htmlentities($_GET["up"]);
