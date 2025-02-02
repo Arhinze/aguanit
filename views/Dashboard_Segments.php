@@ -144,7 +144,7 @@ HTML;
                 //alert("Active !!!")
                 setInterval(() => {
                     var amount = document.getElementById("amount_mined").innerHTML;
-                    var new_amount = Number(amount) + 0.209;
+                    var new_amount = Number(amount) + 0.0209;
                     //alert("Active !!!");
                     document.getElementById("amount_mined").innerHTML = new_amount;
                 }, 1000);
