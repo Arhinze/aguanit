@@ -11,8 +11,8 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
         
     if ($data) {
         if ($data->mining_status == "inactive") {
-            $update_stmt = $pdo->prepare("UPDATE miners SET mining_start_time = ? AND mining_status = ?");
-            $stmt->execute([date("Y-m-d h:i:s", time()), "active"]);
+            $update_stmt = $pdo->prepare("UPDATE miners SET mining_start_time = ? AND mining_status = ? WHERE username = ?");
+            $stmt->execute([date("Y-m-d h:i:s", time()), "active", $data->username]);
 
             echo "<br /><br /><br /><br /><br /><br /><br /><br />Congrats, you've successfully initiated the mining cycle.";
         } else {
