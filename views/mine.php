@@ -30,7 +30,7 @@ if ($data) {
     }
 ?>
     <br /><br /><br /><br /><br />
-    <div id="mining_status" style="display:hidden"><?=$data->mining_status?></div>
+    <div id="mining_status" style="display:none"><?=$data->mining_status?></div>
     <div id="ajax_mine"></div>
     <div id="amount_mined"><?=$amount_mined?></div>
     <button class="mining_button" onclick="start_mining()" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
