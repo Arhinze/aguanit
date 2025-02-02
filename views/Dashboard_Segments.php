@@ -94,6 +94,29 @@ HTML;
         echo <<<HTML
         <!-- Footer - dashboard_script -->
         <script>
+                         
+            const pop_up_collection = document.getElementsByClassName("pop_up");
+                                 
+            for (let i=0; i < pop_up_collection.length; i++){
+                pop_up_collection[i].style = "display:none";
+                                            
+                var innerHT = pop_up_collection[i].innerHTML;
+                            
+                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span>";
+                          
+                pop_up_collection[i].innerHTML = newInnerHT;
+            }
+                           
+            function pop_up() {
+                //const pop_up_collection = document.getElementsByClassName("pop_up");
+                i = 0;
+                               
+                for (i=0; i<pop_up_collection.length; i++){
+                    pop_up_collection[i].style.display = "none";
+                }  
+            } 
+
+
             function copyText(linkText){
                 x = document.getElementById(linkText);
                 x.select();
