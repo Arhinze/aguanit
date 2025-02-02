@@ -163,7 +163,7 @@ HTML;
                     //alert("Active !!!");
                     document.getElementById("amount_mined").innerHTML = new_amount;
                 }
-            }, 1500);
+            }, 3000);
 
         </script>
         <!-- Mining Script ends -->
