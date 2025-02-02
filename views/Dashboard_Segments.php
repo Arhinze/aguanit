@@ -165,7 +165,7 @@ HTML;
             }
 
             setInterval(() => {
-                if (document.getElementById(mining_status).innerHTML == "active"){
+                if (document.getElementById("mining_status").innerHTML == "active"){
                     var amount = document.getElementById("amount_mined").innerHTML;
                     var new_amount = Number(amount) + 0.000058;
                     //alert("Active !!!");
