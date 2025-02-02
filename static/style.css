@@ -211,7 +211,15 @@ a{
     font-size:105px;
     width:120px;
     height:120px;
-    /*box-shadow:0px 0px 9px 0px #042c06;*/
+}
+
+.mining_button{
+    height:180px;width:180px;
+    background-color:#0bee3ccc;
+    border-radius:600px;
+    text-align:center;
+    color:#fff;
+    font-weight:bold
 }
 
 .rotate_360 {
