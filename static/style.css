@@ -350,7 +350,7 @@ a{
     margin:8px 6px;
 }
 
-@keyframes invest {
+@keyframes pop_up{
     0%{
         opacity:1;
     }
