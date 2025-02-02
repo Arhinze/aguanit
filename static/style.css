@@ -341,14 +341,14 @@ a{
 .pop_up{
     text-align:center;
     position:fixed;
-    width:80%;
-    top:50%;
+    width:75%;
+    top:40%;
     left:8%;
     right:8%;
     background-color:#0bee3ccc;
     color:#fff;
     box-shadow:0px 0px 3px #fff;
-    border-radius:3px;
+    border-radius:6px solid #042c06;
     padding:24px;
 
     animation:pop_up 5s infinite 2s alternate;
