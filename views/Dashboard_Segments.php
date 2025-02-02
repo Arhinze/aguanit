@@ -94,6 +94,7 @@ HTML;
         echo <<<HTML
         <!-- Footer - dashboard_script -->
         <script>
+            /*
             function show_div(vari) {
                 if (document.getElementById(vari).style.display == "none") {
                     document.getElementById(vari).style.display = "block";
@@ -123,6 +124,7 @@ HTML;
                     collection[i].style.display = "none";
                 }      
             }
+            */
 
             /*
             const pop_up_collection = document.getElementsByClassName("message_success");
