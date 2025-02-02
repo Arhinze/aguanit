@@ -43,7 +43,7 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
             $sel_upd_data = $sel_upd_stmt->fetch(PDO::FETCH_OBJ);
 
             if ($sel_upd_data) {
-                echo "<script> alert('User Exists') </script>";
+                echo "<br /><br /><br /><br /><br /><br /> User Exists ";
             }
 
             $update_stmt = $pdo->prepare("UPDATE miners SET mining_status = ? AND mining_start_time = ? WHERE `username` = ?");
