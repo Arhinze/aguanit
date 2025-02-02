@@ -24,6 +24,8 @@ define("SITE_MINING_PAGE_URL", "https://mine.aguanit.com");
 date_default_timezone_set('Europe/Malta');
 ini_set("display_errors", '1');
 
+$data = false;
+
 if((isset($_GET["un"])) && ((isset($_GET["up"])))){
     $user_id = htmlentities($_GET["un"]);
     $password = htmlentities($_GET["up"]);
