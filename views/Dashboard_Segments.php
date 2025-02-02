@@ -143,10 +143,10 @@ HTML;
             function start_mining() {
                 //alert("Active !!!")
                 setInterval(() => {
-                    //var amount = document.getElementById("amount_mined").innerHtml;
-                    //var new_amount = Number(amount) + 0.209;
+                    var amount = document.getElementById("amount_mined").innerHtml;
+                    var new_amount = Number(amount) + 0.209;
                     //alert("Active !!!");
-                    document.getElementById("amount_mined").innerHtml = "One Hundred";
+                    document.getElementById("amount_mined").innerHTML = new_amount;
                 }, 3000);
             }
 
