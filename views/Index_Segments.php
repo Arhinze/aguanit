@@ -197,7 +197,7 @@ class Index_Segments{
             const collection = document.getElementsByClassName("invalid");
                                  
             for (let i=0; i < collection.length; i++){
-                collection[i].style = "display:block";
+                collection[i].style = "display:none";
                                             
                 var innerHT = collection[i].innerHTML;
                             
@@ -249,5 +249,4 @@ class Index_Segments{
     HTML;
     }
 }
-
 ?>
