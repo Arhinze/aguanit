@@ -20,6 +20,8 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
         } else {
             echo "<br /><br /><br /><br /><br /><br /><br /><br />Your mining cycle is already on.";
         }
+    } else {
+        echo "<br /><br /><br /><br /><br /><br /><br /><br /> stop that nonsense !!!";
     }
 } else {
     echo "<br /><br /><br /><br /><br /><br /><br /><br /> stop that nonsense";
