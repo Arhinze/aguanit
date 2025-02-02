@@ -229,7 +229,7 @@ class Index_Segments{
             
             echo <<<HTML
             <div class="footer">
-                <div class="footer_fa_links">
+                <div class="footer_fa_links"> <!-- social media links -->
                     <a href="https://youtube.com/@aguanittoken?si=2UPwkGxROq7WpLAO"><i class="fa fa-youtube-play"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61553828145828"><i class="fa fa-facebook"></i></a>
                     <a href="https://t.me/aguanit"><i class="fa fa-telegram"></i></a>
