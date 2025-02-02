@@ -35,18 +35,14 @@ if ($data){//$data from account-manager.php
     <div id="mining_status" style=""><?=$mining_stat?></div>
     
     <div id="ajax_mine"></div>
-    
+
     <div id="amount_mined"><?=$amount_mined?></div>
 
     <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="padding:60px;background-color:#0bee3ccc;border-radius:90px">Click me to start mining</button>
 
-    <br /><br /><br /><br /><br />
-
-    
 <?php
     Dashboard_Segments::dashboard_footer(); 
 } else {
     header("location:$site_url/login");
-    //echo "Data no dey here o";
 }
 ?>
