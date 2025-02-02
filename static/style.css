@@ -290,6 +290,8 @@ a{
 
 #inner_button{
     font-size:105px;
+    width:90px;
+    height:90px;
 }
 
 .action_button {
