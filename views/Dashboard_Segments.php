@@ -124,6 +124,7 @@ HTML;
                 }      
             }
 
+            /*
             const pop_up_collection = document.getElementsByClassName("message_success");
 
             for (let i=0; i < pop_up_collection.length; i++){
@@ -144,6 +145,7 @@ HTML;
                     pop_up_collection[i].style.display = "none";
                 }      
             }
+            */
 
             function copyText(linkText){
                 x = document.getElementById(linkText);
