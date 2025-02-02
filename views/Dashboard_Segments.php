@@ -89,7 +89,7 @@ HTML;
 
     public static function dashboard_scripts($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
 
-        Index_Segments::index_scripts();
+        //Index_Segments::index_scripts();
 
         echo <<<HTML
         <!-- Footer -->
@@ -172,6 +172,6 @@ HTML;
     }
 
     public static function dashboard_footer(){
-        Index_Segments::footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $scripts = Dashboard_Segments::dashboard_scripts());
+        Index_Segments::footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $additional_scripts = Dashboard_Segments::dashboard_scripts());
     }
 }
