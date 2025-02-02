@@ -29,7 +29,7 @@ if ($data) {
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.00000058);
 ?>
     <script>
-        setInterval(start_mining(u_name='<?=$data->user_name?>', u_password='<?=$data->password?>'), 1500);
+        setInterval(start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>'), 1500);
     </script>
 <?php    
     }
