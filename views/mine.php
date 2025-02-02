@@ -26,9 +26,11 @@ if ($data){//$data from account-manager.php
 
     $mining_stat = $data->mining_status;
     $amount_mined = $data->total_amount_mined;
+    $mining_style = "";
     
     if ($mining_stat == "active"){
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.0000058);   
+        $mining_style = "rotate_360";
     }
 ?>
     <div style="margin-top:135px">
@@ -47,7 +49,7 @@ if ($data){//$data from account-manager.php
         </div>
 
         <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:180px;width:180px;background-color:#0bee3ccc;border-radius:600px;text-align:center;color:#fff;font-weight:bold">
-            <img src="<?=$site_url?>/static/images/logo.png" id="inner_button"/>
+            <img src="<?=$site_url?>/static/images/logo.png" id="inner_button" class="<?=$mining_style?>"/>
             <!--<i class="fa fa-power-off" style="" id="inner_button"></i>-->
         </button>
     </center>
