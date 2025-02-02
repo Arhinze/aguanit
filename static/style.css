@@ -208,7 +208,7 @@ a{
 }
 
 .rotate {
-    animation: rotate_100 .9s infinite .0s alternate;
+    animation: rotate_360 .9s infinite .0s alternate;
 }
 
 @keyframes fade{
@@ -221,12 +221,12 @@ a{
     to{background-color: #fff;color:#042c06}
 }
 
-@keyframes rotate_100{
+@keyframes rotate {
     from{rotate:0deg;}
     to{rotate:30deg;}
 }
 
-@keyframes rotate {
+@keyframes rotate_360{
     from{rotate:0deg;}
     to{rotate:360deg;}
 }
