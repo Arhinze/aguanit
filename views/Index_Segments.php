@@ -240,6 +240,7 @@ class Index_Segments{
             </div>
                        
             $index_scripts
+            <br /><br /><br />
             $scripts
         </body>
         </html>    
