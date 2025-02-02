@@ -32,13 +32,15 @@ if ($data){//$data from account-manager.php
     }
 ?>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <div id="mining_status" style=""><?=$mining_stat?></div>
-    
-    <div id="ajax_mine"></div>
+    <center>
+        <div id="mining_status" style=""><?=$mining_stat?></div>
+        
+        <div id="ajax_mine"></div>
 
-    <div id="amount_mined"><?=$amount_mined?></div>
+        <div id="amount_mined"><?=$amount_mined?></div>
 
-    <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:300px;width:300px;background-color:#0bee3ccc;border-radius:600px">Click me to start mining</button>
+        <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:300px;width:300px;background-color:#0bee3ccc;border-radius:600px;text-align:center">Click me to start mining</button>
+</center>
 
 <?php
     Dashboard_Segments::dashboard_footer(); 
