@@ -305,18 +305,6 @@ a{
     font-size:16px;
 }
 
-.invest{
-    background-color:#fff;
-    color:#000;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px #888;
-    position:fixed;
-    left:4px;
-    
-    animation:invest 10s infinite 2s alternate;
-    z-index:3;
-}
-
 .new-dashboard {
     padding:16px 8px;
     border-top:1px solid #888;
@@ -348,6 +336,23 @@ a{
     border-radius:6px;
     width:93%;
     margin:8px 6px;
+}
+
+.pop_up{
+    text-align:center;
+    position:fixed;
+    width:80%;
+    top:50%;
+    left:8%;
+    right:8%;
+    background-color:#0bee3ccc;
+    color:#fff;
+    box-shadow:0px 0px 3px #fff;
+    border-radius:3px;
+    padding:4%;
+
+    animation:invest 6s infinite 2s alternate;
+    z-index:3;
 }
 
 @keyframes pop_up{
@@ -875,20 +880,6 @@ a{
     background-color:#0bee3ccc;
     font-size:17px;
     border:none;
-}
-
-.pop_up{
-    text-align:center;
-    position:fixed;
-    width:80%;
-    top:50%;
-    left:8%;
-    right:8%;
-    background-color:#03010f;
-    color:#fff;
-    box-shadow:0px 0px 3px #fff;
-    border-radius:3px;
-    padding:4%;
 }
 
 .message_success{
