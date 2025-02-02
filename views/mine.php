@@ -21,13 +21,13 @@ if (((isset($_POST["f_username_or_email"])) && ((isset($_POST["f_password"])))))
     }
 } 
 
-if ($data) {//$data from account-manager.php
+if ($data){//$data from account-manager.php
     Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username); 
 
     $mining_stat = $data->mining_status;
     $amount_mined = $data->total_amount_mined;
     
-    if ($mining_stat == "active") {
+    if ($mining_stat == "active"){
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.00000058);   
     }
 ?>
