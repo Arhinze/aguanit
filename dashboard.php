@@ -14,7 +14,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         
 ?>
 
-<div style="margin-top:120px">
+<div style="margin-top:150px">
     <center>
     <!--Start Mining Form Starts--> 
     <form method="post" action="<?=$site_mining_page_url?>">
