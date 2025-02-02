@@ -124,6 +124,27 @@ HTML;
                 }      
             }
 
+            const pop_up_collection = document.getElementsByClassName("message_success");
+
+            for (let i=0; i < pop_up_collection.length; i++){
+                pop_up_collection[i].style = "display:block";
+                
+                var innerHT = pop_up_collection[i].innerHTML;
+
+                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span>";
+
+                pop_up_collection[i].innerHTML = newInnerHT;
+            }
+
+            function close_pop_up() {
+                //const collection = document.getElementsByClassName("invalid");
+                i = 0;
+
+                for (i=0; i<pop_up_collection.length; i++){
+                    pop_up_collection[i].style.display = "none";
+                }      
+            }
+
             function copyText(linkText){
                 x = document.getElementById(linkText);
         
@@ -143,7 +164,7 @@ HTML;
             function start_mining(u_name, u_password) {
                 //alert("Active !!!")
                 document.getElementById("mining_status").innerHTML = "active";
-                
+
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
                     if(obj.readyState == 4){
