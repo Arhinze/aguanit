@@ -38,7 +38,7 @@ if ($data){//$data from account-manager.php
         <div id="ajax_mine"></div>
 
         <div style="font-size:30px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center">
-            <div style="margin-right:9px;margin-top:-7px"><img src="<?=$site_url?>/static/images/logo.png" style="width:30px;height:30px"/></div>
+            <div style="margin-right:9px;margin-top:-7px"><img src="<?=$site_url?>/static/images/logo.png" style="width:36px;height:36px"/></div>
             <div><span id="amount_mined"><?=$amount_mined?></span></div>
         </div>
 
