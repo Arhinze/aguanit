@@ -208,7 +208,7 @@ a{
 }
 
 .rotate {
-    animation: rotate .5s infinite .0s alternate;
+    animation: rotate_100 .9s infinite .0s alternate;
 }
 
 @keyframes fade{
@@ -224,6 +224,11 @@ a{
 @keyframes rotate {
     from{rotate:0deg;}
     to{rotate:30deg;}
+}
+
+@keyframes rotate {
+    from{rotate:0deg;}
+    to{rotate:360deg;}
 }
 
 .header_text{
