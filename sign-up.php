@@ -95,7 +95,7 @@ if(isset($_POST["user_code"])){
 
                         //conditions are met -- Insert User
                         $p_stmt = $pdo->prepare("INSERT INTO miners(real_name, username, user_email, `password`,referred_by,entry_date,mining_status) VALUES(?, ?, ?, ?, ?,?,?)");
-                        $p_stmt->execute([$_POST["name"], $_POST['username'],$_POST["email"],$_POST['password1'],$referer,date("Y-m-d HH:mm:ss", time()),"inactive"]);
+                        $p_stmt->execute([$_POST["name"], $_POST['username'],$_POST["email"],$_POST['password1'],$referer,date("Y-m-d HH:MM:SS", time()),"inactive"]);
                     
                         //Mail User:
                         $e_name = $_POST["name"];
