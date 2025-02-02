@@ -34,7 +34,7 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
     $data = $stmt->fetch(PDO::FETCH_OBJ);
         
     if ($data) {
-        if ($data->mining_status == "inactive"){
+        if ($data->mining_status != "active"){
             $update_stmt = $pdo->prepare("UPDATE miners SET mining_status = ? AND mining_start_time = ? WHERE `username` = ?");
             $update_stmt->execute(["active", date("Y-m-d h:i:s", time()), $data->username]);
 
