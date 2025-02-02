@@ -33,16 +33,13 @@ class Index_Segments{
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Arimo|Prompt"/>
-    
-    
+            
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-            
+                
             <title>$site_name</title>
-
+              
         </head>
         <body>
             <div class="headers">  
@@ -58,13 +55,13 @@ class Index_Segments{
             </div> 
         
             <a name="#top"></a>
-
+              
             <div class="menu-list-div">  
                 <input type="checkbox" id="menu-box" class="menu-box"/>
                 <ul class="menu-list">
-                    
+                                
                     <li class="x"><label for="menu-box"><i class="fa fa-times"></i></label></li>
-
+                    
                     <li><a href="/about-us">About</a></li>
                     <li><a href="/login">Login</a></li>
                     <li><a href="">White Paper</a></li>
@@ -76,61 +73,60 @@ class Index_Segments{
             </div> 
        HTML;
        }
-
-       public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
+                
+        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
             echo <<<HTML
             <div class="site_top_page">
                 <div class="intro">
                 $site_name is a revolutionary project that merges the expertise of $site_name Cybersecurity.
                 </div>
-
+                          
                 Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities.
                 
                 <br /><br />
                 <a href="$site_mining_page_url" class="buy_presale">START MINING</a>
                 <br /><br />
-
                 <div>
                     <img src = "/static/images/coin_image.png" class="coin_image"/>
                 </div>
             </div>
-
+                  
             <div class="white_background">
                 <div class="about_img_div" style="width:100%">
                     <img src="/static/images/about_img1.png" class="site_images"/>
                 </div>
-
+                         
                 <div class="header_text">What is $site_name Token?</div>
-
+                         
                 <div class="what_is_body">
                     <p>$site_name token is a revolutionary project that merges the expertise of $site_name Cybersecurity, a leading cybersecurity firm, with the innovative potential of crypto currency.</p> 
                     
                     <p>Built on The Open Network (TON), $site_name token offers a unique ecosystem of features and utilities designed to enhance online security, empower users, and foster a thriving community.</p>
                 </div>
-                
+                                         
                 <a href="/white-paper" class="buy_presale2">DOWNLOAD WHITE PAPER</a>
-                
+                                          
                 <div class="header_text" style="text-align:center">Project Features</div>
-
+                          
                 <div class="flex-div">
                     <div class="project_features_subdivs">
                         <i class="fa flaticon-decentralized"></i>
                         $site_name <br />
                         DEX
                     </div>
-
+                          
                     <div class="project_features_subdivs">
                         <i class="fa flaticon-decentralized"></i>
                         Minable <br />
                         Airdrops Platform
                     </div>
-
+                        
                     <div class="project_features_subdivs">
                         <i class="fa flaticon-decentralized"></i>
                         Encrypted <br />
                         Online Drive
                     </div>
-
+                            
                     <div class="project_features_subdivs">
                         <i class="fa flaticon-decentralized"></i>
                         Robust Smart <br />
@@ -138,8 +134,7 @@ class Index_Segments{
                     </div>
                 </div>
             </div>
-
-
+                         
             <div class="token_distribution">
                 <div class="token_distribution_head">Token Distribution</div>
                 
@@ -151,24 +146,23 @@ class Index_Segments{
                     <li><span class="token_percentages">12.5% </span>Partnerships and collaborations</li>
                     <li><span class="token_percentages">25% </span>Founding Team</li>
                 </ul>
-
+                        
                 <div style="width:100%">
                     <img src="/static/images/token_distribution.png" class="site_images" style="border-radius:12px"/>
                 </div>
             </div>
-                
-                
-                
-  
+                      
+                        
+                   
             <div class="white_background">     
                 <div class="header_text">Roadmap </div>
-
+                       
                 <div style="font-size:15px; color:#888;text-align:center">We have big plans for the future of $site_name Token.</div>
             </div>
-
+                      
             <div class="faq"> <a name="#faqs"></a>
                 <div class="header_text">Frequently Asked Questions</div>
-                
+                                   
                 <!--
                 <div class="faq_divs">Where can I mine the airdrop?</div>
                 You can mine $site_name Airdrop from our telegram mini app. Click the Mine button below to mine now.
@@ -177,7 +171,7 @@ class Index_Segments{
                 <div class="faq_divs">Will there be presale?</div>
                 -->
             </div>
-
+                            
             <div class="white_background" style="text-align:center;padding-bottom:60px">
                 <div class="header_text" style="font-size:24px;padding-bottom:24px">$site_name token presale is now live</div>
                 <a href="" class="buy_presale2">Buy presale</a>
@@ -189,7 +183,7 @@ class Index_Segments{
        public static function index_scripts(){
 
         echo <<<HTML
-        
+                                 
         <!-- Footer -->
         <script>
             function show_div(vari) {
@@ -199,36 +193,33 @@ class Index_Segments{
                     document.getElementById(vari).style.display = "none";
                 }
             }
-
+                         
             const collection = document.getElementsByClassName("invalid");
-
+                                 
             for (let i=0; i < collection.length; i++){
                 collection[i].style = "display:block";
                 //collection[i].style = "color:pink";
-                
+                                            
                 var innerHT = collection[i].innerHTML;
-
+                            
                 var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span>";
-
+                          
                 collection[i].innerHTML = newInnerHT;
             }
-
+                           
             function show_class_div() {
                 const collection = document.getElementsByClassName("invalid");
                 i = 0;
-
+                               
                 for (i=0; i<collection.length; i++){
                     collection[i].style.display = "none";
-                }
-                  
-            }
-
+                }  
+            } 
         </script>
-
+                         
         <noscript> 
             Texts won't display well. please enable Javascript.
         </noscript>
-
         HTML;
         }
 
@@ -243,17 +234,16 @@ class Index_Segments{
                     <a href="https://t.me/aguanit"><i class="fa fa-telegram"></i></a>
                     <a href="https://x.com/AguanitToken?t=VwVfUCIOP1xBa9KRrfPHkg&s=09"><i class="fa fa-twitter"></i></a>
                 </div>
-
+                         
                 <div class="footer_copyright">
                     © 2025 $site_name Token.
                 </div>
             </div>
-
+                       
             $scripts
             $index_scripts
         </body>
-        </html>
-            
+        </html>    
     HTML;
     }
 }
