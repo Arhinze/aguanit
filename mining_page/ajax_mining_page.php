@@ -19,4 +19,6 @@ if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
             echo "<br /><br /><br /><br /><br /><br /><br /><br />Your mining cycle is already on.";
         }
     }
+} else {
+    echo "<br /><br /><br /><br /><br /><br /><br /><br /> stop that nonsense";
 }

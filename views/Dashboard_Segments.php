@@ -140,7 +140,7 @@ HTML;
 
         <!-- Mining Scripts -->
         <script>
-            function start_mining() {
+            function start_mining(u_name, u_password) {
                 //alert("Active !!!")
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
@@ -160,10 +160,6 @@ HTML;
                     //alert("Active !!!");
                     document.getElementById("amount_mined").innerHTML = new_amount;
                 }, 1000);
-            }
-
-            if (document.getElementById("mining_status").innerHTML == "active") {
-                start_mining();
             }
 
         </script>
