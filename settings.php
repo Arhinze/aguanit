@@ -115,7 +115,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
 
-<div style="float:right"><button type="submit" class="button"><i class="fa fa-gear"></i> Change Account Data</button></div>
+<div style="float:right"><button type="submit" class="button" style="background-color:#0bee3ccc"><i class="fa fa-gear"></i> Change Account Data</button></div>
 
 </div>
 
