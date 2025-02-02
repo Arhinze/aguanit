@@ -14,14 +14,14 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         
 ?>
 
-<div style="margin-top:60px">
+<div style="margin-top:120px">
     <center>
     <!--Start Mining Form Starts--> 
     <form method="post" action="<?=$site_mining_page_url?>">
         <input type="hidden" name="f_username_or_email" value="<?=$form_user_id?>"/>
         <input type="hidden" name="f_password" value="<?=$form_password?>"/>
     
-        <button type="submit" class="mining_button"><b>Start Mining</b></button>
+        <button type="submit" class="mining_button"><b><i class="fa fa-power-off"></i> Start Mining</b></button>
     </form>
     <!--Start Mining Form ends--> 
     </center>
