@@ -1,8 +1,8 @@
 <?php
 
-if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
-    $user_id = $_COOKIE["username_or_email"];
-    $password = $_COOKIE["password"];
+if((isset($_GET["un"])) && ((isset($_GET["up"])))){
+    $user_id = $_GET["un"];
+    $password = $_GET["up"];
 
     $stmt = $pdo->prepare("SELECT * FROM miners WHERE (username = ? OR user_email = ?) AND `password` = ?");
     $stmt->execute([$user_id, $user_id, $password]);
