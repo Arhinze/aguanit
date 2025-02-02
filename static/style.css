@@ -214,7 +214,7 @@ a{
 }
 
 .rotate {
-    animation: rotate_360 9s infinite .2s normal;
+    animation: rotate_360 6s infinite .2s normal ease-in-out;
 }
 
 @keyframes fade{
