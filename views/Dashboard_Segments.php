@@ -110,7 +110,7 @@ HTML;
                 
                 var innerHT = collection[i].innerHTML;
 
-                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span>";
+                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'>X<i class='fa fa-times' onclick='show_class_div()'></i></span>";
 
                 collection[i].innerHTML = newInnerHT;
             }
