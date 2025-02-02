@@ -26,12 +26,7 @@ if ($data) {
 
     $amount_mined = $data->total_amount_mined;
     if ($data->mining_status == "active") {
-        $amount_mined += ((time() - strtotime($data->mining_start_time))*0.00000058);
-?>
-    <script>
-        setInterval(start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>'), 1500);
-    </script>
-<?php    
+        $amount_mined += ((time() - strtotime($data->mining_start_time))*0.00000058);   
     }
 ?>
     <br /><br /><br /><br /><br />
