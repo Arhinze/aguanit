@@ -28,7 +28,7 @@ if ($data){//$data from account-manager.php
     $amount_mined = $data->total_amount_mined;
     
     if ($mining_stat == "active"){
-        $amount_mined += ((time() - strtotime($data->mining_start_time))*0.00000058);   
+        $amount_mined += ((time() - strtotime($data->mining_start_time))*0.0000058);   
     }
 ?>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
