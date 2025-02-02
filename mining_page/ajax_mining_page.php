@@ -37,27 +37,17 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
         
     if ($data) {
         if ($data->mining_status != "active"){
-            //$sel_upd_stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ?");
-            //$sel_upd_stmt->execute([$data->username]);
-
-            //$sel_upd_data = $sel_upd_stmt->fetch(PDO::FETCH_OBJ);
-
-            //if ($sel_upd_data) {
-            //    echo "<br /><br /><br /><br /><br /><br /> User Exists".$data->mining_status;
-            //}
 
             $update_stmt = $pdo->prepare("UPDATE miners SET mining_status = ?, mining_start_time = ? WHERE `username` = ?");
             $update_stmt->execute(["active", date("Y-m-d h:i:s", time()), $data->username]);
 
-            echo "<br /><br /><br /><br /><br /><br /> User Exists - ".$data->mining_status." ".$data->mining_start_time." ".$data->username;
-
-            echo "<br /><br /><br /><br /><br /><br /><br /><br />Congrats, you've successfully initiated the mining cycle.";
+            echo "<div class='message_success'> Congrats, you've successfully initiated the mining cycle.</div>";
         } else {
-            echo "<br /><br /><br /><br /><br /><br /><br /><br />Your mining cycle is already on.";
+            echo "<div class='message_success'>Your mining cycle is already on.</div>";
         }
     } else {
-        echo "<br /><br /><br /><br /><br /><br /><br /><br /> stop that nonsense !!!";
+        echo "<div class='invalid'>stop that nonsense !!!</div>";
     }
 } else {
-    echo "<br /><br /><br /><br /><br /><br /><br /><br /> stop that nonsense";
+    echo "<div class='invalid'> stop that nonsense ! </div>";
 }
