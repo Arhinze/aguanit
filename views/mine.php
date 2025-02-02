@@ -37,7 +37,7 @@ if ($data){//$data from account-manager.php
         
         <div id="ajax_mine"></div>
 
-        <div style="font-size:30px;font-weight:bold;font-family:Arial;margin-bottom:30px"><img src="<?=$site_url?>/static/images/logo.png" style="width:45px;height:45px;margin-right:15px;margin-top:25px"/> <span id="amount_mined"><?=$amount_mined?></span></div>
+        <div style="font-size:30px;font-weight:bold;font-family:Arial;margin-bottom:30px"><img src="<?=$site_url?>/static/images/logo.png" style="width:45px;height:45px;margin-right:15px;margin-top:50px"/> <span id="amount_mined"><?=$amount_mined?></span></div>
 
         <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:180px;width:180px;background-color:#0bee3ccc;border-radius:600px;text-align:center;color:#fff;font-weight:bold">Click me to start mining</button>
     </center>
