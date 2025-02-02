@@ -21,7 +21,7 @@ if (((isset($_POST["f_username_or_email"])) && ((isset($_POST["f_password"])))))
     }
 } 
 
-if ($data) {
+if ($data) {//$data from account-manager.php
     Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username); 
 
     $mining_stat = $data->mining_status;
