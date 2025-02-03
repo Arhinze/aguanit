@@ -301,16 +301,19 @@ a{
 
 .smart_contract{
     color:#fff;
+    
 }
 
 .smart_contract_texts{
     padding:18px 9px;
-    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     overflow: scroll;
+    font-size:15px;
 }
 
 .smart_contract_texts_head{
     font-weight: bold;
+    font-size: 18px;
 }
 
 .header_text{
