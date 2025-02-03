@@ -62,7 +62,7 @@ if ($data){//$data from account-manager.php
         <div class="mining_cards_parent" >
             <div class="mining_cards" style="width:260px;margin-top:30px;">
                 <div class="mining_cards_head">Current mining rate</div>
-                <div class="mining_cards_body"><i class="fa fa-time"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
+                <div class="mining_cards_body"><i class="fa fa-clock-o"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
             </div>
         </div>
 
