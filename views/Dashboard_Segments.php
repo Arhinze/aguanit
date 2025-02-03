@@ -103,7 +103,7 @@ HTML;
             const pop_up_collection = document.getElementsByClassName("pop_up");
                                  
             for (let i=0; i < pop_up_collection.length; i++){
-                pop_up_collection[i].style = "display:none";
+                //pop_up_collection[i].style = "display:none";
                                             
                 var innerHT = pop_up_collection[i].innerHTML;
                             
