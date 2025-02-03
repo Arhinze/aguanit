@@ -42,7 +42,7 @@ if ($data){//$data from account-manager.php
         $mining_minutes_left = $total_mining_minutes_left - ($mining_hours_left*60);
         $mining_seconds_left = $total_mining_seconds_left - ($total_mining_minutes_left*60);
         
-        $mining_time_left = $mining_hours_left.":".$mining_minutes_left.":".$mining_seconds_left;
+        $mining_time_left = "$mining_hours_left:$mining_minutes_left:$mining_seconds_left";
     }
 
     //Get Referral bonus:
