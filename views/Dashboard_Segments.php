@@ -132,7 +132,7 @@ HTML;
             }
 
             function rotate_360() {
-                if(document.getElementById("small_coin").className == "no_class_name") {
+                if(document.getElementById("small_coin").className !== "rotate_360_once") {
                     document.getElementById("small_coin").className = "rotate_360_once";
                 } else {
                     document.getElementById("small_coin").className="no_class_name";
