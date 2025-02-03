@@ -121,8 +121,8 @@ HTML;
                 }  
             } 
 
-            function copyText(linkText){
-                x = document.getElementById(linkText);
+            function copyText(link_text_id){
+                x = document.getElementById(link_text_id);
                 x.select();
                 x.setSelectionRange(0, 99999);
         

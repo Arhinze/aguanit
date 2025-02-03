@@ -30,9 +30,9 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
     <div style="padding:12px">
         <h3 style="color:#fff">Your Referral Link</h3>
             
-        <input style="height:24px;border:1px solid #2b8eeb;
+        <input style="height:33px;border:1px solid #0bee3ccc;
             border-right:30px solid #0bee3ccc;width:80%;
-            border-radius:4px;margin-top:8px" id = 'referral_link'
+            border-radius:6px;margin-top:8px" id='referral_link'
             value="https://<?=$site_url_short?>/?ref=<?=$data->username?>"/>
             
         <i style="margin-left:-27px" class="fa fa-copy" onclick="copyText('referral_link')"></i>
