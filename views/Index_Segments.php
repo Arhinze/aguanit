@@ -183,7 +183,7 @@ class Index_Segments{
        public static function index_scripts(){
 
         echo <<<HTML
-                                 
+
         <!-- Footer - index_scripts -->
         <script>
             function show_div(vari) {
@@ -215,10 +215,6 @@ class Index_Segments{
                 }  
             } 
         </script>
-                         
-        <noscript> 
-            Texts won't display well. please enable Javascript.
-        </noscript>
         HTML;
         }
 
