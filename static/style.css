@@ -299,6 +299,19 @@ a{
     font-size:18px;
 }
 
+.smart_contract{
+    color:#fff;
+}
+
+.smart_contract_texts{
+    padding:18px 9px;
+    border-top: 1px solid #fff;
+}
+
+.smart_contract_texts_head{
+    font-weight: bold;
+}
+
 .header_text{
     margin-top: 24px;
     color:#042c06;

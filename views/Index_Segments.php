@@ -4,7 +4,7 @@ ini_set("display_errors", '1'); //for testing purposes..
 include_once("/home/u590828029/domains/aguanit.com/public_html/php/connection.php");
 
 class Index_Segments{
-    public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = ""){
+    public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = "", $title=SITE_NAME){
         if (isset($_GET["ref"])) {
             $ref = htmlentities($_GET["ref"]);
 
@@ -38,7 +38,7 @@ class Index_Segments{
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 
-            <title>$site_name</title>
+            <title>$title</title>
               
         </head>
         <body>
@@ -68,7 +68,8 @@ class Index_Segments{
                     <li><a href="">Distribution</a></li>
                     <li><a href="">Roadmap</a></li>
                     <li><a href="#faqs">Faq</a></li>
-                    <li><a href="">Smart Contract</a></li>
+                    <li><a href="/smart-contract">Smart Contract</a></li>
+                    <li><a href="">CEX Listing</a></li>
                 </ul> 
             </div> 
        HTML;

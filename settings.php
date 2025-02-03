@@ -2,7 +2,6 @@
 
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
-//Reset password
     if($data){ //$data variable from php/account-manager.php
         // that means user is logged in:
         
