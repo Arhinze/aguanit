@@ -131,11 +131,21 @@ a{
     padding:6px 21px;
     box-shadow:0px 0px 9px 0px #0bee3ccc; 
     transition-property:width;
-    transition-delay: .6s;
-    transition-duration:6s;
+    transition-delay: .1s;
+    transition-duration:0.6s;
     transition-timing-function: ease-in;
     display:block;
     list-style-type: none;
+    animation: menu 3s 1 .3s normal;
+}
+
+@keyframes menu {
+    from{
+        height:0;
+    }
+    to {
+        height:fit-content;
+    }
 }
 
 .menu-box:checked ~ .menu_list li{
@@ -1060,12 +1070,10 @@ a{
         top:-15px;
         color:#fff;
         background-color: none !important;
-        
         list-style-type:none !important;
         float:left;
         z-index: 2;
         /*position:absolute;*/
-        
     }
 
     .menu-list:after{
