@@ -2,8 +2,7 @@
 
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
 
-if($data) {
-    Index_Segments::header($title="Smart Contract");
+Index_Segments::header($title="Smart Contract");
 ?>
 
 <div class="dashboard_div">
@@ -25,5 +24,4 @@ if($data) {
 </div>
 
 <?php
-    Index_Segments::footer();
-}
+Index_Segments::footer();
