@@ -139,8 +139,8 @@ class Index_Segments{
                 <div class="token_distribution_head">Token Distribution</div>
                 
                 <ul class ="token_distribution_list">
-                    <li><span class="token_percentages">100%</span> liquidity pool</li>
-                    <li><span class="token_percentages">12.5%</span> Airdrop and community rewards</li>
+                    <li><span class="token_percentages">100%</span> liquidity</li>
+                    <li><span class="token_percentages">12.5%</span> Airdrop</li>
                     <li><span class="token_percentages">25% </span>Pre-sale</li>
                     <li><span class="token_percentages">25% </span>Mining Pool</li>
                     <li><span class="token_percentages">12.5% </span>Partnerships and collaborations</li>

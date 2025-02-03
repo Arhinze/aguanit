@@ -33,7 +33,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         <input style="height:24px;border:1px solid #2b8eeb;
             border-right:30px solid #0bee3ccc;width:80%;
             border-radius:4px;margin-top:8px" id = 'referral_link'
-            value="https://<?=$site_url_short?>/?ref=<?=$_COOKIE['username_or_email']?>"/>
+            value="https://<?=$site_url_short?>/?ref=<?=$data->username?>"/>
             
         <i style="margin-left:-27px" class="fa fa-copy" onclick="copyText('referral_link')"></i>
         <br /> 

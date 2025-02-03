@@ -33,25 +33,49 @@ if ($data){//$data from account-manager.php
         $mining_style = "rotate_360";
     }
 ?>
-    <div style="margin-top:135px">
+    <div style="margin-top:135px" class="dashboard_div">
     <center>
-        <div id="mining_status" style="display:none"><?=$mining_stat?></div>
-        
+        <div id="mining_status" style="display:none"><?=$mining_stat?></div>  
         <div id="ajax_mine"></div>
 
-        <div style="font-size:30px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center">
+        <div style="font-size:45px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center">
             <div style="margin-right:9px;margin-top:-5px">
-                <img src="<?=$site_url?>/static/images/logo.png" style="width:39px;height:39px"/>
+                <img src="<?=$site_url?>/static/images/logo.png" style="width:45px;height:45px"/>
             </div>
             <div>
                 <span id="amount_mined"><?=round($amount_mined, 6)?></span>
             </div>
         </div>
 
-        <button class="mining_button" onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="height:180px;width:180px;background-color:#0bee3ccc;border-radius:600px;text-align:center;color:#fff;font-weight:bold">
+        <button onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="border:0">
             <img src="<?=$site_url?>/static/images/logo.png" id="inner_button" class="<?=$mining_style?>"/>
             <!--<i class="fa fa-power-off" style="" id="inner_button"></i>-->
         </button>
+
+        <div class="mining_cards_parent">
+            <div class="mining_cards">
+                <div class="mining_cards_head">Invite new members</div>
+                <a href=""><?=$site_url."/sign-up?ref=".$data->username?></a>
+                <div class="mining_cards_body">Bonus: 1 $AGUAT</div>
+            </div>
+
+            <div class="mining_cards">
+                <div class="mining_cards_head">Bonus from mining team</div>
+                <div class="mining_cards_body"><i class="fa fa-plus"></i> $<?=$referral_bonus?></div>
+            </div>
+        </div>
+
+        <div class="mining_cards_parent">
+            <div class="mining_cards">
+                <div class="mining_cards_head">Mining time left</div>
+                <div class="mining_cards_body"><i class="fa fa-clock"></i> <span id="mining_time_left"></span></div>
+            </div>
+
+            <div class="mining_cards">
+                <div class="mining_cards_head">Current mining rate</div>
+                <div class="mining_cards_body"><i class="fa fa-clock"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
+            </div>
+        </div>
     </center>
     </div>
 

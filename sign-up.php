@@ -116,19 +116,28 @@ if(isset($_POST["user_code"])){
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name </h2>
-                                    <p  style ="font-family:Trirong;">Hello $e_name, Welcome to $site_name.</p>
-                                    
-                                    <p><a href="https://$site_url_short/" style="color:#042c06">$site_name </a> is a state of the art token created on the Avalanche blockchain.</p>
-                                    <p>Our aim is to revolutionize the web 3 space.</p>
-                                    <p>Join us on this journey as we set to achieve a feat only a few can dream of. Keep up with our road-map as we're very much determined and committed to this course.</p>
-                                    <p style="margin-bottom:30px">Follow us on all our social media platforms so as not to miss out on any update.</p>
+
+                                    <p  style ="font-family:Trirong;">Dear $e_name, </p>
+
+                                    <p>Welcome to <b>$site_name</b> community!. We're thrilled to have you on board and excited for you to start your journey in the world of our token mining.</p>
+
+                                    <p>Connect with fellow miners and enthusiasts in our community forums and social media channels. Sharing tips and experiences can enhance your mining adventure!</p>
+
+                                    <p>Don’t forget to check out our social media handles for the latest news, updates, and mining strategies to maximize your rewards. If you have any questions or need assistance, our support team is here to help.</p>
 
                                     <hr />
-                                    <b>Kindly find your login details below.</b><br />
+                                    <b>Below are your login details.</b><br />
                                     Please, don't share this with anyone
                                     <p><b>Username:</b> $e_username </p>
                                     <p><b>Password:</b> $e_password</p>
 
+                                    <p>Happy Mining!</p>
+                                    <p>Best regards,</p>
+                                    <p>The $site_name Team</p> 
+                                    <p><b>$site_url_short</b></p> | <b>admin@$site_url_short</b>
+                                    
+                                    <p>kindly disregard this mail if you did not make this sign up and contact: admin@aguanit.com  for further actions.</p>
+                                    
                                     <p><small>Kindly disregard this mail if you did not make this sign up and contact: <a href="mailto:admin@$site_url_short" style="color:#042c06">admin@$site_url_short</a> for further actions.</small></p>
 
                                     <br /><br /><br />
@@ -147,7 +156,7 @@ if(isset($_POST["user_code"])){
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-                        $mail = mail($_POST["email"],"Welcome To $site_name Investment",$message, $headers);
+                        $mail = mail($_POST["email"],"Welcome To $site_name Ecosystem",$message, $headers);
     
                         if($mail){
                             echo "A Welcome Mail has been sent to <b>", $_POST["email"],"</b>. If it doesn't arrive on time, kindly check your spam folder." ;

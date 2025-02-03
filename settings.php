@@ -52,58 +52,19 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 &nbsp; <a class = "button" style="background-color:#0bee3ccc" href="/reset-password">Reset Password <i class="fa fa-pencil"></i></a>
 </div>
 
-<!--
-
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">New Password:</div>
-    <div style="width:60%;float:right"><input type="password" name="password1" value="" class="input"/></div>
-</div>
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Retype Password:</div>
-    <div style="width:60%;float:right"><input type="password" name="password2" value="" class="input"/></div>
-</div>
-
--->
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your Bitcoin Wallet Address:</div>
+    <div style="width:30%;float:left">Twitter Username:</div>
     <div style="width:60%;float:right"><input type="text" name="bitcoin_wallet_address" value="<?=$data->btc_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your Ethereum Wallet Address:</div>
+    <div style="width:30%;float:left">$AVAX Wallet Address:</div>
     <div style="width:60%;float:right"><input type="text" name="ethereum_wallet_address" value="<?=$data->eth_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your Bitcoin Cash Wallet Address:</div>
+    <div style="width:30%;float:left">$AGUAT Wallet Address:</div>
     <div style="width:60%;float:right"><input type="text" name="bitcoin_cash_wallet_address" value="<?=$data->btc_cash_wallet_address?>" class="input"/></div>
-</div>
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your USDT(TRC20) Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="usdt_trc20_wallet_address" value="<?=$data->usdt_trc20_wallet_address?>" class="input"/></div>
-</div>
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your USDT(ERC20) Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="usdt_erc20_wallet_address" value="<?=$data->usdt_erc20_wallet_address?>" class="input"/></div>
-</div>
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your BNB Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="bnb_wallet_address" value="<?=$data->bnb_wallet_address?>" class="input"/></div>
-</div>
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your BNB P20 Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="bnb_p20_wallet_address" value="<?=$data->bnb_p20_wallet_address?>" class="input"/></div>
-</div>
-
-<div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
-    <div style="width:30%;float:left">Your Binance Smart Chain Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="bsc_wallet_address" value="<?=$data->bsc_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
