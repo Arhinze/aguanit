@@ -767,9 +767,8 @@ a{
 }
 
 .fa-user-login {
-    padding:6px 10px;
+    margin-right:12px;
     font-size:30px;
-    margin-right:8px;
     background-color: #0bee3ccc;
     width:21px; 
     height:21px;
