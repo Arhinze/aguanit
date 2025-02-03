@@ -116,7 +116,6 @@ HTML;
                 }  
             } 
 
-
             function copyText(linkText){
                 x = document.getElementById(linkText);
                 x.select();
@@ -126,6 +125,13 @@ HTML;
                 alert("copied text: " + x.value);
             }
         </script>
+
+        <script>
+            function boost_mining_speed() {
+                document.getElementById("boost_mining_speed").innerHTML = "<div class='pop_up'> This feature is coming soon. <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
+            }
+        </script>
+
 
 
 

@@ -43,7 +43,9 @@ if ($data){//$data from account-manager.php
     <div style="margin-top:135px" class="dashboard_div">
     <center>
         <div id="mining_status" style="display:none"><?=$mining_stat?></div>  
+        
         <div id="ajax_mine"></div>
+        <div id="boost_mining_speed"></div>
 
         <div style="font-size:45px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center;margin-top:18px">
             <div style="margin-right:9px;margin-top:-2px">
@@ -63,7 +65,7 @@ if ($data){//$data from account-manager.php
             <div class="mining_cards" style="width:260px;margin-top:30px;">
                 <div class="mining_cards_head" style="position:relative">
                     <div style="position:absolute;float:left">Current mining rate</div>
-                    <div style="position:absolute;float:right;right:3px;color:#0bee3ccc;font-weight:bold"><i class="fa fa-plane"></i> Boost</div>
+                    <div style="position:absolute;float:right;right:3px;color:#0bee3ccc;font-weight:bold" onclick="boost_mining_speed()"><i class="fa fa-plane"></i> Boost</div>
                 </div>
                 <div class="mining_cards_body"><i class="fa fa-clock-o"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
             </div>
