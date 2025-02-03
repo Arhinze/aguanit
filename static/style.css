@@ -792,6 +792,10 @@ a{
     color:#042c06;
 }
 
+.sign-in-page .fa-user {
+    color:#fff;
+}
+
 .sign-in-box{
     padding:5px;
 }

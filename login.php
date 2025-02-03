@@ -60,7 +60,7 @@ if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
             </div>
 
             <div class="sign-in-bottom">
-                <button type="submit" class="long-action-button" style="color:color:<?=$site_color_dark?>">Login </button> <br />
+                <button type="submit" class="long-action-button" style="color:color:<?=$site_color_dark?>;font-weight:bold">Login </button> <br />
         
                 <div style="font-size:15px;text-align;center;margin-top:18px">
                     Forgot Your Password? <b><a href="/reset-password">Recover it now</a></b> <br />
