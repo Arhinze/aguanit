@@ -839,7 +839,7 @@ a{
     height:24px;padding:8px;
     background-color:pink;
     /*animation:blink 6s infinite .2s alternate;*/
-    z-index: 14;
+    z-index:15;
 }
 
 .investor_input, .investor_input2{
