@@ -189,6 +189,10 @@ HTML;
                     //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60
 
                     var new_time_left = remaining_mining_hours.toString() + ":" + remaining_mining_minutes.toString()  + ":" + remaining_mining_seconds.toString() ;
+
+                    //for testing purposes:
+                    document.getElementById("test").innerHTML = "total_remaining_mining_minutes: "+total_remaining_mining_minutes.toString()+"<br />"+"remaining_mining_hours:"+remaining_mining_hours.toString()+"<br />"+"remaining_mining_minutes:"+remaining_mining_minutes.toString()+"<br />"+"remaining_mining_seconds: "+remaining_mining_seconds.toString();
+
                     document.getElementById("mining_time_left").innerHTML = new_time_left;
                 }
             }, 1000);
