@@ -154,6 +154,9 @@ HTML;
                 //alert("Active !!!")
                 document.getElementById("mining_status").innerHTML = "active";
                 document.getElementById("inner_button").className = "rotate_360";
+                if (document.getElementById("mining_time_left").innerHTML == "00:00:00") {
+                    document.getElementById("mining_time_left").innerHTML = "48:00:00";
+                }
 
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
