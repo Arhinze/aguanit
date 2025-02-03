@@ -194,6 +194,7 @@ HTML;
 
                     //for testing purposes:
                     document.getElementById("test").innerHTML = "<b>Test:</b><br />"
+                    +"time_left_array: "+time_left_array+"<br />"
                     +"time_left_array[0]: "+time_left_array[0].toString()+"<br />"
                     +"time_left_array[1]: "+time_left_array[1].toString()+"<br />"
                     +"time_left_array[2]: "+time_left_array[2].toString()+"<br />"
