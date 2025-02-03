@@ -27,10 +27,22 @@ if ($data){//$data from account-manager.php
     $mining_stat = $data->mining_status;
     $amount_mined = $data->total_amount_mined;
     $mining_style = "";
+    $mining_hours_left = "00";
+    $mining_minutes_left = "00";
+    $mining_seconds_left = "00";
+    $mining_time_left = "00:00:00";
     
     if ($mining_stat == "active"){
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.0000058);   
         $mining_style = "rotate_360";
+
+        $total_mining_seconds_left = (strtotime($data->mining_start_time)+(48*60*60)) - time();
+        $total_mining_minutes_left = $total_mining_seconds_left % 60;
+        $mining_hours_left = $total_mining_minutes_left % 60;
+        $mining_minutes_left = $total_mining_minutes_left - ($mining_hours_left*60);
+        $mining_seconds_left = $total_mining_seconds_left - ($total_mining_minutes_left*60);
+        
+        $mining_time_left = $mining_hours_left.":".$mining_minutes_left.":".$mining_seconds_left;
     }
 
     //Get Referral bonus:
@@ -74,7 +86,9 @@ if ($data){//$data from account-manager.php
         <div class="mining_cards_parent" style="margin-bottom:30px">
             <div class="mining_cards">
                 <div class="mining_cards_head">Mining time left</div>
-                <div class="mining_cards_body"><i class="fa fa-clock-o"></i> <span id="mining_time_left"></span></div>
+                <div class="mining_cards_body">
+                    <i class="fa fa-clock-o"></i>
+                    <span id="mining_time_left"><?=$mining_time_left?></span></div>
             </div>
 
             <div class="mining_cards">
