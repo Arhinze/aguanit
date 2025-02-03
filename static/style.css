@@ -253,7 +253,7 @@ a{
     }
 }
 
-@keyframes rotate_360{
+@keyframes rotate_360_once{
     from{
         rotate:0deg;
         width:51px;
