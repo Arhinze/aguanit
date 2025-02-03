@@ -11,9 +11,9 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
         if (isset($_POST["edit_account_data"])){
             //Update Data:
-            $us = $pdo->prepare("UPDATE miners SET real_name = ?, user_email = ?, btc_wallet_address = ?, eth_wallet_address = ?, btc_cash_wallet_address = ?, usdt_trc20_wallet_address = ?, usdt_erc20_wallet_address = ?, bnb_wallet_address = ?, bnb_p20_wallet_address = ?, bsc_wallet_address = ? WHERE user_id = ?");
+            $us = $pdo->prepare("UPDATE miners SET real_name = ?, twitter_username = ?, avax_wallet_address = ?, aguat_wallet_address = ?, user_email = ? WHERE user_id = ?");
 
-            $us->execute([htmlentities($_POST["full_name"]),htmlentities($_POST["email"]),htmlentities($_POST["bitcoin_wallet_address"]), htmlentities($_POST["ethereum_wallet_address"]), htmlentities($_POST["bitcoin_cash_wallet_address"]), htmlentities($_POST["usdt_trc20_wallet_address"]), htmlentities($_POST["usdt_erc20_wallet_address"]), htmlentities($_POST["bnb_wallet_address"]), htmlentities($_POST["bnb_p20_wallet_address"]), htmlentities($_POST["bsc_wallet_address"]), $data->user_id]);
+            $us->execute([htmlentities($_POST["full_name"]), htmlentities($_POST["twitter_username"]), htmlentities($_POST["avax_wallet_address"]), htmlentities($_POST["aguat_wallet_address"]), htmlentities($_POST["email"]), $data->user_id]);
 
             $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
             $stmt->execute([$username, $password]);
@@ -54,17 +54,17 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">Twitter Username:</div>
-    <div style="width:60%;float:right"><input type="text" name="bitcoin_wallet_address" value="<?=$data->btc_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="twitter_username" value="<?=$data->btc_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">$AVAX Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="ethereum_wallet_address" value="<?=$data->eth_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="avax_wallet_address" value="<?=$data->eth_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">$AGUAT Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="bitcoin_cash_wallet_address" value="<?=$data->btc_cash_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="aguat_wallet_address" value="<?=$data->btc_cash_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
