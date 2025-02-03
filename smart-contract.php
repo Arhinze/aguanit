@@ -7,7 +7,7 @@ Index_Segments::header($title="Smart Contract");
 
 <div class="dashboard_div">
     <div class="smart_contract">
-        <div style="font-size:24px;font-weight:bold">Smart Contract</div>
+        <div style="font-size:24px;font-weight:bold;padding-top:21px"><i class="fa fa-file-code-o"></i>&nbsp; Smart Contract</div>
         <hr />
         <div class="smart_contract_texts"><span class="smart_contract_texts_head">Smart Contract Address:</span> 0x2547e1Cf16266a211EE4C651CB6d30f732A1DFd7</div>
 
