@@ -878,11 +878,11 @@ a{
     background-color: #042c06;
     /*color:#525050;*/
     color:#fff;
-    box-shadow:0 0 9px 0 #ff9100;
+    box-shadow:0 0 9px 0 #525050;
 }
 
-.dashboard_div:hover{
-    box-shadow:0 0 9px 0 #525050;
+.dashboard_div:hover, .dashboard_div:active{
+    box-shadow:0 0 9px 0 #0bee3ccc;
 }
 
 .dashboard_lower_div{
