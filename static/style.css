@@ -215,6 +215,15 @@ a{
     font-weight:bold
 }
 
+.small_coin {
+    width:51px;
+    height:51px
+}
+
+.small_coin:active {
+    animation: rotate_360 6s 1 .0s normal;
+}
+
 .rotate_360 {
     animation: rotate_360 6s infinite .0s normal;
 }
