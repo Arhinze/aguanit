@@ -46,8 +46,8 @@ if ($data){//$data from account-manager.php
         <div id="ajax_mine"></div>
 
         <div style="font-size:45px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center">
-            <div style="margin-right:9px;margin-top:-5px">
-                <img src="<?=$site_url?>/static/images/logo.png" style="width:45px;height:45px"/>
+            <div style="margin-right:9px;margin-top:-2px">
+                <img src="<?=$site_url?>/static/images/logo.png" style="width:51px;height:51px"/>
             </div>
             <div>
                 <span id="amount_mined"><?=round($amount_mined, 6)?></span>
