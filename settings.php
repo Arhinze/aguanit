@@ -16,7 +16,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
             $us->execute([htmlentities($_POST["full_name"]), htmlentities($_POST["twitter_username"]), htmlentities($_POST["avax_wallet_address"]), htmlentities($_POST["aguat_wallet_address"]), htmlentities($_POST["email"]), $data->user_id]);
 
             $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? AND `password` = ?");
-            $stmt->execute([$username, $password]);
+            $stmt->execute([$data->username, $password]);
             
             $data = $stmt->fetch(PDO::FETCH_OBJ);
         }
