@@ -275,8 +275,8 @@ a{
 .mining_cards{
     border-radius:6px;
     padding:12px 9px;
-    margin-right:12px;
-    margin-bottom: 12px;
+    margin-right:6px;
+    margin-bottom:6px;
     background-color:#1a1919;
     /*filter:brightness(90%);*/
     border:1px solid  #000500;
