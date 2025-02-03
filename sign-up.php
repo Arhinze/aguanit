@@ -48,15 +48,15 @@ if(isset($_POST["user_code"])){
                 //validate username
                 if(preg_match("/[^a-z0-9_]/i", $_POST["username"])){
                     echo '<div class="invalid"><i class="fa fa-warning"></i> Only letters, numbers and _ are accepted for username</div>';
-                }else {
-     
+                }else {//~checking if user already exists, so as to return 'user exists' error
                     $stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ? OR user_email = ? LIMIT ?, ?");
                     $stmt->execute([$_POST["username"], $_POST["email"], 0, 1]);
     
                     $data = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-                    if(count($data)>0){
+                    if(count($data)>0){// ~ that means.. user exists
                         //--find a way to not repeat yourself again
+                        /*
                         if(isset($_COOKIE["username_or_email"])){
                             setcookie("username_or_email", $_POST["username"], time()-(24*3600), "/");
                             setcookie("username_or_email", $_POST["username"], time()+(24*3600), "/");
@@ -69,8 +69,9 @@ if(isset($_POST["user_code"])){
                         }else {
                             setcookie("password", $_POST["password1"], time()+(24*3600), "/");
                         }
+                        */
 
-                        echo "<div class='invalid'>Sorry, username/email is already taken </div>";
+                        echo "<div class='invalid' style='font-size:105px'>Sorry, username/email is already taken </div>";
                            
                     } else{
                         //input the fields
