@@ -220,8 +220,8 @@ a{
 }
 
 .rotate_360_once:active {
-    width:54px;
-    height:54px;
+    width:60px;
+    height:60px;
     animation: rotate_360_once 6s 1 .0s normal;
 }
 
