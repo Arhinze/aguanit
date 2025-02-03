@@ -255,7 +255,7 @@ a{
 
 .mining_cards{
     border-radius: 6px;
-    padding:3px;
+    padding:12px;
     margin-right:6px;
     margin-bottom: 6px;
     border:1px solid #0bee3ccc;
@@ -270,7 +270,7 @@ a{
 .mining_cards_body{
     font-size:18px;
     font-weight:bold;
-    margin-top:21px;
+    margin-top:36px;
 }
 
 .header_text{
