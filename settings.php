@@ -19,6 +19,8 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
             $stmt->execute([$data->username, $password]);
             
             $data = $stmt->fetch(PDO::FETCH_OBJ);
+
+            echo "<div class='pop_up'>Successfully updated account data <i style='fa fa-check-o'></i><span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
         }
 ?>
 
