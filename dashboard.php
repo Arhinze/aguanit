@@ -35,7 +35,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
             border-radius:6px;margin-top:8px" id='referral_link'
             value="https://<?=$site_url_short?>/?ref=<?=$data->username?>"/>
             
-        <i style="margin-left:-27px" class="fa fa-copy" onclick="copyText('referral_link')"></i>
+        <i style="margin-left:-29px" class="fa fa-copy" onclick="copyText('referral_link')"></i>
         <br /> 
     </div>
     <!-- Referral Link section ends -->
