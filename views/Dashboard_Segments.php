@@ -102,7 +102,7 @@ HTML;
                                             
                 var innerHT = pop_up_collection[i].innerHTML;
                             
-                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span>";
+                var newInnerHT = innerHT + "<span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span>";
                           
                 pop_up_collection[i].innerHTML = newInnerHT;
             }
@@ -128,7 +128,7 @@ HTML;
 
         <script>
             function boost_mining_speed() {
-                document.getElementById("boost_mining_speed").innerHTML = "<div class='pop_up'> This feature is coming soon. <span style='float:right;position:absolute;top:3px;right:3px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
+                document.getElementById("boost_mining_speed").innerHTML = "<div class='pop_up'> This feature is coming soon. <span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
             }
         </script>
 

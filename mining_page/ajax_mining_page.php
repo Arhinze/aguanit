@@ -19,7 +19,7 @@ if((isset($_GET["un"])) && ((isset($_GET["up"])))){
             $update_stmt = $pdo->prepare("UPDATE miners SET mining_status = ?, mining_start_time = ? WHERE username = ?");
             $update_stmt->execute(["active", date("Y-m-d h:i:s", time()), $data->username]);
 
-            echo "<div class='pop_up'> Congrats, you've successfully initiated the mining cycle. <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
+            echo "<div class='pop_up'> Congrats, you've successfully initiated the mining cycle. <span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
         } else {
             echo "<div class='invalid'>Your mining cycle is already on. <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span></div>";
         }
