@@ -362,13 +362,13 @@ if(isset($_POST["user_code"])){
         <!-- AVAX Wallet Address -->
         <div class="new-input-div">
             <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" required/><br />
-            <div class="new-input-fa-icon"> <i class="fa fa-coins"></i> </div>
+            <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
         </div>
 
         <!-- AGUAT Wallet Address -->
         <div class="new-input-div">
             <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" required/><br />
-            <div class="new-input-fa-icon"> <i class="fa fa-coins"></i> </div>
+            <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
         </div>
         </div>
 
