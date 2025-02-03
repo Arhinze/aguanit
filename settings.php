@@ -64,7 +64,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">$AGUAT Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="aguat_wallet_address" value="<?=$data->aguat_cash_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="aguat_wallet_address" value="<?=$data->aguat_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
