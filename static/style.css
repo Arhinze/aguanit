@@ -277,11 +277,11 @@ a{
     padding:12px 9px;
     margin-right:6px;
     margin-bottom:6px;
-    background-color:#1a1919;
+    background-color:#111111;
     /*filter:brightness(90%);*/
-    border:1px solid  #000500;
+    border:1px solid  #042c06;
     text-align: left;
-    box-shadow: 0 0 3px 0 #0bee3ccc;
+    /*box-shadow: 0 0 3px 0 #0bee3ccc;*/
 }
 
 .mining_cards_head{
