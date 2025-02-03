@@ -49,7 +49,7 @@ if ($data){//$data from account-manager.php
 
         <div style="font-size:45px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center;margin-top:18px">
             <div style="margin-right:9px;margin-top:-2px">
-                <img src="<?=$site_url?>/static/images/logo.png" class="small_coin"/>
+                <img src="<?=$site_url?>/static/images/logo.png" style="width:51px;height:51px" onclick="rotate_360()" id="small_coin"/>
             </div>
             <div>
                 <span id="amount_mined"><?=round($amount_mined, 6)?></span>
