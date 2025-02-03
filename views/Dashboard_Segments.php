@@ -131,9 +131,9 @@ HTML;
                 document.getElementById("boost_mining_speed").innerHTML = "<div class='pop_up'> This feature is coming soon. <span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
             }
 
-            function rotate_360() {
+            function rotate_360(){
                 document.getElementById("small_coin").className = "rotate_360_once";
-                document.getElementById("small_coin").className="no_class_name";
+                //document.getElementById("small_coin").className="no_class_name";
             }
         </script>
 
