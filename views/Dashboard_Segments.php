@@ -13,7 +13,7 @@ class Dashboard_Segments extends Index_Segments{
     <!doctype html>
     <html lang="en">
     <head>
-        <link rel="stylesheet" href="$site_url/static/styleiii.css?$css_version"/>
+        <link rel="stylesheet" href="$site_url/static/style.css?$css_version"/>
         <link rel="icon" type="image/x-icon" href="$site_url/static/images/favicon.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -178,7 +178,7 @@ HTML;
                     //calculate time left
                     var time_left = document.getElementById("mining_time_left").innerHTML;
                     var time_left_array = time_left.split(":");
-                    var total_remaining_mining_seconds = (((Number(time_left_array[0]))*60)+((Number(time_left_array[1]))*60)+(Number(time_left_array[2])));
+                    var total_remaining_mining_seconds = (((Number(time_left_array[0]))*60*60)+((Number(time_left_array[1]))*60)+(Number(time_left_array[2])));
 
                     total_remaining_mining_seconds -= 1; //decrease it every second setInterval() is called
 
@@ -186,13 +186,14 @@ HTML;
                     var remaining_mining_hours = Math.floor(total_remaining_mining_minutes/60);
                     var remaining_mining_minutes = total_remaining_mining_minutes - (remaining_mining_hours*60);
                     var remaining_mining_seconds = total_remaining_mining_seconds - (total_remaining_mining_minutes*60);
-                    //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60
+                    //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60 //(modulus ~ reurns the remainder)
 
                     var new_time_left = remaining_mining_hours.toString() + ":" + remaining_mining_minutes.toString()  + ":" + remaining_mining_seconds.toString() ;
 
                     document.getElementById("mining_time_left").innerHTML = new_time_left;
 
-                    //for testing purposes:
+                    /*for testing purposes:
+                        
                     document.getElementById("test").innerHTML = "<b>Test:</b><br />"
                     +"time_left_array: "+time_left_array+"<br />"
                     +"time_left_array[0]: "+time_left_array[0].toString()+"<br />"
@@ -200,6 +201,7 @@ HTML;
                     +"time_left_array[2]: "+time_left_array[2].toString()+"<br />"
                     +"total_remaining_mining_seconds: "+total_remaining_mining_seconds.toString()+"<br />"
                     +"total_remaining_mining_minutes: "+total_remaining_mining_minutes.toString()+"<br />"+"remaining_mining_hours:"+remaining_mining_hours.toString()+"<br />"+"remaining_mining_minutes:"+remaining_mining_minutes.toString()+"<br />"+"remaining_mining_seconds: "+remaining_mining_seconds.toString();
+                    */
 
                 }
             }, 6000);
