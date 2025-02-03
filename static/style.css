@@ -789,6 +789,7 @@ a{
 }
 
 .sign-in-page .fa-user-login, .sign-in-page .new-sign-in-head-caption{
+    background-color:#042c06;
     color:#042c06;
 }
 
