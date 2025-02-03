@@ -259,6 +259,7 @@ a{
     margin:6px;
     border:1px solid #0bee3ccc;
     box-shadow: 0 0 0 6px 0 #0bee3ccc;
+    text-align: left;
 }
 
 .mining_cards_head{
@@ -268,6 +269,7 @@ a{
 .mining_cards_body{
     font-size:18px;
     font-weight:bold;
+    margin-top:21px;
 }
 
 .header_text{
