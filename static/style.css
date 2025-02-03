@@ -269,7 +269,7 @@ a{
 .mining_cards_parent{
     display:flex;
     justify-content: center;
-    width:102%;
+    width:100%;
 }
 
 .mining_cards{
