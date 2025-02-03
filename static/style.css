@@ -222,7 +222,7 @@ a{
 .rotate_360_once {
     width:51px;
     height:51px;
-    animation: rotate 6s infinite .0s normal;
+    animation: rotate_360_once 6s infinite .0s normal;
 }
 
 @keyframes fade{
@@ -250,6 +250,19 @@ a{
         rotate:360deg;
         width:210px;
         height:210px;
+    }
+}
+
+@keyframes rotate_360{
+    from{
+        rotate:0deg;
+        width:51px;
+        height:51px;
+    }
+    to{
+        rotate:360deg;
+        width:60px;
+        height:60px;
     }
 }
 
