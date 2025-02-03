@@ -209,7 +209,7 @@ HTML;
                     */
 
                 }
-            }, 6000);
+            }, 1000);
 
         </script>
         <!-- Mining Script ends -->
