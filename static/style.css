@@ -277,8 +277,8 @@ a{
     padding:12px 9px;
     margin-right:12px;
     margin-bottom: 12px;
-    background-color: #000500;
-    filter:brightness(90%);
+    background-color:lighter(#000500, 50%) ;
+    filter:brightness(90%);/**/
     border:1px solid  #042c06;
     text-align: left;
     box-shadow: 0 0 3px 0 #042c06;
