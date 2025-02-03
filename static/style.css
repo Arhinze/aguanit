@@ -219,7 +219,7 @@ a{
     animation: rotate_360 6s infinite .0s normal;
 }
 
-.rotate_360_once {
+.rotate_360_once:active {
     animation: rotate_360 6s 1 .0s normal;
 }
 
