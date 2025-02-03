@@ -178,7 +178,7 @@ HTML;
                     //calculate time left
                     var time_left = document.getElementById("mining_time_left").innerHTML;
                     var time_left_array = time_left.split(":");
-                    var total_remaining_mining_seconds = ((Number(time_left_array[0]))*60)+((Number(time_left_array[1]))*60)+(Number(time_left_array[2]));
+                    var total_remaining_mining_seconds = (((Number(time_left_array[0]))*60)+((Number(time_left_array[1]))*60)+(Number(time_left_array[2])));
 
                     total_remaining_mining_seconds -= 1; //decrease it every second setInterval() is called
 
