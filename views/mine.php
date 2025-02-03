@@ -64,8 +64,10 @@ echo "current time: ".time()."<br/>";
 echo "total_mining_seconds_left: $total_mining_seconds_left <br/>";
 echo "total_mining_minutes_left: $total_mining_minutes_left <br/>";
 echo "mining_hours_left: $mining_hours_left <br/>";
-echo "mining_hours_left: $mining_minutes_left <br/>";
+echo "mining_minutes_left: $mining_minutes_left <br/>";
 echo "mining_seconds_left: $mining_seconds_left <br/>";
+echo "mining_seconds_left(2nd formula):",($total_mining_seconds_left % (60));
+
 echo "<br /><br />";
 echo "mining_time_left: $mining_time_left"; 
 ?>
