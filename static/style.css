@@ -136,16 +136,6 @@ a{
     transition-timing-function: ease-in;
     display:block;
     list-style-type: none;
-    animation: menu 3s 1 .3s normal;
-}
-
-@keyframes menu {
-    from{
-        height:0;
-    }
-    to {
-        height:fit-content;
-    }
 }
 
 .menu-box:checked ~ .menu_list li{
