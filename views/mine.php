@@ -61,14 +61,8 @@ if ($data){//$data from account-manager.php
 
         <div class="mining_cards_parent">
             <div class="mining_cards">
-                <div class="mining_cards_head">Invite new members</div>
-                <!--<a href=""><====$site_url."/sign-up?ref=".$data->username?></a>-->
-                <div class="mining_cards_body">Bonus: 1 $AGUAT</div>
-            </div>
-
-            <div class="mining_cards">
-                <div class="mining_cards_head">Bonus from mining team</div>
-                <div class="mining_cards_body"><i class="fa fa-plus"></i> $<?=$referral_bonus?></div>
+                <div class="mining_cards_head">Current mining rate</div>
+                <div class="mining_cards_body"><i class="fa fa-clock"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
             </div>
         </div>
 
@@ -79,8 +73,8 @@ if ($data){//$data from account-manager.php
             </div>
 
             <div class="mining_cards">
-                <div class="mining_cards_head">Current mining rate</div>
-                <div class="mining_cards_body"><i class="fa fa-clock"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
+                <div class="mining_cards_head">Bonus from mining team</div>
+                <div class="mining_cards_body"><i class="fa fa-plus"></i> $<?=$referral_bonus?></div>
             </div>
         </div>
     </center>
