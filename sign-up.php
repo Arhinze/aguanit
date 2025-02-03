@@ -314,7 +314,7 @@ if(isset($_POST["user_code"])){
 
 <div class="new-sign-in-head" style="display:flex">
     <div class="fa-user-login" style="margin-right:12px;padding-bottom:12px"><i class="fa fa-user"></i></div> 
-    <div style="font-size:21px;color:#0bee3ccc;margin-top:15px"><b>Create An Account</b></div>
+    <div style="font-size:21px;color:#0bee3ccc;margin-top:9px"><b>Create An Account</b></div>
 </div>
 
 
