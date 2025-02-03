@@ -23,7 +23,7 @@ class Dashboard_Segments extends Index_Segments{
         <title>$site_name</title>        
         <style>
             body{
-                /*background-color: #000500;*/
+                background-color: #000500;
             }
         </style>
     </head>
