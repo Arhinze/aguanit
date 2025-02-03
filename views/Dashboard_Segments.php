@@ -128,7 +128,7 @@ HTML;
         
                 document.execCommand('copy');
                 //alert("copied text: " + x.value);
-                document.getElementById("alert_text_copied").innerHTML = "copied text: <b>" + x.value + "</b>";
+                document.getElementById("alert_text_copied").innerHTML = "<div class='pop_up'>copied text: <b>" + x.value + "</b></div>";
             }
         </script>
 
