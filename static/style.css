@@ -396,7 +396,8 @@ a{
     border:0;
     width:90%;
     max-width:600px;
-    font-size:16px;
+    font-size:18px;
+    font-weight: bold;
 }
 
 .new-dashboard {
@@ -832,6 +833,13 @@ a{
 .sign-in-box a{
     color:#042c06;
     font-weight:bold;
+}
+
+.airdrop_requirements{
+    background-color:#111111;
+    padding:9px 6px;
+    border-radius:6px;
+    box-shadow: 0 0 3px 0 #0bee3ccc;
 }
 
 .code1, .code2, .code3, .code4, .code5, .code0{

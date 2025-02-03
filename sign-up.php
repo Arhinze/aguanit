@@ -351,9 +351,31 @@ if(isset($_POST["user_code"])){
             <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>
         </div>
 
-       <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
+        <!-- Airdrop Credentials -->
+        <div class="airdrop_requirements">
+        <!-- Twitter Username -->
+        <div class="new-input-div">
+            <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" required/><br />
+            <div class="new-input-fa-icon"> <i class="fa fa-twitter"></i> </div>
+        </div>
+
+        <!-- AVAX Wallet Address -->
+        <div class="new-input-div">
+            <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" required/><br />
+            <div class="new-input-fa-icon"> <i class="fa fa-coins"></i> </div>
+        </div>
+
+        <!-- AGUAT Wallet Address -->
+        <div class="new-input-div">
+            <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" required/><br />
+            <div class="new-input-fa-icon"> <i class="fa fa-coins"></i> </div>
+        </div>
+        </div>
+
+        <!-- code -->
+        <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
        
-       <br />
+        <br />
         <input type="checkbox" required/><span class="small_letters">I have read and agreed with the terms and conditions</span>
         <br />
 
