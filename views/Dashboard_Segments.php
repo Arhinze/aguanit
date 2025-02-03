@@ -178,7 +178,7 @@ HTML;
                     //calculate time left
                     var time_left = document.getElementById("mining_time_left").innerHTML;
                     var time_left_array = time_left.split(":");
-                    var total_remaining_mining_seconds = (Number(time_left_array[0])*60)+(Number(time_left_array[1])*60)+(Number(time_left_array[2]));
+                    var total_remaining_mining_seconds = ((Number(time_left_array[0]))*60)+((Number(time_left_array[1]))*60)+(Number(time_left_array[2]));
 
                     total_remaining_mining_seconds -= 1; //decrease it every second setInterval() is called
 
@@ -193,7 +193,12 @@ HTML;
                     document.getElementById("mining_time_left").innerHTML = new_time_left;
 
                     //for testing purposes:
-                    document.getElementById("test").innerHTML = "<b>Test:</b><br />"+"total_remaining_mining_minutes: "+total_remaining_mining_minutes.toString()+"<br />"+"remaining_mining_hours:"+remaining_mining_hours.toString()+"<br />"+"remaining_mining_minutes:"+remaining_mining_minutes.toString()+"<br />"+"remaining_mining_seconds: "+remaining_mining_seconds.toString();
+                    document.getElementById("test").innerHTML = "<b>Test:</b><br />"
+                    +"time_left_array[0]: "+total_left_array[0].toString()+"<br />"
+                    +"time_left_array[1]: "+total_left_array[1].toString()+"<br />"
+                    +"time_left_array[2]: "+total_left_array[2].toString()+"<br />"
+                    +"total_remaining_mining_seconds: "+total_remaining_mining_seconds.toString()+"<br />"
+                    +"total_remaining_mining_minutes: "+total_remaining_mining_minutes.toString()+"<br />"+"remaining_mining_hours:"+remaining_mining_hours.toString()+"<br />"+"remaining_mining_minutes:"+remaining_mining_minutes.toString()+"<br />"+"remaining_mining_seconds: "+remaining_mining_seconds.toString();
 
                 }
             }, 1000);
