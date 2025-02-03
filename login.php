@@ -8,7 +8,6 @@ $remember_username = "";
 
 if($data){ //data from php/account-manager.php ~ if true, that means user is already logged in.
     header("location:/dashboard");
-    //echo "Data dey oo";
 }
 
 if (isset($_POST["username_or_email"]) && isset($_POST["password"])) {
