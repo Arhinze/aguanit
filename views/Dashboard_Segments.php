@@ -127,7 +127,8 @@ HTML;
                 x.setSelectionRange(0, 99999);
         
                 document.execCommand('copy');
-                alert("copied text: " + x.value);
+                //alert("copied text: " + x.value);
+                document.getElementById("alert_text_copied").innerHTML = "copied text: <b>" + x.value + "</b>";
             }
         </script>
 
