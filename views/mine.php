@@ -62,7 +62,7 @@ if ($data){//$data from account-manager.php
         <div class="mining_cards_parent">
             <div class="mining_cards">
                 <div class="mining_cards_head">Invite new members</div>
-                <a href=""><?=$site_url."/sign-up?ref=".$data->username?></a>
+                <!--<a href=""><====$site_url."/sign-up?ref=".$data->username?></a>-->
                 <div class="mining_cards_body">Bonus: 1 $AGUAT</div>
             </div>
 
