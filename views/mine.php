@@ -36,7 +36,7 @@ if ($data){//$data from account-manager.php
         $amount_mined += ((time() - strtotime($data->mining_start_time))*0.0000058);   
         $mining_style = "rotate_360";
 
-        $total_mining_seconds_left = (strtotime($data->mining_start_time)+(48*60*60)) - time();
+        $total_mining_seconds_left = ((strtotime($data->mining_start_time)+(48*60*60)) - time());
         $total_mining_minutes_left = $total_mining_seconds_left % 60;
         $mining_hours_left = $total_mining_minutes_left % 60;
         $mining_minutes_left = $total_mining_minutes_left - ($mining_hours_left*60);
