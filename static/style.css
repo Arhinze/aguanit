@@ -277,9 +277,9 @@ a{
     padding:6px;
     margin-right:6px;
     margin-bottom: 6px;
-    border:1px solid #0bee3ccc;
-    box-shadow: 0 0 0 9px 0 #0bee3ccc;
+    border:1px solid  #0bee3ccc;
     text-align: left;
+    box-shadow: 0 0 6px 0 #0bee3ccc;
 }
 
 .mining_cards_head{
@@ -421,7 +421,6 @@ a{
     border:solid #042c06;
     border-radius:6px;
     padding:24px;
-
     animation:pop_up .2s 1 2s reverse;
     z-index:3;
 }

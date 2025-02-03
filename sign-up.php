@@ -71,7 +71,7 @@ if(isset($_POST["user_code"])){
                         }
                         */
 
-                        echo "<div class='invalid' style='font-size:105px'>Sorry, username/email is already taken </div>";
+                        echo "<div class='invalid'>Sorry, username/email is already taken </div>";
                            
                     } else{
                         //input the fields
