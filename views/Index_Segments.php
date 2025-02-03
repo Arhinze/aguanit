@@ -197,16 +197,16 @@ class Index_Segments{
             const collection = document.getElementsByClassName("invalid");
                                  
             for (let i=0; i < collection.length; i++){
-                collection[i].style = "display:none";
+                collection[i].style = "display:block";
                                             
                 var innerHT = collection[i].innerHTML;
                             
-                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='show_class_div()'></i></span>";
+                var newInnerHT = innerHT + "<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='hide_invalid_div()'></i></span>";
                           
                 collection[i].innerHTML = newInnerHT;
             }
                            
-            function show_class_div() {
+            function hide_invalid_div() {
                 //const collection = document.getElementsByClassName("invalid");
                 i = 0;
                                
