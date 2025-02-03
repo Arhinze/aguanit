@@ -873,6 +873,7 @@ a{
 
 .dashboard_div{
     margin:150px 3% 9% 3%;
+    padding: 6px 12px;
     border:1px solid #525050;
     border-radius:6px;
     background-color: #042c06;
