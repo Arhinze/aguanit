@@ -56,6 +56,8 @@ if ($data){//$data from account-manager.php
 <?php
 //Tests:
 echo "<b>Tests:</b><br /><br />";
+echo "mining start time: ",strtotime($data->mining_start_time)+(48*60*60),"<br/>";
+echo "current time: ".time()."<br/>";
 echo "total_mining_seconds_left: $total_mining_seconds_left <br/>";
 echo "total_mining_minutes_left: $total_mining_minutes_left <br/>";
 echo "mining_hours_left: $mining_hours_left <br/>";
