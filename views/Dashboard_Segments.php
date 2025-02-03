@@ -132,7 +132,7 @@ HTML;
             }
 
             function rotate_360() {
-                document.getElementById("small_coin").style="width:51px;height:51px;rotate:360deg";
+                document.getElementById("small_coin").className="rotate_360_once";
             }
         </script>
 

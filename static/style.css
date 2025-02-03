@@ -219,6 +219,10 @@ a{
     animation: rotate_360 6s infinite .0s normal;
 }
 
+.rotate_360_once {
+    width:51px;height:51px;rotate:360deg;
+}
+
 @keyframes fade{
     from{background-color:#042c06;}
     to{background-color: #0bee3ccc;}
