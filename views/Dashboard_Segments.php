@@ -188,6 +188,11 @@ HTML;
                     var remaining_mining_seconds = total_remaining_mining_seconds - (total_remaining_mining_minutes*60);
                     //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60 //(modulus ~ reurns the remainder)
 
+                    //so it appears in 00:00:00 format instead of 0:0:00 or otherwise
+                    remaining_mining_hours = remaining_mining_hours > 10 ? remaining_mining_hours : "0"+remaining_mining_hours.toString();
+                    remaining_mining_minutes = remaining_mining_minutes > 10 ? remaining_mining_minutes : "0"+remaining_mining_minutes.toString();
+                    remaining_mining_seconds = remaining_mining_seconds > 10 ? remaining_mining_seconds : "0"+remaining_mining_seconds.toString();
+
                     var new_time_left = remaining_mining_hours.toString() + ":" + remaining_mining_minutes.toString()  + ":" + remaining_mining_seconds.toString() ;
 
                     document.getElementById("mining_time_left").innerHTML = new_time_left;
