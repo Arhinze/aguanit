@@ -7,13 +7,13 @@ class Dashboard_Segments extends Index_Segments{
     public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = ""){
 
     
-    $css_version = filemtime("/home/u590828029/domains/aguanit.com/public_html/static/styleiii.css");
+    $css_version = filemtime("/home/u590828029/domains/aguanit.com/public_html/static/style.css");
 
     echo <<<HTML
     <!doctype html>
     <html lang="en">
     <head>
-        <link rel="stylesheet" href="$site_url/static/style.css?$css_version"/>
+        <link rel="stylesheet" href="$site_url/static/styleiii.css?$css_version"/>
         <link rel="icon" type="image/x-icon" href="$site_url/static/images/favicon.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 

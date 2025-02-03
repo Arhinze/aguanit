@@ -56,11 +56,11 @@ if ($data){//$data from account-manager.php
 <?php
 //Tests:
 echo "<b>Tests:</b><br /><br />";
-echo "total_mining_seconds_left: $total_mining_seconds_left";
-echo "total_mining_minutes_left: $total_mining_minutes_left";
-echo "mining_hours_left: $mining_hours_left";
-echo "mining_hours_left: $mining_minutes_left";
-echo "mining_seconds_left: $mining_seconds_left";
+echo "total_mining_seconds_left: $total_mining_seconds_left <br/>";
+echo "total_mining_minutes_left: $total_mining_minutes_left <br/>";
+echo "mining_hours_left: $mining_hours_left <br/>";
+echo "mining_hours_left: $mining_minutes_left <br/>";
+echo "mining_seconds_left: $mining_seconds_left <br/>";
 echo "<br /><br />";
 echo "mining_time_left: $mining_time_left"; 
 ?>
