@@ -37,10 +37,12 @@ if ($data){//$data from account-manager.php
         $mining_style = "rotate_360";
 
         $total_mining_seconds_left = ((strtotime($data->mining_start_time)+(48*60*60)) - time());
-        $total_mining_minutes_left = $total_mining_seconds_left % 60;
-        $mining_hours_left = $total_mining_minutes_left % 60;
+        $total_mining_minutes_left = floor($total_mining_seconds_left/60);
+        $mining_hours_left = floor($total_mining_minutes_left/60);
         $mining_minutes_left = $total_mining_minutes_left - ($mining_hours_left*60);
         $mining_seconds_left = $total_mining_seconds_left - ($total_mining_minutes_left*60);
+        //OR:
+        //$mining_seconds_left = ($total_mining_seconds_left % (60))
         
         $mining_time_left = "$mining_hours_left:$mining_minutes_left:$mining_seconds_left";
     }
