@@ -729,6 +729,7 @@ a{
     left:12px;
     padding:3px 12px 3px 6px;
     border-right:2px solid #bbb7b7;
+    color:#042c06;
 }
 
 .new-input {
@@ -771,7 +772,8 @@ a{
     padding:6px 10px;
     font-size:30px;
     margin-right:8px;
-    background-color: #c3c3fc;
+    background-color: #0bee3ccc;
+    width:90px; height:90px;
     border-radius: 100%;
 }
 
