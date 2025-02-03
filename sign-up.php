@@ -313,7 +313,7 @@ if(isset($_POST["user_code"])){
 <div class="dashboard_div" style="padding:3px 6px"> <!-- dashboard_div class starts -->
 
 <div class="new-sign-in-head" style="display:flex">
-    <div class="fa-user-login" style="margin-right:18px"><i class="fa fa-user"></i></div> 
+    <div class="fa-user-login" style="margin-right:12px"><i class="fa fa-user"></i></div> 
     <b style="font-size:21px;color:#0bee3ccc">Create An Account</b>
 </div>
 
