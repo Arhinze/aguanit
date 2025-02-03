@@ -170,10 +170,26 @@ HTML;
 
             setInterval(() => {
                 if (document.getElementById("mining_status").innerHTML == "active"){
+                    //increment amount earned per second
                     var amount = document.getElementById("amount_mined").innerHTML;
                     var new_amount = Number(amount) + 0.0000058;
-                    //alert("Active !!!");
                     document.getElementById("amount_mined").innerHTML = new_amount.toFixed(6);
+
+                    //calculate time left
+                    var time_left = document.getElementById("mining_time_left").innerHTML;
+                    var time_left_array = time_left.split(":");
+                    var total_remaining_mining_seconds = (Number(time_left_array[0])*60)+(Number(time_left_array[1])*60)+(Number(time_left_array[2]));
+
+                    total_remaining_mining_seconds -= 1; //decrease it every second setInterval() is called
+
+                    var total_remaining_mining_minutes = math.floor(total_remaining_mining_seconds/60);
+                    var remaining_mining_hours = math.floor(total_remaining_mining_minutes/60);
+                    var remaining_mining_minutes = total_remaining_mining_minutes - (remaining_mining_hours*60);
+                    var remaining_mining_seconds = total_remaining_mining_seconds - ($total_remaining_mining_minutes*60);
+                    //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60
+
+                    var new_time_left = remaining_mining_hours.toString() + ":" + remaining_mining_minutes.toString()  + ":" + remaining_mining_seconds.toString() ;
+                    document.getElementById("mining_time_left").innerHTML = new_time_left;
                 }
             }, 1000);
 
