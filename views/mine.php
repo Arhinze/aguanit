@@ -45,7 +45,7 @@ if ($data){//$data from account-manager.php
         <div id="mining_status" style="display:none"><?=$mining_stat?></div>  
         <div id="ajax_mine"></div>
 
-        <div style="font-size:45px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center">
+        <div style="font-size:45px;font-weight:bold;font-family:Arial;margin-bottom:30px;display:flex;justify-content:center;margin-top:18px">
             <div style="margin-right:9px;margin-top:-2px">
                 <img src="<?=$site_url?>/static/images/logo.png" style="width:51px;height:51px"/>
             </div>
