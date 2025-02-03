@@ -45,9 +45,9 @@ if ($data){//$data from account-manager.php
         //$mining_seconds_left = ($total_mining_seconds_left % (60))
 
         //so it appears in 00:00:00 format instead of 0:0:00 or otherwise
-        $mining_hours_left = $mining_hours_left < 10 ? $mining_hours_left : "0$mining_hours_left";
-        $mining_minutes_left = $mining_minutes_left < 10 ? $mining_hours_left : "0$mining_minutes_left";
-        $mining_seconds_left = $mining_seconds_left < 10 ? $mining_hours_left : "0$mining_seconds_left";
+        $mining_hours_left = $mining_hours_left > 10 ? $mining_hours_left : "0$mining_hours_left";
+        $mining_minutes_left = $mining_minutes_left > 10 ? $mining_minutes_left : "0$mining_minutes_left";
+        $mining_seconds_left = $mining_seconds_left > 10 ? $mining_seconds_left : "0$mining_seconds_left";
         
         $mining_time_left = "$mining_hours_left:$mining_minutes_left:$mining_seconds_left";
     }
