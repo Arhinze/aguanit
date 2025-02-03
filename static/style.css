@@ -351,7 +351,7 @@ a{
 }
 
 .login a, .sign-up a{
-    color:#0000ff !important;
+    color:#0bee3ccc !important;
 }
 
 .action_button {
@@ -710,7 +710,7 @@ a{
     width:90%;
     height:33px;
     margin-top:6px;
-    background-color: #03010f;
+    background-color:#042c06;
     color:#fff;
     border:1px solid #fff;
     border-radius: 6px;
@@ -787,7 +787,7 @@ a{
 }
 
 .sign-in-box a{
-    color:#042c06;
+    color:#0bee3ccc;
 }
 
 .sign-in-welcome{

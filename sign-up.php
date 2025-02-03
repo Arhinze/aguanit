@@ -319,15 +319,6 @@ if(isset($_POST["user_code"])){
 
 
 <div class="sign-in-box">   <!-- sign-in-box class starts -->
-    <!--
-    <div class="sign-in-welcome">
-        Welcome to  <br />
-        <b style="color:#57acfc;font-size:16px;">$site_name Investment</b>
-        <br /><br />Let's get to know you please.
-    </div>
-    -->
-
-
     <form method="post" action=""> 
         Name & Username:<br />
         <div class="new-input-div">
@@ -368,7 +359,7 @@ if(isset($_POST["user_code"])){
         <?php 
             if(!empty($referer)){
         ?>
-                Referred By: <span style="color:#2b8eeb;font-weight:bold"><?= $referer ?></span>
+                Referred By: <span style="color:#2b8eeb;font-weight:bold"><?=$referer?></span>
         <?php
             }
         ?>
