@@ -182,8 +182,8 @@ HTML;
 
                     total_remaining_mining_seconds -= 1; //decrease it every second setInterval() is called
 
-                    var total_remaining_mining_minutes = math.floor(total_remaining_mining_seconds/60);
-                    var remaining_mining_hours = math.floor(total_remaining_mining_minutes/60);
+                    var total_remaining_mining_minutes = Math.floor(total_remaining_mining_seconds/60);
+                    var remaining_mining_hours = Math.floor(total_remaining_mining_minutes/60);
                     var remaining_mining_minutes = total_remaining_mining_minutes - (remaining_mining_hours*60);
                     var remaining_mining_seconds = total_remaining_mining_seconds - (total_remaining_mining_minutes*60);
                     //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60
