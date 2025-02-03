@@ -788,24 +788,17 @@ a{
     font-weight:bold;
 }
 
+.sign-in-page .fa-user-login, .sign-in-page .new-sign-in-head-caption{
+    color:#042c06;
+}
+
 .sign-in-box{
     padding:5px;
 }
 
 .sign-in-box a{
-    color:#0bee3ccc;
-}
-
-.sign-in-welcome{
-    background-image:url('../static/images/bitcoin_bg.png');
-    background-size:cover;
-    padding:3%;
-    font-size:21px;
-    margin-bottom:2%;
-}
-
-.sign-in-welcome a{
-    color:#0bee3ccc;
+    color:#042c06;
+    font-weight:bold;
 }
 
 .code1, .code2, .code3, .code4, .code5, .code0{
