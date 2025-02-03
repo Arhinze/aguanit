@@ -70,7 +70,10 @@ echo "mining_seconds_left(2nd formula):",($total_mining_seconds_left % (60));
 
 echo "<br /><br />";
 echo "mining_time_left: $mining_time_left"; 
-?> <div id="test"></test>
+?> 
+
+<div id="test"></div>
+
     <div style="margin-top:135px" class="dashboard_div">
     <center>
         <div id="mining_status" style="display:none"><?=$mining_stat?></div>  
