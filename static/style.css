@@ -131,8 +131,8 @@ a{
     padding:6px 21px;
     box-shadow:0px 0px 9px 0px #0bee3ccc; 
     transition-property:width;
-    transition-delay: .1s;
-    transition-duration: .60s;
+    transition-delay: .6s;
+    transition-duration:1.5s;
     transition-timing-function: ease-in;
     display:block;
     list-style-type: none;
