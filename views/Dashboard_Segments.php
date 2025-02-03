@@ -128,7 +128,7 @@ HTML;
 
         <script>
             function boost_mining_speed() {
-                document.getElementById("boost_mining_speed").innerHTML = "<div class='pop_up'> This feature is coming soon. <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
+                document.getElementById("boost_mining_speed").innerHTML = "<div class='pop_up'> This feature is coming soon. <span style='float:right;position:absolute;top:3px;right:3px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
             }
         </script>
 
