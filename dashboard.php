@@ -36,7 +36,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
             value="https://<?=$site_url_short?>/?ref=<?=$data->username?>"/>
             
             <i style="margin-left:-29px" class="fa fa-copy" onclick="copyText('referral_link')"></i>
-            <div id="alert_text_copied"></div>
+            <div id="alert_text_copied" class='pop_up'></div>
         <br /> 
     </div>
     <!-- Referral Link section ends -->
