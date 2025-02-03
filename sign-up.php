@@ -367,8 +367,10 @@ if(isset($_POST["user_code"])){
         
         <br /><button type="submit" class="long-action-button">Sign Up</i> </button> <br />
 
-        Already have an account? <a href="login" style="font-weight:bold;font-size:18px">Login</a><br />
-        Forgot Your Password? <b><a href="/reset-password" style="font-weight:bold;font-size:18px">Recover it</a></b>
+        <div style="margin-top:15px;font-size:18px">
+            Already have an account? <a href="login" style="font-weight:bold;font-size:18px">Login</a><br />
+            Forgot Your Password? <b><a href="/reset-password" style="font-weight:bold;font-size:18px">Recover it</a></b>
+        </div>
     </form>
 </div>   <!-- sign-in-box class ends -->
 </div>    <!-- dashboard_div class ends -->
