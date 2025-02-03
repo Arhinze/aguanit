@@ -140,7 +140,7 @@ class Index_Segments{
                 <div class="token_distribution_head">Token Distribution</div>
                 
                 <ul class ="token_distribution_list">
-                    <li><span class="token_percentages">100%</span> liquidity</li>
+                    <li><span class="token_percentages">100%</span> Liquidity pool</li>
                     <li><span class="token_percentages">12.5%</span> Airdrop</li>
                     <li><span class="token_percentages">25% </span>Pre-sale</li>
                     <li><span class="token_percentages">25% </span>Mining Pool</li>
@@ -174,8 +174,8 @@ class Index_Segments{
             </div>
                             
             <div class="white_background" style="text-align:center;padding-bottom:60px">
-                <div class="header_text" style="font-size:24px;padding-bottom:24px">$site_name token presale is now live</div>
-                <a href="" class="buy_presale2">Buy presale</a>
+                <div class="header_text" style="font-size:24px;padding-bottom:24px">$site_name token airdrop is now live</div>
+                <a href="/settings" class="buy_presale2">Airdrop</a>
             </div>
         HTML;
        }
