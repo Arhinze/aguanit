@@ -52,6 +52,18 @@ if ($data){//$data from account-manager.php
     $ref_data = $stmt->fetchAll(PDO::FETCH_OBJ);
     $referral_bonus = count($ref_data);
 ?>
+    
+<?php
+//Tests:
+echo "<b>Tests:</b><br /><br />";
+echo "total_mining_seconds_left: $total_mining_seconds_left";
+echo "total_mining_minutes_left: $total_mining_minutes_left";
+echo "mining_hours_left: $mining_hours_left";
+echo "mining_hours_left: $mining_minutes_left";
+echo "mining_seconds_left: $mining_seconds_left";
+echo "<br /><br />";
+echo "mining_time_left: $mining_time_left"; 
+?>
     <div style="margin-top:135px" class="dashboard_div">
     <center>
         <div id="mining_status" style="display:none"><?=$mining_stat?></div>  
