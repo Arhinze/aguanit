@@ -194,9 +194,9 @@ HTML;
 
                     //for testing purposes:
                     document.getElementById("test").innerHTML = "<b>Test:</b><br />"
-                    +"time_left_array[0]: "+total_left_array[0].toString()+"<br />"
-                    +"time_left_array[1]: "+total_left_array[1].toString()+"<br />"
-                    +"time_left_array[2]: "+total_left_array[2].toString()+"<br />"
+                    +"time_left_array[0]: "+time_left_array[0].toString()+"<br />"
+                    +"time_left_array[1]: "+time_left_array[1].toString()+"<br />"
+                    +"time_left_array[2]: "+time_left_array[2].toString()+"<br />"
                     +"total_remaining_mining_seconds: "+total_remaining_mining_seconds.toString()+"<br />"
                     +"total_remaining_mining_minutes: "+total_remaining_mining_minutes.toString()+"<br />"+"remaining_mining_hours:"+remaining_mining_hours.toString()+"<br />"+"remaining_mining_minutes:"+remaining_mining_minutes.toString()+"<br />"+"remaining_mining_seconds: "+remaining_mining_seconds.toString();
 
