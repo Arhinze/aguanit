@@ -54,17 +54,17 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">Twitter Username:</div>
-    <div style="width:60%;float:right"><input type="text" name="twitter_username" value="<?=$data->btc_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="twitter_username" value="<?=$data->twitter_username?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">$AVAX Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="avax_wallet_address" value="<?=$data->eth_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="avax_wallet_address" value="<?=$data->avax_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
     <div style="width:30%;float:left">$AGUAT Wallet Address:</div>
-    <div style="width:60%;float:right"><input type="text" name="aguat_wallet_address" value="<?=$data->btc_cash_wallet_address?>" class="input"/></div>
+    <div style="width:60%;float:right"><input type="text" name="aguat_wallet_address" value="<?=$data->aguat_cash_wallet_address?>" class="input"/></div>
 </div>
 
 <div class="clear" style="padding:6px 8px;border-top:1px solid #888;margin:12px">
