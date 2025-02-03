@@ -291,6 +291,11 @@ a{
     margin-top:42px;
 }
 
+.mining_cards_body i{
+    color:"#042c06";
+    margin-right:21px;
+}
+
 .header_text{
     margin-top: 24px;
     color:#042c06;
