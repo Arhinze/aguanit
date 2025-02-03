@@ -67,14 +67,14 @@ if ($data){//$data from account-manager.php
                     <div style="position:absolute;float:left">Current mining rate</div>
                     <div style="position:absolute;float:right;right:3px;color:#0bee3ccc;font-weight:bold" onclick="boost_mining_speed()"><i class="fa fa-plane"></i> Boost</div>
                 </div>
-                <div class="mining_cards_body"><i class="fa fa-clock-o"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
+                <div class="mining_cards_body"><i class="fa fa-bolt"></i> <?=0.0000058*60?><?=" $".$token_name." / h"?></div>
             </div>
         </div>
 
         <div class="mining_cards_parent" style="margin-bottom:30px">
             <div class="mining_cards">
                 <div class="mining_cards_head">Mining time left</div>
-                <div class="mining_cards_body"><i class="fa fa-clock"></i> <span id="mining_time_left"></span></div>
+                <div class="mining_cards_body"><i class="fa fa-clock-o"></i> <span id="mining_time_left"></span></div>
             </div>
 
             <div class="mining_cards">
