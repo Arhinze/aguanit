@@ -55,10 +55,10 @@ if ($data){//$data from account-manager.php
         </div>
 
         <div style="position:relative;width:225px;height:225px">
-        <button onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="border:0;background-color:none">
-            <img src="<?=$site_url?>/static/images/logo.png" id="inner_button" class="<?=$mining_style?>"/>
-            <!--<i class="fa fa-power-off" style="" id="inner_button"></i>-->
-        </button>
+            <button onclick="start_mining(u_name='<?=$data->username?>', u_password='<?=$data->password?>')" style="border:0;background-color:none;border-radius:600px">
+                <img src="<?=$site_url?>/static/images/logo.png" id="inner_button" class="<?=$mining_style?>"/>
+                <!--<i class="fa fa-power-off" style="" id="inner_button"></i>-->
+            </button>
         </div>
 
         <div class="mining_cards_parent">
