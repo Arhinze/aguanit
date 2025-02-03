@@ -310,7 +310,7 @@ if(isset($_POST["user_code"])){
 }
 ?>
 
-<div class="dashboard_div" style="margin-top:120px"> <!-- dashboard_div class starts -->
+<div class="dashboard_div" style="margin-top:90px"> <!-- dashboard_div class starts -->
 
 <div class="new-sign-in-head" style="display:flex">
     <div class="fa-user-login"><i class="fa fa-user"></i></div> 
