@@ -201,7 +201,7 @@ HTML;
                     +"total_remaining_mining_minutes: "+total_remaining_mining_minutes.toString()+"<br />"+"remaining_mining_hours:"+remaining_mining_hours.toString()+"<br />"+"remaining_mining_minutes:"+remaining_mining_minutes.toString()+"<br />"+"remaining_mining_seconds: "+remaining_mining_seconds.toString();
 
                 }
-            }, 1000);
+            }, 6000);
 
         </script>
         <!-- Mining Script ends -->
