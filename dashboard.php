@@ -42,7 +42,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
 </div>
 
 <?php
-Dashboard_Segments::footer();
+    Dashboard_Segments::dashboard_footer(); 
     } /*end of count($data) for cookie name and pass*/ else {
         header("location:/login");
     } 

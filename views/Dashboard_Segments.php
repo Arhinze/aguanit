@@ -147,7 +147,6 @@ HTML;
 
 
 
-
         <!-- Mining Scripts -->
         <script>
             function start_mining(u_name, u_password) {
