@@ -2,7 +2,7 @@
 
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
 
-Index_Segments::header($title="Smart Contract");
+Index_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = "", $title="Smart Contract");
 ?>
 
 <div class="dashboard_div">
