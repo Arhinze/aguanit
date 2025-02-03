@@ -779,6 +779,14 @@ a{
     font-weight:bold;
     font-family:"Prompt";
     margin:21px 9px;
+    display: flex;
+}
+
+.new-sign-in-head-caption{
+    font-size:21px;
+    color:#0bee3ccc;
+    margin-top:9px;
+    font-weight:bold;
 }
 
 .sign-in-box{
