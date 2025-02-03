@@ -185,7 +185,7 @@ HTML;
                     var total_remaining_mining_minutes = math.floor(total_remaining_mining_seconds/60);
                     var remaining_mining_hours = math.floor(total_remaining_mining_minutes/60);
                     var remaining_mining_minutes = total_remaining_mining_minutes - (remaining_mining_hours*60);
-                    var remaining_mining_seconds = total_remaining_mining_seconds - ($total_remaining_mining_minutes*60);
+                    var remaining_mining_seconds = total_remaining_mining_seconds - (total_remaining_mining_minutes*60);
                     //OR var remaining_mining_seconds = total_remaining_mining_seconds % 60
 
                     var new_time_left = remaining_mining_hours.toString() + ":" + remaining_mining_minutes.toString()  + ":" + remaining_mining_seconds.toString() ;
