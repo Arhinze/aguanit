@@ -133,7 +133,6 @@ HTML;
 
             function rotate_360() {
                 //document.getElementById("small_coin").className="rotate_360_once";
-                document.getElementById("small_coin").style = "width:60px;height:60px";
                 document.getElementById("small_coin").style.transform = 'rotate(90 deg)';
             }
         </script>
