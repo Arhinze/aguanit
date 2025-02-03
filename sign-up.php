@@ -70,7 +70,7 @@ if(isset($_POST["user_code"])){
                             setcookie("password", $_POST["password1"], time()+(24*3600), "/");
                         }
 
-                        echo "<div class='pop_up'>Sorry, username/email is already taken </div>";
+                        echo "<div class='invalid'>Sorry, username/email is already taken </div>";
                            
                     } else{
                         //input the fields
