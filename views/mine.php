@@ -56,7 +56,7 @@ if ($data){//$data from account-manager.php
     $ref_stmt = $pdo->prepare("SELECT * FROM miners WHERE referred_by = ? LIMIT ?, ?");
     $ref_stmt->execute([$data->username, 0, 500]);
     
-    $ref_data = $stmt->fetchAll(PDO::FETCH_OBJ);
+    $ref_data = $ref_stmt->fetchAll(PDO::FETCH_OBJ);
     $referral_bonus = count($ref_data);
 ?>
     
