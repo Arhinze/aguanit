@@ -273,8 +273,8 @@ a{
 }
 
 .mining_cards{
-    border-radius: 6px;
-    padding:12px 6px;
+    border-radius:6px;
+    padding:12px 9px;
     margin-right:12px;
     margin-bottom: 12px;
     border:1px solid  #042c06;
