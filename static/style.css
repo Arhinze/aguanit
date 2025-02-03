@@ -356,7 +356,7 @@ a{
 
 .action_button {
     padding:6px;
-    background-color: #ff9100;
+    background-color: #0bee3ccc;
     border-radius: 8px;
     width:fit-content;
     color:#fff;
@@ -365,7 +365,7 @@ a{
 
 .long-action-button{
     padding:10px;
-    background-color: #042c06;
+    background-color: #0bee3ccc;
     border-radius:6px;
     width:fit-content;
     color:#fff;
@@ -737,14 +737,12 @@ a{
     height:37px;
     margin-top:6px;
     background-color: #fff;
-    color:#062981;
+    color:#042c06;
     font-weight:bold;
     border:1px solid #525050;
     border-radius: 6px;
     border-left:54px solid #fff;
 }
-
-
 
 .textarea{
     margin:6px 0px 3px 0px;
@@ -1099,7 +1097,7 @@ a{
 
     .action_button{
         padding: 12px 24px;
-        background-color: #ff9100;
+        background-color: #0bee3ccc;
         margin:0 3%;
         border-radius: 8px;
     }
