@@ -192,7 +192,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                     $ud_data = $ud_stmt->fetch(PDO::FETCH_OBJ);
 
                     if($ud_data){  
-                        echo "Byson";
+                        echo "Byson Tarry";
                 ?>
                         <div class="admin_user_details"><b>Username: </b><br /><?=$ud_data->username?></div>
                         <div class="admin_user_details"><b>Password: </b><br /><?=$ud_data->password?></div>
