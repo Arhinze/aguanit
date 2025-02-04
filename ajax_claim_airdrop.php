@@ -1,6 +1,6 @@
 <?php
 
-include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 
 if($data) {
 ?>
