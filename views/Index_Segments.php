@@ -79,10 +79,12 @@ class Index_Segments{
             echo <<<HTML
             <div class="site_top_page">
                 <div class="intro">
-                $site_name is a revolutionary project that merges the expertise of $site_name Cybersecurity.
+                <!--$site_name is a revolutionary project that merges the expertise of $site_name Cybersecurity.-->
                 </div>
-                          
-                Powered by Avalanche, $site_name token offers a unique ecosystem of features and utilities.
+
+                In an age where digital transformation is reshaping industries, Aguanit Token emerges as a cryptocurrency aimed at revolutionizing the fields of historical preservation and research by leveraging blockchain technology and artificial intelligence (AI). 
+
+                <p>Powered by Avalanche, $site_name token offers a unique ecosystem of features and utilities.</p>
                 
                 <br /><br />
                 <a href="$site_mining_page_url" class="buy_presale">START MINING</a>
