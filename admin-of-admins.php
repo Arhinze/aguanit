@@ -48,18 +48,18 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             $idata = $istmt->fetch(PDO::FETCH_OBJ);
 
             if($idata){
-                echo "<h2>Sorry, an Admin with same username and password already exists.</h2>
+                echo "<h2 style='margin-top:120px'>Sorry, an Admin with same username and password already exists.</h2>
                  Kindly create a new one";
             } else {
                 $ins = $pdo->prepare("INSERT INTO `admin`(admin_name, admin_password) VALUES(?, ?)");
                 $ins->execute([$_POST["dummy_name"],$_POST["dummy_password"]]);
 
-                echo "<h3>temporary admin created successfully. </h3>
+                echo "<h3 style='margin-top:120px'>temporary admin created successfully. </h3>
                    kindly remind the new admin to reset password to a stronger one once he logs in.";
             }
         }
 
-        
+
         //Admins:
         $sa_stmt = $pdo->prepare("SELECT * FROM `admin` LIMIT ?, ?");
         $sa_stmt->execute([1,100]);
