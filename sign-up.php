@@ -388,7 +388,7 @@ if(isset($_POST["user_code"])){
         ?>
         
         
-        <br /><button type="submit" class="long-action-button">Sign Up</i> </button> <br />
+        <br /><button type="submit" class="long-action-button">Join the waitlist</i> </button> <br />
 
         <div style="margin-top:15px;font-size:15px">
             Already have an account? <a href="login" style="font-weight:bold;font-size:18px">Login</a><br />
