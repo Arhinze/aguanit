@@ -1246,7 +1246,8 @@ a{
     }
 
     .where_to_get_wallet_address{
-        width:60%;
+        width:45%;
+        right:25%;
     }
 
     /*End of Other Pages(Big Screen)*/
