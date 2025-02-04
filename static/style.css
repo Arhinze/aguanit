@@ -493,6 +493,10 @@ a{
     right:8%;
 }
 
+.close_where_to_get_wa i{
+    margin-top:-4px;
+}
+
 .pop_up{
     text-align:center;
     position:fixed;
