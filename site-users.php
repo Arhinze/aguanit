@@ -39,13 +39,13 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         //To Delete User:
         if(isset($_POST["remove_user"])){
             //check if user still exists
-            $ds_stmt = $pdo->prepare("SELECT * FROM investors WHERE user_id = ?");
+            $ds_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ?");
             $ds_stmt->execute([$_POST["remove_user"]]);
     
             $ds_data = $ds_stmt->fetch(PDO::FETCH_OBJ);
             if($ds_data){ 
                 //then delete
-                $dd_stmt = $pdo->prepare("DELETE FROM investors WHERE user_id = ?");
+                $dd_stmt = $pdo->prepare("DELETE FROM miners WHERE user_id = ?");
                 $dd_stmt->execute([$_POST["remove_user"]]);
 
                 echo "<h4 style='color:red'>User: ", $ds_data->username, " has been deleted successfully</h4>";
@@ -195,7 +195,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         $page_to_call = ($p - 1)*$num_of_rows;
 
         //count entire users:
-        $u_search_stmt = $pdo->prepare("SELECT * FROM investors ORDER BY user_id DESC LIMIT ?, ?");
+        $u_search_stmt = $pdo->prepare("SELECT * FROM miners ORDER BY user_id DESC LIMIT ?, ?");
         $u_search_stmt->execute([0, 1000]);
 
         $num_of_users = count($u_search_stmt->fetchAll(PDO::FETCH_OBJ));
@@ -208,13 +208,13 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         if(isset($_GET["user"])){
             $search_q = htmlentities($_GET["user"]);
 
-            $u_search_stmt = $pdo->prepare("SELECT * FROM investors WHERE username LIKE ? ORDER BY user_id DESC LIMIT ?, ?");
+            $u_search_stmt = $pdo->prepare("SELECT * FROM miners WHERE username LIKE ? ORDER BY user_id DESC LIMIT ?, ?");
             $u_search_stmt->execute(["%$search_q%",$page_to_call, $num_of_rows]);
 
             $u_data = $u_search_stmt->fetchAll(PDO::FETCH_OBJ);
         }  else {
             //if no particular person is searched for, call out everyone:
-            $u_stmt = $pdo->prepare("SELECT * FROM investors ORDER BY user_id DESC LIMIT ?, ?");
+            $u_stmt = $pdo->prepare("SELECT * FROM miners ORDER BY user_id DESC LIMIT ?, ?");
             $u_stmt->execute([$page_to_call, $num_of_rows]);
     
             $u_data = $u_stmt->fetchAll(PDO::FETCH_OBJ);
