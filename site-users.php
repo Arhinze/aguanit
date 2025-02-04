@@ -192,6 +192,9 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                     $ud_data = $ud_stmt->fetchAll(PDO::FETCH_OBJ);
 
                     if(count($ud_data)>0){  
+                        foreach($ud_data as $ud) {
+                            
+                        }
                 ?><!--
                         -->
                 <?php
