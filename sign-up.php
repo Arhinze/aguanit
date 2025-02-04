@@ -419,9 +419,9 @@ if(isset($_POST["user_code"])){
     <!-- where_to_get_wallet_address div starts -->
     <div id="where_to_get_wallet_address" class="where_to_get_wallet_address">
         <div class="where_to_get_wa_header" style="border-bottom:1px solid #fff">Where to get $<?=$token_name?> Wallet Address</div>
-        
+
         <div class="close_where_to_get_wa" id="close_where_to_get_wa">
-            <i class ="fa fa-times"></i>
+            <div class="fa-x-icon"><i class ="fa fa-times"></i></div>
         </div>
 
         <p>Below is a step by step guide on where and how to get your <?=$token_name?> wallet address:</p>
