@@ -73,16 +73,6 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
 
         echo $is_updated;
 
-        /*
-           Tip:
-               rate1 = btc;
-               rate2 = eth;
-               rate3 = usdt;
-               rate4 = pm;
-        */ 
-        
-        //To be used in 1.) withdraw.php 2.) invest.php 3.) admin_of_admins.php
-        //Select the rates from database to use as 'value' for the input elements
         $rates = [];
         $br_stmt = $pdo->prepare("SELECT * FROM btc_rate LIMIT ?, ?");
         $br_stmt->execute([0, 6]);
@@ -97,7 +87,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         $sa_stmt->execute([1,100]);
         $sa_data = $sa_stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
-        <div class="main" style="margin-top:60px">
+        <div class="main" style="margin-top:150px">
             <div class= "calculator">
                 <h2>Admins </h2><hr />
                 <?php 
