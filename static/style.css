@@ -474,6 +474,14 @@ a{
     border-radius:6px;
 }
 
+.close_where_to_get_wa{
+    height:21px;
+    width:21px;
+    font-weight:bold;
+    color:#fff;
+    border-radius:100%;
+}
+
 .pop_up{
     text-align:center;
     position:fixed;
