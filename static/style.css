@@ -451,13 +451,22 @@ a{
    right:3%;
    z-index:12;
    overflow: scroll;
-   font-size:12px;
+   font-size:15px;
 }
 
 .where_to_get_wa_header{
     font-weight:bold;
     font-size:18px;
     margin-top:15px;
+}
+
+.where_to_get_wa_subheader{
+    font-weight:bold
+}
+
+.where_to_get_wa_card{
+    border-radius: 6px;
+    border:1px solid #0bee3ccc;
 }
 
 .where_to_get_wa_img{
