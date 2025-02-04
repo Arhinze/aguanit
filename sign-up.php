@@ -393,7 +393,6 @@ if(isset($_POST["user_code"])){
                 <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"  onclick="show_div('where_to_get_wallet_address')"><i class="fa fa-question-circle"></i> Where to get your $<?=$token_name?> wallet address?</b>
             </div>
             <!-- Airdrop Credentials end-->
-    
             <!-- code -->
             <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
            
@@ -408,8 +407,7 @@ if(isset($_POST["user_code"])){
             <?php
                 }
             ?>
-            
-            
+
             <br /><button type="submit" class="long-action-button"><i class="fa fa-bolt"></i> Join the waitlist now</i> </button> <br />
     
             <div style="margin-top:15px;font-size:15px">

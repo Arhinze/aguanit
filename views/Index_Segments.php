@@ -184,7 +184,7 @@ class Index_Segments{
                             
             <div class="white_background" style="text-align:center;padding-bottom:60px">
                 <div class="header_text" style="font-size:24px;padding-bottom:24px">$site_name token airdrop is now live</div>
-                <a href="/settings" class="buy_presale2">Airdrop</a>
+                <a href="/claim-airdrop" class="buy_presale2">Airdrop</a>
             </div>
         HTML;
        }
