@@ -378,6 +378,7 @@ if(isset($_POST["user_code"])){
         </div>
 
         <!-- AVAX Wallet Address -->
+        <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"><i class="fa fa-question-circle"></i> Don't know where to get your $Aguat wallet address?</b>
         <div class="new-input-div">
             <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
             <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
