@@ -19,7 +19,7 @@ Index_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site
         
         <div class="smart_contract_texts"><span class="smart_contract_texts_head">Decimals:</span> 18</div>
         
-        <div class="smart_contract_texts"><span class="smart_contract_texts_head">Token Tracker:</span> https://snowtrace.io/token/0x2547e1Cf16266a211EE4C651CB6d30f732A1DFd7?chainid=43114</div>
+        <div class="smart_contract_texts"><span class="smart_contract_texts_head">Token Tracker:</span> <a href="https://snowtrace.io/token/0x2547e1Cf16266a211EE4C651CB6d30f732A1DFd7?chainid=43114">https://snowtrace.io/token/0x2547e1Cf16266a211EE4C651CB6d30f732A1DFd7?chainid=43114</a></div>
     </div>
 </div>
 
