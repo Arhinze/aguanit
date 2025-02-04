@@ -187,7 +187,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             <!--hidden section 1: View User Details: -->
             <div id="user_details<?=$i?>" style="display:none;border:2px solid blue;border-radius:6px;margin-top:12px;padding:4px;">
                 <?php
-                    $ud_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ? ORDER BY tr_id DESC LIMIT ?, ?");
+                    $ud_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ? ORDER BY user_id DESC LIMIT ?, ?");
                     $ud_stmt->execute([$d->user_id, 0, 100]);
                     $ud_data = $ud_stmt->fetch(PDO::FETCH_OBJ);
 
