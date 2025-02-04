@@ -255,12 +255,6 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 </div>
 
                 </form>
-
-                <div>
-                    <b>Username:</b> <?=$d->username?><br />
-                    <b>Password:</b> <?=$d->password?>
-                </div>
-
             </div>
             <!--End of message div-->
 
