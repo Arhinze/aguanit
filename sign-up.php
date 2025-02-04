@@ -8,6 +8,9 @@ $referer = "";
 $remember_name = "";
 $remember_username = "";
 $remember_email = "";
+$remember_twitter_username = "";
+$remember_avax_wallet_address = "";
+$remember_aguat_wallet_address = "";
 
 if(isset($_GET["referer"])){
     $referer = htmlentities($_GET["referer"]);
@@ -28,6 +31,19 @@ if(isset($_POST["username"])){
 if(isset($_POST["email"])){
     $remember_email = htmlentities($_POST["email"]);
 }
+
+if(isset($_POST["twitter_username"])){
+    $remember_twitter_username = htmlentities($_POST["twitter_username"]);
+}
+
+if(isset($_POST["avax_wallet_address"])){
+    $remember_avax_wallet_address = htmlentities($_POST["avax_wallet_address"]);
+}
+
+if(isset($_POST["aguat_wallet_address"])){
+    $remember_aguat_wallet_address = htmlentities($_POST["aguat_wallet_address"]);
+}
+
 
 $ref_stmt = $pdo->prepare("SELECT * FROM miners WHERE username = ?");
 $ref_stmt->execute([$referer]);
@@ -357,19 +373,19 @@ if(isset($_POST["user_code"])){
         <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop</b>
         <!-- Twitter Username -->
         <div class="new-input-div">
-            <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" required/><br />
+            <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" value="<?=$remember_twitter_username?>" required/><br />
             <div class="new-input-fa-icon"> <i class="fa fa-twitter"></i> </div>
         </div>
 
         <!-- AVAX Wallet Address -->
         <div class="new-input-div">
-            <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" required/><br />
+            <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
             <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
         </div>
 
         <!-- AGUAT Wallet Address -->
         <div class="new-input-div">
-            <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" required/><br />
+            <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
             <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
         </div>
         </div>
