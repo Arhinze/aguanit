@@ -7,7 +7,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segme
 ?>
     <div class = "dashboard_div">
         <input class="input" name="aguat_wallet_address" placeholder = "Enter Your $<?=$token_name?> Wallet Address"/> 
-        <div>
+        <div style = "margin:15px 9px">
             <button class="long-action-button">Claim Airdrop</button>
         </div>
     </div>
