@@ -12,7 +12,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
     }
 }
 
-Segments::header();
+Index_Segments::header();
 
 $check_admin = "";
 $remember_admin = "";
@@ -72,5 +72,5 @@ if(isset($_POST["user_code"])){
 </div>
 
 <?php
-Segments::footer();
+Index_Segments::footer();
 ?>
