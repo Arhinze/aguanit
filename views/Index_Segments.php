@@ -103,9 +103,11 @@ class Index_Segments{
                 <div class="header_text">What is $site_name Token?</div>
                          
                 <div class="what_is_body">
-                    <p>$site_name token is a revolutionary project that merges the expertise of $site_name Cybersecurity, a leading cybersecurity firm, with the innovative potential of crypto currency.</p> 
+                    <p><b>$site_name Token</b> is the world's first Decentralized Art (DeArt) token that leverages artificial intelligence (AI), blockchain technology, smart contracts, and tokenized incentives to democratize historical research.</p>
                     
-                    <p>Powered by Avalanche, $site_name token offers a unique ecosystem of features and utilities designed to enhance online security, empower users, and foster a thriving community.</p>
+                    <p>We aim to create a decentralized platform that incentivizes the documentation, preservation, and sharing of historical artifacts and knowledge.</p>
+                    
+                    <p>Our mission is to empower communities, historians, and institutions to participate actively in preserving the world's cultural heritage while providing a sustainable economic model.</p>
                 </div>
                                          
                 <a href="/white-paper" class="buy_presale2">DOWNLOAD WHITE PAPER</a>
