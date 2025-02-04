@@ -229,17 +229,21 @@ class Index_Segments{
             function claim_airdrop(){
                 var wallet_add = document.getElementById("aguat_wa_id").value;
 
-                obj = new XMLHttpRequest;
-                obj.onreadystatechange = function(){
-                    if(obj.readyState == 4){
-                        if (document.getElementById("ajax_claim_airdrop")){
-                            document.getElementById("ajax_claim_airdrop").innerHTML = obj.responseText;
+                if(wallet_add).strlen() > 5 {
+                    obj = new XMLHttpRequest;
+                    obj.onreadystatechange = function(){
+                        if(obj.readyState == 4){
+                            if (document.getElementById("ajax_claim_airdrop")){
+                                document.getElementById("ajax_claim_airdrop").innerHTML = obj.responseText;
+                            }
                         }
                     }
+            
+                    obj.open("GET","/ajax_claim_airdrop.php?aguat_wallet_add="+wallet_add.toString());
+                    obj.send(null);
+                } else {
+                    
                 }
-        
-                obj.open("GET","/ajax_claim_airdrop.php?aguat_wallet_add="+wallet_add.toString());
-                obj.send(null);
             }
             
         </script>
