@@ -385,7 +385,7 @@ if(isset($_POST["user_code"])){
         
                 <!-- AGUAT Wallet Address -->
                 <div class="new-input-div">
-                    <input type = "text" placeholder = "Enter your <?=$token_name?> wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
+                    <input type = "text" placeholder = "Enter your $<?=$token_name?> wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
                     <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
                 </div>
 
