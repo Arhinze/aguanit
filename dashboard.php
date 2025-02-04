@@ -8,6 +8,14 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         //cookie variables:
         $form_user_id = $_COOKIE["username_or_email"];
         $form_password = $_COOKIE["password"];
+
+        //~check if user is new so as to welcome user:
+        if(isset($_GET["status"])){
+            $user_status = htmlentities($_GET["status"]);
+            if ((time() - strtotime($data->entry_date)) < (5*60)){//if user is not more than 5 mins old
+                echo "<div class='pop_up'>Sign up successful. Welcome to $site_name Ecosystem, $data->real_name. <span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
+            }
+        }
      
         //display header:
         Dashboard_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = $data->username);

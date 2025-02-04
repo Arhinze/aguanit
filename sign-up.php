@@ -284,7 +284,8 @@ if(isset($_POST["user_code"])){
 
 
 
-                        header("location:/dashboard"); //--automatically log in
+                        //redirect user to dashboard
+                        header("location:/dashboard?status=new_user"); //--automatically log in
                         //display sign up success pop up:
                         //echo "<div class='pop_up' style='display:block'>
                         //    <h3>Sign UP Successful, Kindly <a href='/login' style='color:#042c06'>Login</a></h3>

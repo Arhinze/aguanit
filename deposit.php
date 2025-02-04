@@ -17,10 +17,6 @@ foreach($br_data as $b){
     if($data){
         //that means the person is logged in:
         Dashboard_Segments::header();
-        
-        if(isset($_POST["deposit"])){
-            //send mail to user -- moved to confirm-deposit page
-        }
 ?>
 
 <form method="post" action="/confirm-deposit">
