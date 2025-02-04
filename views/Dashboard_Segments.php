@@ -46,10 +46,8 @@ class Dashboard_Segments extends Index_Segments{
         </div> 
 
         <div class="hi_user"> 
-        
-            <!-- Google Translate div -->  
-            
-            <div class="clear"><div id="google_translate_element" style="position:fixed;float:left;left:13px;top:59px;background-color:#fff;border-radius:4px;padding:0px 3px"></div></div>
+            <!-- Google Translate div --> 
+            <!--<div class="clear"><div id="google_translate_element" style="position:fixed;float:left;left:13px;top:59px;background-color:#fff;border-radius:4px;padding:0px 3px"></div></div>-->
             
             <!-- Hi user --> 
             

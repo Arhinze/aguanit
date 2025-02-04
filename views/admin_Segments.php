@@ -123,16 +123,15 @@ Class admin_Segments{
     <div style="position:fixed;width:100%;height:39px;top:59px;left:0;background-color:#fff;padding-bottom:6px;" class="clear"> 
             
             <!-- Google Translate div -->  
-            
-            <div class="clear"><div id="google_translate_element" style="position:fixed;float:left;left:13px;top:59px;background-color:#fff;border-radius:4px;padding:0px 3px"></div></div>
+            <!--<div class="clear"><div id="google_translate_element" style="position:fixed;float:left;left:13px;top:59px;background-color:#fff;border-radius:4px;padding:0px 3px"></div></div>-->
             
             <!-- Hi admin -->  
             
-            <span style="float:right;background-color:#01123c;border-radius:6px;margin:3px;font-size:12px;padding:1px 0 6px 9px">
+            <span style="float:right;background-color:#042c06;border-radius:6px;margin:3px;font-size:12px;padding:1px 0 6px 9px">
 
                 <i class="fa fa-lock"></i> Hi $Hi_admin
 
-                <i style="background-color:#2b8eeb;color:#fff; border-radius:6px;padding:6px 8px;text-align:center;margin:6px 9px 0px 6px;" class="fa fa-user"></i> 
+                <i style="background-color:#0bee3ccc;color:#fff; border-radius:6px;padding:6px 8px;text-align:center;margin:6px 9px 0px 6px;" class="fa fa-user"></i> 
             </span>
     </div>
 
@@ -167,7 +166,7 @@ Class admin_Segments{
 
         <li><i class="fa fa-key"></i> <a href="/admin-reset-password">Reset Password</a></li>
 
-        <li><a href="/logout" style="color:#fff;font-weight:bold;background-color:#2b8eeb;padding:6px;border-radius:12px">Log out</a></li>
+        <li><a href="/logout" style="color:#fff;font-weight:bold;background-color:#042c06;padding:6px;border-radius:12px">Log out</a></li>
 
     </ul>
 
@@ -203,7 +202,7 @@ public static function footer($site_name = SITE_NAME, $site_url = SITE_URL){
             
             &nbsp; <h3>$site_name</h3>
         </div>
-        &copy;2022 - All Rights Reserved
+        &copy;2025 - All Rights Reserved
     </div>
 
     <script>
