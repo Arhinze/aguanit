@@ -78,7 +78,7 @@ class Index_Segments{
         public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
             echo <<<HTML
             <div class="site_top_page">
-                <div class="intro" style="font-size:21px">
+                <div class="intro" style="font-size:27px">
                 <!--$site_name is a revolutionary project that merges the expertise of $site_name Cybersecurity.-->
                 In an age where digital transformation is reshaping industries,
                 </div>
