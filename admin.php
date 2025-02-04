@@ -53,7 +53,7 @@ if(isset($_POST["user_code"])){
 
 <div class="dashboard_div" style="margin-top:90px">
     <div class="sign-in-welcome">
-        <h2>Control Panel</h2>
+        <h2><i class="fa fa-bank"></i> Control Panel</h2>
     </div>
 
     <?=$check_admin?>
