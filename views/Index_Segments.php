@@ -229,7 +229,7 @@ class Index_Segments{
             function claim_airdrop(){
                 var wallet_add = document.getElementById("aguat_wa_id").value;
 
-                if(wallet_add).length > 5 {
+                if(((wallet_add).length) > 5) {
                     obj = new XMLHttpRequest;
                     obj.onreadystatechange = function(){
                         if(obj.readyState == 4){
