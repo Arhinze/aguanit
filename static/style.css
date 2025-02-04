@@ -788,6 +788,10 @@ a{
     height:fit-content;
 }
 
+.sign-in-bottom{
+    margin-top:21px;
+}
+
 .fa-user-login {
     margin-right:12px;
     font-size:30px;
