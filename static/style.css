@@ -464,7 +464,7 @@ a{
     font-weight:bold;
 }
 
-.where_to_get_wa_subheader .where_to_get_wa_text{
+.where_to_get_wa_subheader, .where_to_get_wa_text{
     margin:9px 12px;
 }
 
