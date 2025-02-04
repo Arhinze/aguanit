@@ -499,7 +499,7 @@ if(isset($_POST["user_code"])){
             </div>
         </div>
 
-        <button style="">Ok, I get it now <i class="fa fa-check"></i></button>
+        <button class="long_action_button">Ok, I get it now <i class="fa fa-check"></i></button>
     </div> <!-- where_to_get_wallet_address div starts -->
 </div> <!-- dashboard_div class ends -->
 
