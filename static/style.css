@@ -328,6 +328,10 @@ a{
     margin:15px 0;
 }
 
+.site_images_div{
+    margin:12px 0;
+}
+
 .site_images{
     width:100%; 
     height:auto;
@@ -1176,6 +1180,10 @@ a{
 
     .dashboard_lower_div{
         margin:6% 14%;
+    }
+
+    .site_images{
+        width:60%;
     }
 
     /*End of Other Pages(Big Screen)*/
