@@ -438,6 +438,15 @@ a{
     margin:8px 6px;
 }
 
+.where_to_get_wallet_address{
+   width:90%;
+   padding:12px 9px;
+}
+
+.where_to_get_wa_img{
+    width:100%;
+}
+
 .pop_up{
     text-align:center;
     position:fixed;
