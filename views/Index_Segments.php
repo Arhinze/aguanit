@@ -148,8 +148,12 @@ class Index_Segments{
                     <li><span class="token_percentages">25% </span>Founding Team</li>
                 </ul>
                         
-                <div style="width:100%">
+                <div>
                     <img src="/static/images/token_distribution.png" class="site_images" style="border-radius:12px"/>
+                </div>
+
+                <div>
+                    <img src="/static/images/prospective_listing_partners.png" class="site_images" style="border-radius:12px"/>
                 </div>
             </div>
                       
