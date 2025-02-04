@@ -541,6 +541,12 @@ a{
     padding-bottom:6px;
 }
 
+.airdrop_users {
+    padding-bottom:9px;
+    border-bottom:1px solid #fff;
+    margin:12px 3px;
+}
+
 .about_us{
    background-color:#042c06;
    color: #fff;

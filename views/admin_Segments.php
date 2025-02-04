@@ -143,23 +143,14 @@ Class admin_Segments{
                 <label for="menu-box"><i class="fa fa-times" style="font-weight:bold"></i></label> 
             </li>
         </div> 
-        
-        
+
         <li><i class="fa fa-home"></i> <a href="/admin">Home</a></li>
 
         <li><i class="fa fa-users"></i> <a href="/site-users">Users</a></li>
+        <li><i class="fa fa-users"></i> <a href="/airdrop-participants">Airdrop participants</a></li>
 
-        <!-- <li><i class="fa fa-lock"></i> <a href="/">admins</a></li> -->
         
         $main_admin_access
-
-        <!--
-        <li><i class="fa fa-envelope"></i> <label for="hidden-menu-item">Mail</label></li>
-            <input type="checkbox" style="display:none" id="hidden-menu-item" class="hidden-menu-item"/>
-            <div class="hidden-menu-div">
-                <a href="">Send Mail</a><br />
-                <a href="">View Sent Mails</a>
-            </div> -->
 
         <li><i class="fa fa-key"></i> <a href="/admin-reset-password">Reset Password</a></li>
 
