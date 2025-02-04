@@ -193,15 +193,15 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
 
                     if($ud_data){  
                 ?>
-                        <div><b>Username: </b><?=$ud_data->username?></div>
-                        <div><b>Password: </b><?=$ud_data->password?></div>
-                        <div><b>Email: </b><?=$ud_data->user_email?></div>
-                        <div><b>Twitter Username: </b><?=$ud_data->twitter_username?></div>
+                        <div><b>Username: </b><br /><?=$ud_data->username?></div>
+                        <div><b>Password: </b><br /><?=$ud_data->password?></div>
+                        <div><b>Email: </b><br /><?=$ud_data->user_email?></div>
+                        <div><b>Twitter Username: </b><br /><?=$ud_data->twitter_username?></div>
                         <div style="overflow:scroll">
-                            <b>$Avax wallet address: </b><?=$ud_data->avax_wallet_address?>
+                            <b>$Avax wallet address: </b><br /><?=$ud_data->avax_wallet_address?>
                         </div>
                         <div style="overflow:scroll">
-                            <b>$Aguat wallet address: </b><?=$ud_data->aguat_wallet_address?>
+                            <b>$Aguat wallet address: </b><br /><?=$ud_data->aguat_wallet_address?>
                         </div>
                 <?php
                     }
