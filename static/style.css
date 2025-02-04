@@ -461,12 +461,17 @@ a{
 }
 
 .where_to_get_wa_subheader{
-    font-weight:bold
+    font-weight:bold;
+}
+
+.where_to_get_wa_subheader .where_to_get_wa_text{
+    margin:9px 12px;
 }
 
 .where_to_get_wa_card{
     border-radius: 6px;
     border:1px solid #0bee3ccc;
+    margin-bottom:18px;
 }
 
 .where_to_get_wa_img{
