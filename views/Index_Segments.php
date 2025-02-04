@@ -78,15 +78,16 @@ class Index_Segments{
         public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL){
             echo <<<HTML
             <div class="site_top_page">
-                <div class="intro">
+                <div class="intro" style="font-size:21px">
                 <!--$site_name is a revolutionary project that merges the expertise of $site_name Cybersecurity.-->
+                In an age where digital transformation is reshaping industries,
                 </div>
 
-                In an age where digital transformation is reshaping industries, Aguanit Token emerges as a cryptocurrency aimed at revolutionizing the fields of historical preservation and research by leveraging blockchain technology and artificial intelligence (AI). 
+                <b>$site_name</b> Token emerges as a cryptocurrency aimed at revolutionizing the fields of historical preservation and research by leveraging blockchain technology and artificial intelligence (AI). 
 
                 <p>Powered by Avalanche, $site_name token offers a unique ecosystem of features and utilities.</p>
                 
-                <br /><br />
+                <br />
                 <a href="$site_mining_page_url" class="buy_presale">START MINING</a>
                 <br /><br />
                 <div style="width:100%">
