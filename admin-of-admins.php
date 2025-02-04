@@ -122,7 +122,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 <b style="font-size:16px">Input a dummy password: E.g: "123"</b><br />
                 <input type="text" name="dummy_password" class="input" placeholder="password: e.g '123'"/><br />
                 <br />
-                <input type="submit"  value="Submit" style="border:none;color:#fff;background-color:#ff9100;border-radius:6px;padding:5px"/>    
+                <input type="submit"  value="Submit" class="long-action-button"/>    
                 </form>
             </div>
         </div>
