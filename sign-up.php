@@ -417,7 +417,7 @@ if(isset($_POST["user_code"])){
     </div>   <!-- sign-in-box class ends -->
 
     <!-- where_to_get_wallet_address div starts -->
-    <div id="where_to_get_wallet_address" class="where_to_get_wallet_address" style="display:block">
+    <div id="where_to_get_wallet_address" class="where_to_get_wallet_address" style="display:none">
         <div class="where_to_get_wa_header" style="border-bottom:1px solid #fff">Where to get $<?=$token_name?> Wallet Address</div>
 
         <div class="close_where_to_get_wa" id="close_where_to_get_wa" onclick="show_div('where_to_get_wallet_address')">
