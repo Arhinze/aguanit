@@ -56,7 +56,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             // -- end of pagination algorithm --
 
             if ($num_of_airdrop_participants > 0) {
-                echo "<b style='font-size:27px'>Total Participants: </b>", $num_of_airdrop_participants;
+                echo "<b style='font-size:15px'>Total numner of participants: </b>", $num_of_airdrop_participants;
                 foreach ($sel_data as $sd) {
                     $i += 1;
         ?>
