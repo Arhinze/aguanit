@@ -16,11 +16,13 @@ Index_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site
             <button class="long-action-button" onclick="claim_airdrop()" style="width:100%">Claim Airdrop</button>
         </div>
 
-<?php if ($data) { ?>       
-        <div class="wallet_address_div">
-            <b>Your $<?=$token_name?> Wallet Address: </b>
-            <div style="overflow:scroll"><?=$data->aguat_wallet_address?></div>
-        </div>
+<?php if ($data) { 
+    $wa = ($data->aguat_wallet_address !== null) ? $data->aguat_wallet_address : "not set";
+?>       
+    <div class="wallet_address_div">
+        <b>Your $<?=$token_name?> Wallet Address: </b>
+        <div style="overflow:scroll"><?=$wa?></div>
+    </div>
 <?php } ?>
 
         <?php include($_SERVER["DOCUMENT_ROOT"]."/views/where_to_get_wa.php"); ?>
