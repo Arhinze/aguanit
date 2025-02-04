@@ -225,8 +225,10 @@ if (isset($_POST["code"])) {
 
         <button type="submit" class="long-action-button" style="margin-top:12px">Submit <i class="fa fa-telegram"></i> </button> <br />
 
-        <a href="/login" style="font-weight:bold;font-size:18px">Login</a>. 
-        Don't have an account? <a href="/sign-up" style="font-weight:bold;font-size:18px">Sign Up</a>
+        <div style="font-size:15px">
+            <a href="/login" style="font-weight:bold;color:<?=$site_color_light?>">Login</a>.
+            Don't have an account? <a href="/sign-up" style="font-weight:bold;color:<?=$site_color_light?>">Sign Up</a>
+        </div>
         <?php } ?>
     </form>
 
