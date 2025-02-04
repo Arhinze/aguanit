@@ -368,28 +368,31 @@ if(isset($_POST["user_code"])){
                 <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>
             </div>
     
-            <!-- Airdrop Credentials -->
+            <!-- Airdrop Credentials starts -->
             <div class="airdrop_requirements">
-            <div style="border-radius:3px; border: 1px solid <?=$site_color_light?>;background-color:#fff;padding:2px 3px"><b style = "color:<?=$site_color_dark?>;font-weight:bold;font-size:12px;margin:6px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop: </b></div>
-            <!-- Twitter Username -->
-            <div class="new-input-div">
-                <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" value="<?=$remember_twitter_username?>" required/><br />
-                <div class="new-input-fa-icon"> <i class="fa fa-twitter"></i> </div>
+                <div style="border-radius:3px; border: 1px solid <?=$site_color_light?>;background-color:#fff;padding:2px 3px"><b style = "color:<?=$site_color_dark?>;font-weight:bold;font-size:12px;margin:6px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop: </b></div>
+                <!-- Twitter Username -->
+                <div class="new-input-div">
+                    <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" value="<?=$remember_twitter_username?>" required/><br />
+                    <div class="new-input-fa-icon"> <i class="fa fa-twitter"></i> </div>
+                </div>
+        
+                <!-- AVAX Wallet Address -->
+                <div class="new-input-div">
+                    <input type = "text" placeholder = "Enter your $AVAX wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
+                    <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
+                </div>
+        
+                <!-- AGUAT Wallet Address -->
+                <div class="new-input-div">
+                    <input type = "text" placeholder = "Enter your <?=$token_name?> wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
+                    <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
+                </div>
+
+                <!-- Where to get your $Aguat wallet address? -->
+                <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"  onclick="show_div('where_to_get_wallet_address')"><i class="fa fa-question-circle"></i> Where to get your $<?=$token_name?> wallet address?</b>
             </div>
-    
-            <!-- AVAX Wallet Address -->
-            <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"  onclick="show_div('where_to_get_wallet_address')"><i class="fa fa-question-circle"></i> Where to get your $Aguat wallet address?</b>
-            <div class="new-input-div">
-                <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
-                <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
-            </div>
-    
-            <!-- AGUAT Wallet Address -->
-            <div class="new-input-div">
-                <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
-                <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
-            </div>
-            </div>
+            <!-- Airdrop Credentials end-->
     
             <!-- code -->
             <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
@@ -407,7 +410,7 @@ if(isset($_POST["user_code"])){
             ?>
             
             
-            <br /><button type="submit" class="long-action-button"><i class="fa fa-telegram"></i> Join the waitlist now</i> </button> <br />
+            <br /><button type="submit" class="long-action-button"><i class="fa fa-bolt"></i> Join the waitlist now</i> </button> <br />
     
             <div style="margin-top:15px;font-size:15px">
                 Already have an account? <a href="login" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Login</a><br />
