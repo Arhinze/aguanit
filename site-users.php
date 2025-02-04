@@ -13,7 +13,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
 ?>
         <div class="dashboard_div">
 
-        <h1 style="text-align:center;margin-top:130px">Registered Users on <?=$site_name?></h2>
+        <h1 style="margin:24px 6px">Registered Users on <?=$site_name?></h2>
 
         <!-- "refresh" class -->
         <a href = '' style='color:#fff;font-size:19px;margin:0 3px 0 6px;padding:6px 9px;background-color:<?=$site_color_light?>;border-radius:5px' class="refresh">
