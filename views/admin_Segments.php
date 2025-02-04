@@ -153,9 +153,6 @@ Class admin_Segments{
         
         $main_admin_access
 
-        <li><i class="fa fa-eye"></i> <a href="/user-requests">View User Requests</a></li>
-
-
         <!--
         <li><i class="fa fa-envelope"></i> <label for="hidden-menu-item">Mail</label></li>
             <input type="checkbox" style="display:none" id="hidden-menu-item" class="hidden-menu-item"/>
