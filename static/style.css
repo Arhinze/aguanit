@@ -445,7 +445,11 @@ a{
    box-shadow: 0 0 3px 0 #0bee3ccc;
    width:90%;
    padding:12px 9px;
-   /*position:fixed;*/
+   position:fixed;
+   top:9px;
+   z-index:12;
+   height:90%;
+   overflow: scroll;
 }
 
 .where_to_get_wa_img{
