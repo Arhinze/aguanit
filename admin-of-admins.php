@@ -59,17 +59,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             }
         }
 
-        echo $is_updated;
-
-        $rates = [];
-        $br_stmt = $pdo->prepare("SELECT * FROM btc_rate LIMIT ?, ?");
-        $br_stmt->execute([0, 6]);
-        $br_data = $br_stmt->fetchAll(PDO::FETCH_OBJ);
-
-        foreach($br_data as $b){
-            $rates[] = $b->br;
-        }
- 
+        
         //Admins:
         $sa_stmt = $pdo->prepare("SELECT * FROM `admin` LIMIT ?, ?");
         $sa_stmt->execute([1,100]);
