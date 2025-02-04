@@ -449,7 +449,7 @@ a{
    position:fixed;
    top:3%;
    right:3%;
-   z-index:12;
+   /*z-index:12;*/
    overflow: scroll;
    font-size:15px;
 }
@@ -479,7 +479,11 @@ a{
     width:21px;
     font-weight:bold;
     color:#fff;
+    background-color: red;
     border-radius:100%;
+    position:fixed;
+    top:6%;
+    right:8%;
 }
 
 .pop_up{
