@@ -443,12 +443,13 @@ a{
    border:1px solid #042c06;
    background-color: #042c06;
    box-shadow: 0 0 3px 0 #0bee3ccc;
-   width:90%;
    padding:12px 9px;
-   position:fixed;
-   top:9px;
-   z-index:12;
+   width:90%;
    height:90%;
+   position:fixed;
+   top:3%;
+   right:3%;
+   z-index:12;
    overflow: scroll;
 }
 
