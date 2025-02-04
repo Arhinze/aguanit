@@ -3,12 +3,6 @@
 Class Transactions{
     private $amt;
     private $obj;
-  
-    /*
-    public function __construct($amt){
-        $this->amt = $amt ;
-    }
-    */
 
     public function rate($amt){
         $r = "";
