@@ -87,7 +87,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         $sa_stmt->execute([1,100]);
         $sa_data = $sa_stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
-        <div class="main" style="margin-top:150px">
+        <div class="main" style="margin-top:120px">
             <div class= "calculator">
                 <h2>Admins </h2><hr />
                 <?php 
