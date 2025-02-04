@@ -834,6 +834,8 @@ a{
 
 .sign-in-box-headers {
     margin: 12px 0 -3px 0;
+    font-size:15px;
+    font-weight:bold;
 }
 
 .sign-in-box a{
