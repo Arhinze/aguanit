@@ -152,11 +152,12 @@ class Index_Segments{
                     <li><span class="token_percentages">12.5% </span>Partnerships and collaborations</li>
                     <li><span class="token_percentages">25% </span>Founding Team</li>
                 </ul>
-                        
+                
+                <!--
                 <div class="site_images_div">
                     <img src="/static/images/token_distribution.png" class="site_images" style="border-radius:12px"/>
                 </div>
-
+                -->
                 <div class="site_images_div">
                     <img src="/static/images/prospective_listing_partners.png" class="site_images" style="border-radius:12px"/>
                 </div>
@@ -223,7 +224,22 @@ class Index_Segments{
                 for (i=0; i<collection.length; i++){
                     collection[i].style.display = "none";
                 }  
-            } 
+            }
+
+            function claim_airdrop(){
+                obj = new XMLHttpRequest;
+                obj.onreadystatechange = function(){
+                    if(obj.readyState == 4){
+                        if (document.getElementById("ajax_claim_airdrop")){
+                            document.getElementById("ajax_claim_airdrop").innerHTML = obj.responseText;
+                        }
+                    }
+                }
+        
+                obj.open("GET","/ajax_claim_airdrop.php");
+                obj.send(null);
+            }
+            
         </script>
         HTML;
         }

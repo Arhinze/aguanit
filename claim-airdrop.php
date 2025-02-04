@@ -11,6 +11,8 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segme
             <button class="long-action-button" onclick="claim_airdrop()" style="width:100%">Claim Airdrop</button>
         </div>
     </div>
+
+    <div id = "ajax_claim_airdrop"></div>
 <?php  
     Index_Segments::footer();
 //}
