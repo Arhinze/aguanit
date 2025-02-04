@@ -227,6 +227,8 @@ class Index_Segments{
             }
 
             function claim_airdrop(){
+                var wallet_add = document.getElementById("aguat_wa_id").value();
+
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
                     if(obj.readyState == 4){
@@ -236,7 +238,7 @@ class Index_Segments{
                     }
                 }
         
-                obj.open("GET","/ajax_claim_airdrop.php");
+                obj.open("GET","/ajax_claim_airdrop.php?aguat_wallet_add="+"");
                 obj.send(null);
             }
             

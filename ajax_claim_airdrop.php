@@ -15,6 +15,9 @@ if($data) {
         </span>
         </div>";
     } else {//user has already participated ~ update again, because he/she might be trying to change the wallet addrress, then remind him/her that they have participated in the past
+        $air_stmt = $pdo->prepare("UPDATE miners SET aguat_wallet_address = ? WHERE user_id = ?");
+        $air_stmt->execute($aguat_wa, $data->user_id);
+        
         echo "<div class='pop_up'>Congratulations. You've already been added to the waitlist. 
         <span style='float:right;position:absolute;top:6px;right:6px'>
             <i class='fa fa-times' onclick='close_pop_up()'></i>
