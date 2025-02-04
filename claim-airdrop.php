@@ -1,6 +1,7 @@
 <?php
 
 include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segments.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
 //if($data) {
     Index_Segments::header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $site_mining_page_url = SITE_MINING_PAGE_URL, $Hi_user = "", $title="Claim Airdrop - Aguanit Token");
@@ -21,5 +22,5 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Index_Segme
 
     <div id = "ajax_claim_airdrop"></div>
 <?php  
-    Index_Segments::footer();
+    Dashboard_Segments::dashboard_footer();
 //}

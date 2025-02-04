@@ -1,6 +1,7 @@
 <?php
 
 include_once("/home/u590828029/domains/aguanit.com/public_html/php/account-manager.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_Segments.php");
 
 /*$data = false;
 
@@ -39,6 +40,7 @@ if($data) { //that means user is logged in
 ?>
 
 <?php
+
 } else {
     echo "<div class='invalid'>Kindly <b><a href='/login' style='color:#042c06'>Login</a></b> to access this feature. 
     <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='hide_invalid_div()'></i></span>
