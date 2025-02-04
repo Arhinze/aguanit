@@ -758,7 +758,7 @@ a{
 .new-input {
     width:80%;
     height:37px;
-    margin-bottom:6px;
+    margin-top:6px;
     background-color: #fff;
     color:#042c06;
     font-weight:bold;
@@ -829,7 +829,7 @@ a{
 }
 
 .sign-in-box-headers {
-    margin-top: 12px;
+    margin-top: 12px 0 -3px 0;
 }
 
 .sign-in-box a{
