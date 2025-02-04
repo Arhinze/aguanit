@@ -888,6 +888,7 @@ a{
     background-color:pink;
     /*animation:blink 6s infinite .2s alternate;*/
     font-size:15px;
+    font-weight:bold;
     z-index:15;
 }
 
