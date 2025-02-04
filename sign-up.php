@@ -378,7 +378,7 @@ if(isset($_POST["user_code"])){
             </div>
     
             <!-- AVAX Wallet Address -->
-            <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0" onclick="where_to_get_wallet_address()"><i class="fa fa-question-circle"></i> Where to get your $Aguat wallet address?</b>
+            <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"  onclick="show_div('where_to_get_wallet_address')"><i class="fa fa-question-circle"></i> Where to get your $Aguat wallet address?</b>
             <div class="new-input-div">
                 <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
                 <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
@@ -420,7 +420,7 @@ if(isset($_POST["user_code"])){
     <div id="where_to_get_wallet_address" class="where_to_get_wallet_address">
         <div class="where_to_get_wa_header" style="border-bottom:1px solid #fff">Where to get $<?=$token_name?> Wallet Address</div>
 
-        <div class="close_where_to_get_wa" id="close_where_to_get_wa">
+        <div class="close_where_to_get_wa" id="close_where_to_get_wa" onclick="show_div('where_to_get_wallet_address')">
             <div class="fa-x-icon"><i class ="fa fa-times"></i></div>
         </div>
 
@@ -504,7 +504,7 @@ if(isset($_POST["user_code"])){
             </div>
         </div>
 
-        <button class="long-action-button">Ok, I get it now <i class="fa fa-check"></i></button>
+        <button class="long-action-button" onclick="show_div('where_to_get_wallet_address')">Ok, I get it now <i class="fa fa-check"></i></button>
     </div> <!-- where_to_get_wallet_address div starts -->
 </div> <!-- dashboard_div class ends -->
 
