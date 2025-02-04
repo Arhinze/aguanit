@@ -42,7 +42,7 @@ if($data) { //that means user is logged in
 <?php
 
 } else {
-    echo "<div class='invalid'>Kindly <b><a href='/login' style='color:#042c06'>Login</a></b> to access this feature. 
+    echo "<div class='invalid' style='font-weight:bold'>Kindly <b><a href='/login' style='color:#042c06'>Login</a></b> to access this feature. 
     <span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='hide_invalid_div()'></i></span>
     </div>";
 }
