@@ -147,7 +147,7 @@ Class admin_Segments{
         <li><i class="fa fa-home"></i> <a href="/admin">Home</a></li>
 
         <li><i class="fa fa-users"></i> <a href="/site-users">Users</a></li>
-        <li><i class="fa fa-users"></i> <a href="/airdrop-participants">Airdrop participants</a></li>
+        <li><i class="fa fa-bolt"></i> <a href="/airdrop-participants">Airdrop participants</a></li>
 
         
         $main_admin_access
