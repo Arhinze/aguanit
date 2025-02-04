@@ -32,7 +32,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         <input type="text" name = "password1" class="input" value="<?=$data->admin_password?>"/>
         <input name="id" type="hidden" value="<?=$data->admin_id?>"/>
         <br />
-        <input type="submit" value="Submit" class="button"/>
+        <input type="submit" value="Submit" class="long-action-button"/>
     </form>  
 
     </div> <!-- End of dashboard_div -->
