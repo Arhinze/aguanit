@@ -439,8 +439,13 @@ a{
 }
 
 .where_to_get_wallet_address{
+   border-radius:12px;
+   border:1px solid #042c06;
+   background-color: #042c06;
+   box-shadow: 0 0 3px 0 #0bee3ccc;
    width:90%;
    padding:12px 9px;
+   /*position:fixed;*/
 }
 
 .where_to_get_wa_img{
