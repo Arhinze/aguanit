@@ -480,11 +480,12 @@ a{
 }
 
 .close_where_to_get_wa{
-    height:21px;
-    width:21px;
+    text-align: center;
     font-weight:bold;
     color:#fff;
     background-color: red;
+    height:21px;
+    width:21px;
     border-radius:100%;
     position:fixed;
     top:6%;
