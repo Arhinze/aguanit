@@ -834,6 +834,7 @@ a{
 }
 
 .airdrop_requirements{
+    margin-top:9px;
     background-color:#111111;
     padding:9px 6px;
     border-radius:6px;
