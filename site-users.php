@@ -156,7 +156,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
 
                     <button onclick = "create_content('user_details',<?=$i?>)" style="background-color:blue" 
                     class="show_hidden_divs_button">
-                        <i class="fa fa-spinner"></i> User Details
+                        <i class="fa fa-user"></i> User Details
                     </buton>
 
                     <button onclick = "create_content('referred-by',<?=$i?>)" style="background-color:#888"
