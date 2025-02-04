@@ -13,7 +13,7 @@ include_once("/home/u590828029/domains/aguanit.com/public_html/views/Dashboard_S
         if(isset($_GET["new-user"])){
             $user_status = htmlentities($_GET["new-user"]);
             if ((time() - strtotime($data->entry_date)) < (1*60)){//if user is not more than 1 min old
-                echo "<div class='pop_up'>Sign up successful. Welcome to $site_name Ecosystem, $data->username. <span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
+                echo "<div class='pop_up'>Sign up successful. Welcome to $site_name Ecosystem, <b>$data->username</b>. <span style='float:right;position:absolute;top:6px;right:6px'><i class='fa fa-times' onclick='close_pop_up()'></i></span></div>";
             } else { //to avoid excessive access to mysql database ~ I don't know if this is necessary though
                 header("location:/dashboard");
             }
