@@ -111,8 +111,9 @@ if(isset($_POST["user_code"])){
 
 
                         //conditions are met -- Insert User
-                        $p_stmt = $pdo->prepare("INSERT INTO miners(real_name, username, user_email, `password`,twitter_username,avax_wallet_address,aguat_wallet_address,referred_by,entry_date,mining_status,mining_start_time) VALUES(?, ?, ?, ?, ?,?,?,?,?,?,?)");
-                        $p_stmt->execute([$_POST["name"], $_POST['username'],$_POST["email"],$_POST['password1'],$_POST['twitter_username'],$_POST['avax_wallet_address'],$_POST['aguat_wallet_address'],$referer,date("Y-m-d H:i:s", time()),date("Y-m-d H:i:s", time()),"inactive"]);
+                        $p_stmt = $pdo->prepare("INSERT INTO miners(real_name, username, user_email, `password`,airdrop_status,twitter_username,avax_wallet_address,aguat_wallet_address,referred_by,entry_date,mining_status,mining_start_time) VALUES(?, ?,?, ?, ?, ?,?,?,?,?,?,?)");
+
+                        $p_stmt->execute([$_POST["name"], $_POST['username'],$_POST["email"],$_POST['password1'],"not_participated",$_POST['twitter_username'],$_POST['avax_wallet_address'],$_POST['aguat_wallet_address'],$referer,date("Y-m-d H:i:s", time()),date("Y-m-d H:i:s", time()),"inactive"]);
                     
                         //Mail User:
                         $e_name = $_POST["name"];
