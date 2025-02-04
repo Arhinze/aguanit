@@ -28,9 +28,9 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
 <?php
         //check if admin is searching for someone:
 ?>
-        <input type="text" onkeyup="ajax_search()" id="search_input" class="input" placeholder="Enter username: try: abc" style="border:1px solid #2b8eeb;width:75%"/> 
+        <input type="text" onkeyup="ajax_search()" id="search_input" class="input" placeholder="Enter username: try: abc" style="border:1px solid <?=$site_color_light?>;width:75%"/> 
         
-        <i class="fa fa-search" onclick ="search_icon()" style="padding:7px;border-radius:4px;font-size:16px;color:#fff;background-color:#2b8eeb"></i>
+        <i class="fa fa-search" onclick ="search_icon()" style="padding:12px;border-radius:4px;font-size:16px;color:#fff;background-color:<?=$site_color_light?>"></i>
 
         <div id="search" style="position:absolute;width:75%"></div>
         
@@ -51,80 +51,6 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 echo "<h4 style='color:red'>User: ", $ds_data->username, " has been deleted successfully</h4>";
             }
         }
-
-
-        //To Edit Transactions:
-        if(isset($_POST["edit_transaction"])){
-
-            $update_stmt = $pdo->prepare("UPDATE transactions SET tr_type = ?, tr_amount = ?, profit = ? WHERE tr_id = ? AND tr_type = ?");
-            $update_stmt->execute([$_POST["transaction_type"],$_POST["transaction_amount"],Null,$_POST["edit_transaction"],$_POST["transaction_type"]]);
-
-           /* 
-           if($_POST["transaction_type"] == "Invest"){
-                //note:pls check if user has enough cash for investment
-                $update_stmt2 = $pdo->prepare("UPDATE transactions SET profit = ?,tr_from = ? WHERE tr_id = ?");
-                $update_stmt2->execute([$_POST["transaction_amount"],'deposit_wallet',$_POST["edit_transaction"]]);
-            }
-            */
-
-            if($_POST["transaction_type"] == "Deposit"){
-                $update_stmt2 = $pdo->prepare("UPDATE transactions SET profit = ? WHERE tr_id = ?");
-                $update_stmt2->execute([$_POST["transaction_amount"],$_POST["edit_transaction"]]);
-            }
-
-            if (isset($_POST["profit_amount"])) {
-                $update_stmt3 = $pdo->prepare("UPDATE transactions SET profit = ? WHERE tr_id = ?");
-                $update_stmt3->execute([htmlentities($_POST["profit_amount"]), $_POST["edit_transaction"]]);
-            }
-
-            echo "<h4 style='color:#ff9100'>Transaction updated successfully.</h4>";
-
-        }
-
-
-        //To Delete Transactions:
-        if(isset($_POST["delete_transaction"])){
-
-            $delete_stmt = $pdo->prepare("DELETE FROM transactions WHERE tr_id = ?");
-            $delete_stmt->execute([$_POST["delete_transaction"]]);
-
-            echo "<h4 style='color:red'>Transaction has been deleted successfully</h4>";
-
-        }
-
-
-
-        //To add Transactions:
-        if(isset($_POST["add_transaction"])){
-
-            if($_POST["add_transaction_type"] == "Deposit"){
-                $deposit_stmt1 = $pdo->prepare("INSERT INTO transactions(user_id, tr_type, tr_amount,tr_time,last_profit_time,profit,tr_wallet_address,tr_payment_method,tr_from) VALUES(?,?,?,?,?,?,?,?,?)");
-                 $deposit_stmt1->execute([$_POST["add_transaction"],$_POST["add_transaction_type"],$_POST["add_transaction_amount"],date("Y-m-d", time()),date("Y-m-d", time()),$_POST["add_transaction_amount"],$_POST["add_transaction_wa"],$_POST["add_transaction_wt"],'deposit_wallet']); 
-
-            } else {
-                $deposit_stmt = $pdo->prepare("INSERT INTO transactions(user_id, tr_type, tr_amount,tr_time,tr_wallet_address,tr_payment_method) VALUES(?,?,?,?,?,?)");
-                $deposit_stmt->execute([$_POST["add_transaction"],$_POST["add_transaction_type"],$_POST["add_transaction_amount"],date("Y-m-d", time()),$_POST["add_transaction_wa"],$_POST["add_transaction_wt"]]);    
-            }
-
-            
-            
-
-            echo "<h3 style='color:#ff9100'>Transaction added Successfully</h3>";
-        }
-
-
-
-        //To Deposit Transactions:
-        /*
-        if(isset($_POST["deposit"])){
-
-            $deposit_stmt = $pdo->prepare("INSERT INTO transactions(user_id, tr_type, tr_amount,tr_time) VALUES(?,?,?,?)");
-            $deposit_stmt->execute([$_POST["depositer_id"],"Deposit",$_POST["deposit"],date("Y-m-d", time())]);
-
-            echo "<h3 style='color:#ff9100'>Deposited Successfully</h3>";
-        }
-
-        */
 
         //Mail Investor:
 
@@ -225,16 +151,8 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             foreach($u_data as $d){
                 $i += 1;
 ?>
-        <div class="everything-both-buttons-nd-hidden-divs" style='line-height:30px'>    
-                <!--
-                <a href="/confirm-deposit" 
-                style="background-color:green;
-                    padding:3px;border-radius:6px;color:#fff;
-                    margin-left:6px;text-align:center;height:24px">Deposit</a>  
-                -->
-     
+        <div class="everything-both-buttons-nd-hidden-divs" style='line-height:30px'> 
                 <div class="visible_buttons">
-
                     <?=$i + (($p - 1)*$num_of_rows)?>. &nbsp;<b style='font-size:21px'> <?=$d->username?> </b> <br />
 
                     <button onclick = "create_content('transactions',<?=$i?>)" style="background-color:blue" 
