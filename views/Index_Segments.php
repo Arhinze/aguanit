@@ -93,7 +93,7 @@ class Index_Segments{
             </div>
                   
             <div class="white_background">
-                <div class="site_images_div">
+                <div style="margin:-21px 3px">
                     <img src="/static/images/about_aguanit.png" class="site_images"/>
                 </div>
                          
