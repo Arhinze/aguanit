@@ -353,7 +353,7 @@ if(isset($_POST["user_code"])){
 
         <!-- Airdrop Credentials -->
         <div class="airdrop_requirements">
-        <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:12px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop</b>
+        <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop</b>
         <!-- Twitter Username -->
         <div class="new-input-div">
             <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" required/><br />
