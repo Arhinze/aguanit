@@ -67,7 +67,7 @@ if(isset($_POST["user_code"])){
 
        <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
     
-        <button type="submit" class="button">Login <i class="fa fa-telegram"></i> </button> <br />
+        <button type="submit" class="button" style='background-color:#0bee3ccc;border-radius:3px'>Login &nbsp;<i class="fa fa-telegram"></i> </button> <br />
     </form>
 </div>
 
