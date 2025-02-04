@@ -10,7 +10,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
     if($data){
     //that means admin is logged in:
         admin_Segments::header();
-        echo "<div class='dashboard_div' style='padding:6px'><h1>Admin Reset Username/Password</h1><hr />";
+        echo "<div class='dashboard_div' style='padding:6px'><h1 style='font-size:24px'>Admin Reset Username/Password</h1><hr />";
 
         if(isset($_POST["admin_username"])) {
             if($_POST["password1"] == $_POST["password2"]){
