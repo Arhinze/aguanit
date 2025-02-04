@@ -189,20 +189,11 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 <?php
                     $ud_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ? ORDER BY tr_id DESC LIMIT ?, ?");
                     $ud_stmt->execute([$d->user_id, 0, 100]);
-                    $ud_data = $ud_stmt->fetch(PDO::FETCH_OBJ);
+                    $ud_data = $ud_stmt->fetchAll(PDO::FETCH_OBJ);
 
-                    if($ud_data){  
-                ?>
-                        <div><b>Username: </b><?=$ud_data->username?></div>
-                        <div><b>Password: </b><?=$ud_data->password?></div>
-                        <div><b>Email: </b><?=$ud_data->user_email?></div>
-                        <div><b>Twitter Username: </b><?=$ud_data->twitter_username?></div>
-                        <div style="overflow:scroll">
-                            <b>$Avax wallet address: </b><?=$ud_data->avax_wallet_address?>
-                        </div>
-                        <div style="overflow:scroll">
-                            <b>$Aguat wallet address: </b><?=$ud_data->aguat_wallet_address?>
-                        </div>
+                    if(count($ud_data)>0){  
+                ?><!--
+                        -->
                 <?php
                     }
                 ?>
