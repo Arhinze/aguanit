@@ -205,6 +205,55 @@ public static function footer($site_name = SITE_NAME, $site_url = SITE_URL){
         &copy;2025 - All Rights Reserved
     </div>
 
+<!--site-users page scripts starts-->    
+<script>
+    function show_div(vari) {
+        if (document.getElementById(vari).style.display == "none") {
+            document.getElementById(vari).style.display = "block";
+        } else if (document.getElementById(vari).style.display == "block") {
+            document.getElementById(vari).style.display = "none";
+        }
+    }
+
+    
+    function create_content(varia, numb) {
+        get_id = varia + (numb).toString();
+        //get_html = document.getElementById(get_id).innerHTML;
+
+        get_id2 = "content_space" + numb;
+
+        document.getElementById(get_id2).innerHTML = "";
+        document.getElementById(get_id2).innerHTML = document.getElementById(get_id).innerHTML;
+        document.getElementById(get_id2).style = "display:block";
+    }
+
+    function hide_content_space(cont_name, numbr){
+        
+        con_space = "content_space" + (numbr).toString();
+        
+        document.getElementById(con_space).innerHTML = ""; //for internet explorer
+        document.getElementById(con_space).style = "display:none";
+    }
+
+    function ajax_search(){
+        sq = document.getElementById("search_input").value;
+        obj = new XMLHttpRequest;
+        obj.onreadystatechange = function(){
+            if(obj.readyState == 4){
+                document.getElementById("search").innerHTML = obj.responseText;
+            }
+        }
+
+        obj.open("GET","/ajax_search.php?search_query="+sq+"&page=site-users");
+        obj.send(null);
+    }
+
+        function search_icon(){
+            location = "/site-users/" + document.getElementById("search_input").value;
+        }
+</script>
+<!--site-users page scripts ends -->
+
     <script>
         function copyText(linkText){
         x = document.getElementById(linkText);
