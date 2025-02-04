@@ -81,7 +81,7 @@ Class admin_Segments{
             font-size:18px;
             border-radius:6px;
             color:#fff;
-            margin-left:6px;
+            margin:12px 6px 12px 0;
             text-align:center;
             border:none;
         }
