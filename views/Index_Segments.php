@@ -87,7 +87,7 @@ class Index_Segments{
                 <br /><br />
                 <a href="$site_mining_page_url" class="buy_presale">START MINING</a>
                 <br /><br />
-                <div>
+                <div style="width:100%">
                     <img src = "/static/images/coin_image.png" class="coin_image"/>
                 </div>
             </div>
