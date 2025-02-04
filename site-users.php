@@ -189,14 +189,13 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 <?php
                     $ud_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ? ORDER BY tr_id DESC LIMIT ?, ?");
                     $ud_stmt->execute([$d->user_id, 0, 100]);
-                    $ud_data = $ud_stmt->fetchAll(PDO::FETCH_OBJ);
+                    $ud_data = $ud_stmt->fetch(PDO::FETCH_OBJ);
 
-                    if(count($ud_data)>0){  
-                        foreach($ud_data as $ud) {
-                            
-                        }
-                ?><!--
-                        -->
+                    if($ud_data){  
+                ?>
+                    <!--
+                    
+                    -->
                 <?php
                     }
                 ?>
