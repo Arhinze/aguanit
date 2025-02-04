@@ -34,7 +34,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             $sel_stmt = $pdo->prepare("SELECT * FROM miners WHERE airdrop_status = ? LIMIT ?, ?");
             $sel_stmt->execute(["participated", 0, 1000]);
 
-            $sel_data = $sel_stmt->fetch(PDO::FETCH_OBJ);
+            $sel_data = $sel_stmt->fetchAll(PDO::FETCH_OBJ);
             $i = 0;
 
             if (count($sel_data) > 0) {
