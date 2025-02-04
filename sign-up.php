@@ -391,8 +391,8 @@ if(isset($_POST["user_code"])){
         <br /><button type="submit" class="long-action-button">Join the waitlist</i> </button> <br />
 
         <div style="margin-top:15px;font-size:15px">
-            Already have an account? <a href="login" style="font-weight:bold;font-size:18px">Login</a><br />
-            Forgot Your Password? <b><a href="/reset-password" style="font-weight:bold;font-size:18px">Recover it</a></b>
+            Already have an account? <a href="login" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Login</a><br />
+            Forgot Your Password? <b><a href="/reset-password" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Recover it</a></b>
         </div>
     </form>
 </div>   <!-- sign-in-box class ends -->
