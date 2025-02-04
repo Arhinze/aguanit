@@ -453,8 +453,15 @@ a{
    overflow: scroll;
 }
 
+.where_to_get_wa_header{
+    font-weight:bold;
+    font-size:18px;
+    margin-top:15px;
+}
+
 .where_to_get_wa_img{
     width:100%;
+    border-radius:6px;
 }
 
 .pop_up{
