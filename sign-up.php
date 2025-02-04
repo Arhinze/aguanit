@@ -416,6 +416,7 @@ if(isset($_POST["user_code"])){
         </form>
     </div>   <!-- sign-in-box class ends -->
 
+    <!-- where_to_get_wallet_address div starts -->
     <div id="where_to_get_wallet_address" class="where_to_get_wallet_address">
         <div class="where_to_get_wa_header" style="border-bottom:1px solid #fff">Where to get $<?=$token_name?> Wallet Address</div>
         <p>Below is a step by step guide on where and how to get your <?=$token_name?> wallet address:</p>
@@ -499,8 +500,8 @@ if(isset($_POST["user_code"])){
         </div>
 
         <button style="">Ok, I get it now <i class="fa fa-check"></i></button>
-    </div>
-</div>    <!-- dashboard_div class ends -->
+    </div> <!-- where_to_get_wallet_address div starts -->
+</div> <!-- dashboard_div class ends -->
 
 <?php
     Index_Segments::footer();
