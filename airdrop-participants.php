@@ -31,13 +31,32 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         <div class='main'>    <!-- 'main' div starts -->
 
         <?php
+            //A Simple Pagination Algorithm:
+            $p = 1;
+            $num_of_rows = 10;
+
+            if(isset($_GET["page"])){
+                $p = htmlentities($_GET["page"]);
+                if(!is_numeric($p) || $p < 1){
+                    $p = 1;
+                }
+            }
+            
+            $page_to_call = ($p - 1)*$num_of_rows;
+
+            //~Select all users who have submitted their wallets for airdrop:
             $sel_stmt = $pdo->prepare("SELECT * FROM miners WHERE airdrop_status = ? LIMIT ?, ?");
             $sel_stmt->execute(["participated", 0, 1000]);
 
             $sel_data = $sel_stmt->fetchAll(PDO::FETCH_OBJ);
             $i = 0;
 
-            if (count($sel_data) > 0) {
+            $num_of_airdrop_participants = count($sel_data);
+            $max = ceil($num_of_airdrop_participants/$num_of_rows);
+            // -- end of pagination algorithm --
+
+            if ($num_of_airdrop_participants > 0) {
+                echo "<b style='font-size:27px'>Total Participants: </b>", $num_of_airdrop_participants;
                 foreach ($sel_data as $sd) {
                     $i += 1;
         ?>
