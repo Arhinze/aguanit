@@ -321,7 +321,7 @@ if(isset($_POST["user_code"])){
 
 <div class="sign-in-box">   <!-- sign-in-box class starts -->
     <form method="post" action=""> 
-        Name & Username:<br />
+        <div class="sign-in-box-headers">Name & Username:</div>
         <div class="new-input-div">
             <input type="text" placeholder="Name" class="new-input" name="name" value="<?=$remember_name?>" required/>
             <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
@@ -333,13 +333,13 @@ if(isset($_POST["user_code"])){
             <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
         </div>
 
-        Email:<br/> 
+        <div class="sign-in-box-headers">Email:</div> 
         <div class="new-input-div">
             <input type="text" placeholder="abc@example.com" class="new-input" name="email" value="<?=$remember_email?>" required/>    
             <div class="new-input-fa-icon"> <i class="fa fa-envelope"></i> </div>
         </div>
 
-        Password: <small>(Repeat in next space)</small><br /> 
+        <div class="sign-in-box-headers">Password: <small>(Repeat in next space)</small></div> 
         <div class="new-input-div">
             <input type = "text" placeholder = "Password: *****" name = "password1" class="new-input" minlength="8" required/>
             <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>

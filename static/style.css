@@ -828,10 +828,16 @@ a{
     padding:5px;
 }
 
+.sign-in-box-headers {
+    margin: 12px 0 3px 0;
+}
+
 .sign-in-box a{
     color:#042c06;
     font-weight:bold;
 }
+
+
 
 .airdrop_requirements{
     margin-top:12px;
