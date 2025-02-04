@@ -122,7 +122,7 @@ echo "mining_time_left: $mining_time_left";
 
             <div class="mining_cards">
                 <div class="mining_cards_head">Bonus from referrals</div>
-                <div class="mining_cards_body"><i class="fa fa-bullseye"></i> $<?=$referral_bonus?></div>
+                <div class="mining_cards_body"><i class="fa fa-bullseye"></i><?=$referral_bonus?> $AGUAT</div>
             </div>
         </div>
     </center>
