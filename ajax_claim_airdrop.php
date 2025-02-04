@@ -1,6 +1,7 @@
 <?php
 
-include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
+//include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/php/account-manager.php");
 
 if($data) {
 ?>
