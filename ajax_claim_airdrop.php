@@ -1,8 +1,8 @@
 <?php
 
-include_once("/home/u590828029/domains/aguanit.com/public_html/views/connection.php");
+include_once("/home/u590828029/domains/aguanit.com/public_html/php/account-manager.php");
 
-$data = false;
+/*$data = false;
 
 if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
     $user_id = $_COOKIE["username_or_email"];
@@ -12,7 +12,7 @@ if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
     $stmt->execute([$user_id, $user_id, $password]);
     
     $data = $stmt->fetch(PDO::FETCH_OBJ);
-}
+}*/
 
 if($data) { //that means user is logged in
     $aguat_wa = (htmlentities($_GET["aguat_wallet_add"]) !== null) ? htmlentities($_GET["aguat_wallet_add"]) : " ";
