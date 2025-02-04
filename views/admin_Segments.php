@@ -77,7 +77,7 @@ Class admin_Segments{
 
         .show_hidden_divs_button{
             background-color:#888;
-            padding:12px 9px;
+            padding:6px 3px;
             font-size:18px;
             border-radius:6px;
             color:#fff;
