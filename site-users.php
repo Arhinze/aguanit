@@ -192,15 +192,16 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                     $ud_data = $ud_stmt->fetch(PDO::FETCH_OBJ);
 
                     if($ud_data){  
+                        echo "Byson";
                 ?>
-                        <div><b>Username: </b><br /><?=$ud_data->username?></div>
-                        <div><b>Password: </b><br /><?=$ud_data->password?></div>
-                        <div><b>Email: </b><br /><?=$ud_data->user_email?></div>
-                        <div><b>Twitter Username: </b><br /><?=$ud_data->twitter_username?></div>
-                        <div style="overflow:scroll">
+                        <div class="admin_user_details"><b>Username: </b><br /><?=$ud_data->username?></div>
+                        <div class="admin_user_details"><b>Password: </b><br /><?=$ud_data->password?></div>
+                        <div class="admin_user_details"><b>Email: </b><br /><?=$ud_data->user_email?></div>
+                        <div class="admin_user_details"><b>Twitter Username: </b><br /><?=$ud_data->twitter_username?></div>
+                        <div class="admin_user_details" style="overflow:scroll">
                             <b>$Avax wallet address: </b><br /><?=$ud_data->avax_wallet_address?>
                         </div>
-                        <div style="overflow:scroll">
+                        <div class="admin_user_details" style="overflow:scroll">
                             <b>$Aguat wallet address: </b><br /><?=$ud_data->aguat_wallet_address?>
                         </div>
                 <?php
