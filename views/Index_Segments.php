@@ -94,7 +94,7 @@ class Index_Segments{
                   
             <div class="white_background">
                 <div class="about_img_div" style="width:100%">
-                    <img src="/static/images/about_img1.png" class="site_images"/>
+                    <img src="/static/images/about_aguanit.png" class="site_images"/>
                 </div>
                          
                 <div class="header_text">What is $site_name Token?</div>
