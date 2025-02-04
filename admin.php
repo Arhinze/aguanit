@@ -1,9 +1,9 @@
 <?php
 
-include_once("views/Segments.php");
+include_once("views/Index_Segments.php");
 if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
 
-    $stmt = $pdo->prepare("SELECT * FROM admin WHERE admin_name = ? AND admin_password = ?");
+    $stmt = $pdo->prepare("SELECT * FROM `admin` WHERE admin_name = ? AND admin_password = ?");
     $stmt->execute([$_COOKIE["admin_name"], $_COOKIE["admin_password"]]);
 
     $data = $stmt->fetch(PDO::FETCH_OBJ);
