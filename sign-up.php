@@ -330,91 +330,176 @@ if(isset($_POST["user_code"])){
 
 <div class="dashboard_div" style="margin-top:90px"> <!-- dashboard_div class starts -->
 
-<div class="new-sign-in-head" style="display:flex">
-    <div class="fa-user-login"><i class="fa fa-user"></i></div> 
-    <div class="new-sign-in-head-caption">Create An Account</div>
-</div>
+    <div class="new-sign-in-head" style="display:flex">
+        <div class="fa-user-login"><i class="fa fa-user"></i></div> 
+        <div class="new-sign-in-head-caption">Create An Account</div>
+    </div>
+    
+    
+    <div class="sign-in-box"><!-- sign-in-box class starts -->
+        <form method="post" action=""> 
+            <div class="sign-in-box-headers">Name & Username:</div>
+            <div class="new-input-div">
+                <input type="text" placeholder="Name" class="new-input" name="name" value="<?=$remember_name?>" required/>
+                <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
+            </div>
+    
+            <!-- Username:<br />   -->
+            <div class="new-input-div">
+                <input type="text" placeholder="Username" class="new-input" name="username" value="<?=$remember_username?>" required/>      
+                <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
+            </div>
+    
+            <div class="sign-in-box-headers">Email:</div> 
+            <div class="new-input-div">
+                <input type="text" placeholder="abc@example.com" class="new-input" name="email" value="<?=$remember_email?>" required/>    
+                <div class="new-input-fa-icon"> <i class="fa fa-envelope"></i> </div>
+            </div>
+    
+            <div class="sign-in-box-headers">Password: <small>(Repeat in next space)</small></div> 
+            <div class="new-input-div">
+                <input type = "text" placeholder = "Password: *****" name = "password1" class="new-input" minlength="8" required/>
+                <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>
+            </div>
+    
+            <!-- Repeat Password:<br /> -->
+            <div class="new-input-div">
+                <input type = "text" placeholder = "Repeat Password: *****" name = "password2" class="new-input" minlength="8" required/><br />
+                <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>
+            </div>
+    
+            <!-- Airdrop Credentials -->
+            <div class="airdrop_requirements">
+            <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop</b>
+            <!-- Twitter Username -->
+            <div class="new-input-div">
+                <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" value="<?=$remember_twitter_username?>" required/><br />
+                <div class="new-input-fa-icon"> <i class="fa fa-twitter"></i> </div>
+            </div>
+    
+            <!-- AVAX Wallet Address -->
+            <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0" onclick="where_to_get_wallet_address()"><i class="fa fa-question-circle"></i> Where to get your $Aguat wallet address?</b>
+            <div class="new-input-div">
+                <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
+                <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
+            </div>
+    
+            <!-- AGUAT Wallet Address -->
+            <div class="new-input-div">
+                <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
+                <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
+            </div>
+            </div>
+    
+            <!-- code -->
+            <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
+           
+            <br />
+            <input type="checkbox" required/><span class="small_letters">I have read and agreed with the terms and conditions</span>
+            <br />
+    
+            <?php 
+                if(!empty($referer)){
+            ?>
+                    Referred By: <span style="color:#2b8eeb;font-weight:bold"><?=$referer?></span>
+            <?php
+                }
+            ?>
+            
+            
+            <br /><button type="submit" class="long-action-button"><i class="fa fa-telegram"></i> Join the waitlist now</i> </button> <br />
+    
+            <div style="margin-top:15px;font-size:15px">
+                Already have an account? <a href="login" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Login</a><br />
+                Forgot Your Password? <b><a href="/reset-password" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Recover it</a></b>
+            </div>
+        </form>
+    </div>   <!-- sign-in-box class ends -->
 
+    <div id="where_to_get_wallet_address" class="where_to_get_wallet_address">
+        <div class="where_to_get_wa_header" style="border-bottom:1px solid #fff">Where to get $<?=$token_name?> Wallet Address</div>
+        <p>Below is a step by step guide on where and how to get your <?=$token_name?> wallet address:</p>
 
-<div class="sign-in-box">   <!-- sign-in-box class starts -->
-    <form method="post" action=""> 
-        <div class="sign-in-box-headers">Name & Username:</div>
-        <div class="new-input-div">
-            <input type="text" placeholder="Name" class="new-input" name="name" value="<?=$remember_name?>" required/>
-            <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa1.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 1:</div>
+            <div class="where_to_get_wa_text">
+                Open the Trust Wallet app on your device and ensure you’re on the wallet tab (main screen showing your current tokens).
+            </div>
         </div>
 
-        <!-- Username:<br />   -->
-        <div class="new-input-div">
-            <input type="text" placeholder="Username" class="new-input" name="username" value="<?=$remember_username?>" required/>      
-            <div class="new-input-fa-icon"> <i class="fa fa-user"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa2.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 2:</div>
+            <div class="where_to_get_wa_text">
+                On the main screen, scroll to the bottom and click on the “Manage Crypto” button.
+            </div>
         </div>
 
-        <div class="sign-in-box-headers">Email:</div> 
-        <div class="new-input-div">
-            <input type="text" placeholder="abc@example.com" class="new-input" name="email" value="<?=$remember_email?>" required/>    
-            <div class="new-input-fa-icon"> <i class="fa fa-envelope"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa3.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 3:</div>
+            <div class="where_to_get_wa_text">
+                Next, click the “+” button option to start the process of adding Aguanit token.
+            </div>
         </div>
 
-        <div class="sign-in-box-headers">Password: <small>(Repeat in next space)</small></div> 
-        <div class="new-input-div">
-            <input type = "text" placeholder = "Password: *****" name = "password1" class="new-input" minlength="8" required/>
-            <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa4.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 4:</div>
+            <div class="where_to_get_wa_text">
+                <p>Choose the correct blockchain network from the dropdown menu</p>
+                <p><b>Network:</b> Avalanche</p>
+                <p>Input Aguanit token’s contract address</p>
+                <p><b>Contract Address:</b></p>
+                <p style="overflow:scroll">0x2547e1Cf16266a211EE4C651CB6d30f732A1DFd7</p>
+            </div>
         </div>
 
-        <!-- Repeat Password:<br /> -->
-        <div class="new-input-div">
-            <input type = "text" placeholder = "Repeat Password: *****" name = "password2" class="new-input" minlength="8" required/><br />
-            <div class="new-input-fa-icon"> <i class="fa fa-key"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa5.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 5:</div>
+            <div class="where_to_get_wa_text">
+               <p>Review the details you’ve entered to ensure they are correct.</p>
+               <p>Tap <b>“Import”</b> to complete the process.</p>
+            </div>
         </div>
 
-        <!-- Airdrop Credentials -->
-        <div class="airdrop_requirements">
-        <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"><i class="fa fa-asterisk"></i> Do not miss out on the $Aguat Airdrop</b>
-        <!-- Twitter Username -->
-        <div class="new-input-div">
-            <input type = "text" placeholder = "Enter your X(twitter) username" name = "twitter_username" class="new-input" minlength="3" value="<?=$remember_twitter_username?>" required/><br />
-            <div class="new-input-fa-icon"> <i class="fa fa-twitter"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa6.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 6:</div>
+            <div class="where_to_get_wa_text">
+                <p>Aguanit Token will be successfully added to your wallet.</p>
+                <p>Tap on <b>"Receive"</b> to get your $<b><?=$token_name?></b> wallet address.</p>
+            </div>
         </div>
 
-        <!-- AVAX Wallet Address -->
-        <b style = "color:<?=$site_color_light?>;font-weight:bold;font-size:12px;margin:9px 0"><i class="fa fa-question-circle"></i> Where to get your $Aguat wallet address?</b>
-        <div class="new-input-div">
-            <input type = "text" placeholder = "Enter your avax wallet address" name = "avax_wallet_address" class="new-input" minlength="8" value="<?=$remember_avax_wallet_address?>" required/><br />
-            <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
+        <div class="where_to_get_wa_card">
+            <div class="where_to_get_wa_img_div">
+                <img src="/static/images/where_to_get_wa7.png" class="where_to_get_wa_img"/>
+            </div>
+            <div class="where_to_get_wa_subheader">STEP 7:</div>
+            <div class="where_to_get_wa_text">
+                <p>Tap on <b>"Copy"</b> and your <?=$site_name?> wallet address will be copied to your clipboard.</p>
+                <p>Get back to the sign up page and submit it.</p>
+                <p><b>N/B:</b> Same steps are also applicable to <b>Metamask</b> users or any other <b>crypto DeFi</b> wallets.</p>
+            </div>
         </div>
 
-        <!-- AGUAT Wallet Address -->
-        <div class="new-input-div">
-            <input type = "text" placeholder = "Enter your aguat wallet address" name = "aguat_wallet_address" class="new-input" minlength="8" value="<?=$remember_aguat_wallet_address?>" required/><br />
-            <div class="new-input-fa-icon"> <i class="fa fa-barcode"></i> </div>
-        </div>
-        </div>
-
-        <!-- code -->
-        <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
-       
-        <br />
-        <input type="checkbox" required/><span class="small_letters">I have read and agreed with the terms and conditions</span>
-        <br />
-
-        <?php 
-            if(!empty($referer)){
-        ?>
-                Referred By: <span style="color:#2b8eeb;font-weight:bold"><?=$referer?></span>
-        <?php
-            }
-        ?>
-        
-        
-        <br /><button type="submit" class="long-action-button"><i class="fa fa-telegram"></i> Join the waitlist now</i> </button> <br />
-
-        <div style="margin-top:15px;font-size:15px">
-            Already have an account? <a href="login" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Login</a><br />
-            Forgot Your Password? <b><a href="/reset-password" style="font-weight:bold;font-size:18px;color:<?=$site_color_light?>">Recover it</a></b>
-        </div>
-    </form>
-</div>   <!-- sign-in-box class ends -->
+        <button style="">Ok, I get it now <i class="fa fa-check"></i></button>
+    </div>
 </div>    <!-- dashboard_div class ends -->
 
 <?php

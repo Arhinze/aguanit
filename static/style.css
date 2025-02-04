@@ -307,7 +307,7 @@ a{
 .smart_contract_texts{
     padding:18px 9px;
     border-bottom: 1px solid #fff;
-    overflow: scroll;
+    overflow:scroll;
     font-size:15px;
 }
 
