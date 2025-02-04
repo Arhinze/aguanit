@@ -59,18 +59,6 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             }
         }
 
-        //update rate
-        $arr = [1,2,3,4];
-        $is_updated = "";
-        foreach($arr as $a){
-            if(isset($_POST["rate$a"])) {
-                $update_rate_stmt = $pdo->prepare("UPDATE btc_rate SET br = ? WHERE br_id = ?");
-                $update_rate_stmt->execute([$_POST["rate$a"],$a]);
-
-                $is_updated = "<h3 style='color:#ff9100'>Rates updated successfully</h3>";  
-            }  
-        }
-
         echo $is_updated;
 
         $rates = [];
@@ -145,35 +133,7 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 <input type="submit"  value="Submit" style="border:none;color:#fff;background-color:#ff9100;border-radius:6px;padding:5px"/>    
                 </form>
             </div>
-
-            <div class="calculator">
-                <h2>Set Rates </h2><hr />
-                <h3>How many dollars?</h3>
-                    You can change the <b>crypto-usd</b> exchange rates below.  
-                      <b style="font-size:16px;color:#ff9100">Note: This would affect in-built calculators on this site.</b>
-
-                <h3>Current Rates </h3>
-                <form method="post" action="">
-                <b style="font-size:19px">1 BTC = ?</b> <br />
-                <input type="text" name="rate1" class="investor_input" value="<?=$rates[0]?>"/><span style="margin-left:-37px">USD</span><br /><br />
-
-                <b style="font-size:19px">1 ETH = ?</b> <br />
-                <input type="text" name="rate2" class="investor_input" value="<?=$rates[1]?>"/><span style="margin-left:-37px">USD</span><br /><br />
-
-                <b style="font-size:19px">1 USDT = ?</b> <br />
-                <input type="text" name="rate3" class="investor_input" value="<?=$rates[2]?>"/><span style="margin-left:-37px">USD</span><br /><br />
-
-                <b style="font-size:19px">1 PM = ?</b> <br />
-                <input type="text" name="rate4" class="investor_input" value="<?=$rates[3]?>"/><span style="margin-left:-37px">USD</span><br />
-
-                <br /><br />
-
-                <input type="submit"  value="Submit" style="border:none;color:#fff;background-color:#ff9100;border-radius:6px;padding:5px"/>
-                </form>
-            </div>
         </div>
-
-
 <?php
         admin_Segments::footer();
     } else {
