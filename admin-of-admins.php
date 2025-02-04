@@ -38,6 +38,8 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             if($dcd){
                 $delete_admin_stmt = $pdo->prepare("DELETE FROM `admin` WHERE admin_id=?");
                 $delete_admin_stmt->execute([$_POST["remove_admin"]]);
+
+                echo "<h3 style='margin-top:120px;color:red'>Admin: $dcd->admin_name deleted successfully.</h3>";
             }
         }
 
