@@ -545,7 +545,11 @@ a{
     padding-bottom:9px;
     border-bottom:1px solid #fff;
     margin:12px 3px;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.airdrop_users_text_bottom{
+    margin-left:18px;
 }
 
 .about_us{

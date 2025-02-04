@@ -62,7 +62,10 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
         ?>
                     <div class="airdrop_users">
                         <div><b><?=$i?>. Username:</b> <?=$sd->username?> </div>
-                        <div style="overflow:scroll"><b>$AGUAT Wallet Address:</b> <?=$sd->aguat_wallet_address?> </div>
+                        <div style="overflow:scroll" class="airdrop_users_text_bottom">
+                            <b>$AGUAT Wallet Address: </b> 
+                            <?=$sd->aguat_wallet_address?> 
+                        </div>
                     </div>
         <?php
                 }
