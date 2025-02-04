@@ -1,6 +1,5 @@
 <?php
 include_once($_SERVER["DOCUMENT_ROOT"]."/views/admin_Segments.php");
-include_once($_SERVER["DOCUMENT_ROOT"]."/views/Transactions.php");
 
 if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
     $stmt = $pdo->prepare("SELECT * FROM `admin` WHERE admin_name = ? AND admin_password = ?");
@@ -155,9 +154,9 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
                 <div class="visible_buttons">
                     <?=$i + (($p - 1)*$num_of_rows)?>. &nbsp;<b style='font-size:21px'> <?=$d->username?> </b> <br />
 
-                    <button onclick = "create_content('transactions',<?=$i?>)" style="background-color:blue" 
+                    <button onclick = "create_content('user_details',<?=$i?>)" style="background-color:blue" 
                     class="show_hidden_divs_button">
-                        <i class="fa fa-spinner"></i> Transactions 
+                        <i class="fa fa-spinner"></i> User Details
                     </buton>
 
                     <button onclick = "create_content('referred-by',<?=$i?>)" style="background-color:#888"
@@ -185,17 +184,26 @@ if(isset($_COOKIE["admin_name"]) && isset($_COOKIE["admin_password"])){
             <!-- style="display:block creates undesirable problems like making the div not to appear even onclick" -->
             </div>
 
-            <!--hidden section 1: View Transactions-->
-            <div id="transactions<?=$i?>" style="display:none;border:2px solid blue;border-radius:6px;margin-top:12px;padding:4px;">
+            <!--hidden section 1: View User Details: -->
+            <div id="user_details<?=$i?>" style="display:none;border:2px solid blue;border-radius:6px;margin-top:12px;padding:4px;">
                 <?php
-                    $t_stmt = $pdo->prepare("SELECT * FROM transactions WHERE user_id = ? ORDER BY tr_id DESC LIMIT ?, ?");
-                    $t_stmt->execute([$d->user_id, 0, 100]);
-                    $t_data = $t_stmt->fetchAll(PDO::FETCH_OBJ);
+                    $ud_stmt = $pdo->prepare("SELECT * FROM miners WHERE user_id = ? ORDER BY tr_id DESC LIMIT ?, ?");
+                    $ud_stmt->execute([$d->user_id, 0, 100]);
+                    $ud_data = $ud_stmt->fetch(PDO::FETCH_OBJ);
 
-                    if(count($t_data)>0){  
-                        foreach($t_data as $t){
-                    
-                        }
+                    if($ud_data){  
+                ?>
+                        <div><b>Username: </b><?=$ud_data->username?></div>
+                        <div><b>Password: </b><?=$ud_data->password?></div>
+                        <div><b>Email: </b><?=$ud_data->user_email?></div>
+                        <div><b>Twitter Username: </b><?=$ud_data->twitter_username?></div>
+                        <div style="overflow:scroll">
+                            <b>$Avax wallet address: </b><?=$ud_data->avax_wallet_address?>
+                        </div>
+                        <div style="overflow:scroll">
+                            <b>$Aguat wallet address: </b><?=$ud_data->aguat_wallet_address?>
+                        </div>
+                <?php
                     }
                 ?>
             </div>
