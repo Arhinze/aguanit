@@ -242,7 +242,7 @@ class Index_Segments{
                     obj.open("GET","/ajax_claim_airdrop.php?aguat_wallet_add="+wallet_add.toString());
                     obj.send(null);
                 } else {
-                    document.write ("<div class='invalid' style='font-weight:bold'>String too short to be $AGUAT wallet address.<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='hide_invalid_div()'></i></span></div>");
+                    document.write ("<div class='invalid' style='font-weight:bold'>String too short to be \$AGUAT wallet address.<span style='float:right;margin:4px 18px'><i class='fa fa-times' onclick='hide_invalid_div()'></i></span></div>");
                 }
             }
             
