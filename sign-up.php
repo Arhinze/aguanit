@@ -152,7 +152,7 @@ if(isset($_POST["user_code"])){
                                     <p>Happy Mining!</p>
                                     <p>Best regards,</p>
                                     <p>The $site_name Team</p> 
-                                    <p><b>$site_url_short</b></p> | <b>admin@$site_url_short</b>
+                                    <p><b>$site_url_short</b> | <b>admin@$site_url_short</b></p>
                                     
                                     <p>kindly disregard this mail if you did not make this sign up and contact: admin@aguanit.com  for further actions.</p>
                                     
