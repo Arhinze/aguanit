@@ -425,7 +425,7 @@ if(isset($_POST["user_code"])){
             <?php 
                 if(!empty($referer)){
             ?>
-                    Referred By: <span style="color:#2b8eeb;font-weight:bold"><?=$referer?></span>
+                    Referred By: <span style="color:<?=$site_color_light?>;font-weight:bold"><?=$referer?></span>
             <?php
                 }
             ?>
