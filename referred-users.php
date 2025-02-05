@@ -16,19 +16,16 @@ if($data){
             foreach($refdata as $rd){   
                 $i++;    
 ?>
-            <?=$i, ". <b>", $rd->username, "</b> - <span style='color:#2b8eeb'>", date("D M jS Y - h:i a", strtotime($rd->entry_date)) ?></span><br /><br /> 
+            <?=$i, ". <b>", $rd->username, "</b> - <span style='color:$site_color_light'>", date("D M jS Y - h:i a", strtotime($rd->entry_date)) ?></span><br /><br /> 
 
             
-            
-
-
 <?php
             }
 ?>
             </div>
 
             <div style="text-align:center">
-                    <a href="/referred-commissions" class="action_button" style="background-color:#2b8eeb;color:#fff;border:1px solid #fff;border-radius:4px">
+                    <a href="/referred-commissions" class="action_button" style="background-color:<?=$site_color_light?>;color:#fff;border:1px solid #fff;border-radius:4px">
                     Referred Commisions
                 
                     &nbsp;
@@ -38,7 +35,7 @@ if($data){
             </div><br /><br />
 <?php
         }else {
-            echo "No Referals yet.<br /> <br />Kindly Copy your referal link in <b><a href='/dashboard' style='color:#2b8eeb'>dashboard</a></b> and share with your friends to start earning from their investments.";
+            echo "No Referals yet.<br /> <br />Kindly Copy your referal link in <b><a href='/dashboard' style='color:$site_color_light'>dashboard</a></b> and share with your friends to start earning from their investments.";
             
             echo "</div>";
         }

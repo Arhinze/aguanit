@@ -196,6 +196,7 @@ if(isset($_POST["user_code"])){
 
                             if($ref_data) {
                                 $ref_name = $ref_data->real_name; 
+                                $ref_username = $ref_data->username; 
                                 $ref_data_user_email = $ref_data->user_email;
                             }
                             $new_user = $_POST["name"];
@@ -216,19 +217,39 @@ if(isset($_POST["user_code"])){
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
-                                    <p  style ="font-family:Trirong;">Hello $ref_name,<b> $new_user</b> with username <b>$new_username </b> signed up using your referral link.</p>
-                                    <p>You would earn 10% of their deposit from now on.</p>
-                                    <p>The <b><a href="https://$site_url_short/referred-users"  style="color:#042c06">Referred Users</a></b> page of your dashboard contains a list of Users that have signed up with your link while 
-                                    the <b><a href="https://$site_url_short/referred-users"  style="color:#042c06">Referred Commissions</a></b> page contains your referral earnings.</p>
+                                    <p  style ="font-family:Trirong;">Hi $ref_name,
 
-                                    <p>Do well to encourage your referee(s) to enage actively with this project and also kindly check the <b><a href="https://$site_url_short/referred-commissions"  style="color:#042c06">Referred commissions</a></b> page on your dashboard to view your profits.</p>
-                                    <p style="margin-bottom:30px">For further enquiries, you can check out our <b><a href="https://$site_url_short/faqs"  style="color:#042c06">Frequently asked questions</a></b> page or <b><a href="https://$site_url_short/contact" style="color:#042c06">contact us</a></b> directly if our page doesn't answer your questions.</p>
+                                    We’re thrilled to let you know that your referral of $new_user with username: $new_username was successful!.
+
+                                    As a token of our appreciation, we’ve credited your account with 1 $$token_name referral bonus.
+                                    
+                                    Your support means the world to us and we’re grateful you chose to share this project with others. Keep mining free Aguanit Tokens, there’s more to earn with every successful referral!  
+                                        
+                                    <p>The <b><a href="https://$site_url_short/referred-users"  style="color:#042c06">Referred Users</a></b> page of your dashboard contains a list of Users you have referred while 
+                                    the <b><a href="https://$site_url_short/referred-commissions"  style="color:#042c06">Referred Commissions</a></b> page contains your referral earnings.</p>
+
+                                    <p>Do well to encourage your referee(s) to enage actively with this project.</p>
+
+                                    <p>Thanks again for being an amazing advocate!</p>  
+                                    
+                                    <p>Best regards,</p>  
+                                    <p>$ref_name</p> 
+                                    
+                                    <p>Share your unique referral link below and keep the rewards coming:</p>  
+                                    <p><a href="https://$site_url_short/?ref=$ref_username"></a></p>
                                     
                                     <br /><br /><br />
                                     
                                     <a href="https://$site_url_short/referred-commissions" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;width:8%;margin-left:30%;margin-right:20%">View Referral Earnings</a>
 
-                                    <br /><br /><br />
+                                    <br /><br /><br /> 
+                                    
+                                   
+                                    
+                                    
+                                    
+                                    
+                                    
                             </body>
                             </html>
                         HTML;
@@ -240,7 +261,7 @@ if(isset($_POST["user_code"])){
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-                        $mail = mail($ref_data_user_email,"Your Referee Just Signed Up On $site_name Investment",$message, $headers);
+                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, Enjoy Your 1 $$token_name Bonus!",$message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
@@ -273,7 +294,7 @@ if(isset($_POST["user_code"])){
                                 <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name </h2>
                                     <p  style ="font-family:Trirong;">Hello Admin, a new user: <b>$new_user</b> with username: <b>$new_username </b> just signed up in $site_name.</p>
                                     
-                                    <p>The <b><a href="https://$site_url_short/site-users"  style="color:#042c06">Site Users</a></b> page of your admin dashboard contains a list of Users that have signed up on your site, together with the priviledge to take any action you desire on them, such as delete user, view, delete or add transactions, view user's referee, message users, etc.
+                                    <p>The <b><a href="https://$site_url_short/site-users"  style="color:#042c06">Site Users</a></b> page of your admin dashboard contains a list of Users that have signed up on your site, together with the priviledge to take any action you desire on them, such as delete user, view user details, view user's referee, message users, etc.
 
                                     <br /><br /><br />
 
@@ -291,7 +312,7 @@ if(isset($_POST["user_code"])){
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-                        $mail = mail($sender,"A User Just Signed Up On $site_name Investment",$message, $headers);
+                        $mail = mail($sender,"A User Just Signed Up On $site_name",$message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
