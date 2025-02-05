@@ -221,7 +221,7 @@ if(isset($_POST["user_code"])){
 
                                     We’re thrilled to let you know that your referral of $new_user with username: $new_username was successful!.
 
-                                    As a token of our appreciation, we’ve credited your account with 1 $$token_name referral bonus.
+                                    As a token of our appreciation, we’ve credited your account with 1 \$AGUAT referral bonus.
                                     
                                     Your support means the world to us and we’re grateful you chose to share this project with others. Keep mining free Aguanit Tokens, there’s more to earn with every successful referral!  
                                         
@@ -261,7 +261,7 @@ if(isset($_POST["user_code"])){
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, Enjoy Your 1 $$token_name Bonus!",$message, $headers);
+                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, Enjoy Your 1 \$AGUAT Bonus!",$message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
