@@ -160,7 +160,7 @@ if(isset($_POST["user_code"])){
 
                                     <br /><br /><br />
                                     
-                                    <a href="$site_mining_page_url" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;width:8%;margin-left:40%;margin-right:30%">Start Mining</a>
+                                    <a href="$site_mining_page_url" style="color:#042c06;font-size:18px;padding:2% 4%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;display:flex;justify-content:center">Start Mining</a>
 
                                     <br /><br /><br />
                             </body>
