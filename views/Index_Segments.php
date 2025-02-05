@@ -64,6 +64,7 @@ class Index_Segments{
                     
                     <li><a href="/about-us">About</a></li>
                     <li><a href="/login">Login</a></li>
+                    <li><a href="/sign-up">Sign Up</a></li>
                     <li><a href="">White Paper</a></li>
                     <li><a href="">Distribution</a></li>
                     <li><a href="">Roadmap</a></li>
