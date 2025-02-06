@@ -258,7 +258,7 @@ if(isset($_POST["user_code"])){
                         //$subject = "Thank You for Your Referral, Enjoy Your &dollar;$token_name Bonus!";
                         //$subject = str_replace('&dollar;', mb_encode_mimeheader('$', 'UTF-8'), $subject);
 
-                        $mail = mail($ref_data_user_email, "Thank You for Your Referral, Enjoy Your $1$token_name Bonus!", $message, $headers);
+                        $mail = mail($ref_data_user_email, "Thank You for Your Referral, $ref_username", $message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
