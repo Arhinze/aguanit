@@ -254,7 +254,7 @@ if(isset($_POST["user_code"])){
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, Enjoy Your 1 &#x24;$token_name Bonus!",$message, $headers);
+                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, Enjoy Your 1 $$token_name Bonus!",$message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
