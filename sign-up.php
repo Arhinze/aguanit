@@ -240,7 +240,7 @@ if(isset($_POST["user_code"])){
                                     
                                     <br /><br /><br />
                                     
-                                    <a href="https://$site_url_short/referred-commissions" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;width:8%;margin-left:30%;margin-right:20%">View Referral Earnings</a>
+                                    <a href="https://$site_url_short/referred-commissions" style="color:#042c06;font-size:18px;padding:2%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;display:flex;justify-content:center">View Referral Earnings</a>
 
                                     <br /><br /><br /> 
                                     
