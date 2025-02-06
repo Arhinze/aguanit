@@ -152,7 +152,7 @@ if(isset($_POST["user_code"])){
                                     <p>Happy Mining!</p>
                                     <p>Best regards,</p>
                                     <p>The $site_name Team</p> 
-                                    <p><b>$site_url_short</b> | <b>admin@$site_url_short</b></p>
+                                    <p><b style="color:$site_color_light">$site_url_short</b> | <b>admin@$site_url_short</b></p>
                                     
                                     <p>kindly disregard this mail if you did not make this sign up and contact: admin@aguanit.com  for further actions.</p>
                                     
@@ -254,7 +254,7 @@ if(isset($_POST["user_code"])){
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
-                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, Enjoy Your 1 $ $token_name Bonus!",$message, $headers);
+                        $mail = mail($ref_data_user_email,"Thank You for Your Referral, $ref_username",$message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
@@ -308,9 +308,9 @@ if(isset($_POST["user_code"])){
                         $mail = mail($sender,"A User Just Signed Up On $site_name",$message, $headers);
 
                         if($mail){
-                            echo "<br /><br />A Mail has been sent to your referer";
+                            echo "<br /><br />A Mail has been sent to both the user and referer";
                         } else {
-                            echo "Sorry, an error occurred, Mail not sent";
+                            echo "Sorry, an error occurred, Mail not sent to both user and referer";
                           }
 
 
