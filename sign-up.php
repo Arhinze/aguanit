@@ -133,7 +133,7 @@ if(isset($_POST["user_code"])){
                                 <div style="position:relative">
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
-                                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name </h2>
+                                <h2 style="color:$site_color_light;font-family:Arimo;text-align:center">$site_name </h2>
 
                                     <p  style ="font-family:Trirong;">Dear $e_name, </p>
 
@@ -160,7 +160,7 @@ if(isset($_POST["user_code"])){
 
                                     <br /><br /><br />
                                     
-                                    <a href="$site_mining_page_url" style="color:#042c06;font-size:18px;padding:2% 4%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;display:flex;justify-content:center;text-align:center;background-color:$site_color_light">Start Mining</a>
+                                    <a href="$site_mining_page_url" style="font-size:18px;padding:2% 4%;border-radius:6px;box-shadow:0px 0px 3px #042c06;border:2px solid #042c06;display:flex;justify-content:center;text-align:center;background-color:$site_color_light;color:#fff">Start Mining</a>
 
                                     <br /><br /><br />
                             </body>
@@ -216,7 +216,7 @@ if(isset($_POST["user_code"])){
                                 <div style="position:relative">
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
-                                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name</h2>
+                                <h2 style="color:$site_color_light;font-family:Arimo;text-align:center">$site_name</h2>
                                     <p  style ="font-family:Trirong;">Hi $ref_name,
 
                                     We’re thrilled to let you know that your referral of $new_user with username: $new_username was successful!.
@@ -284,7 +284,7 @@ if(isset($_POST["user_code"])){
                                 <div style="position:relative">
                                     <img src="https://$site_url_short/static/images/aguanit.png" style="margin-left:36%;margin-right:36%;width:25%;position:absolute"/><br /><br /><br />
                                 </div>
-                                <h2 style="color:#00008b;font-family:Arimo;text-align:center">$site_name </h2>
+                                <h2 style="color:$site_color_light;font-family:Arimo;text-align:center">$site_name </h2>
                                     <p  style ="font-family:Trirong;">Hello Admin, a new user: <b>$new_user</b> with username: <b>$new_username </b> just signed up in $site_name.</p>
                                     
                                     <p>The <b><a href="https://$site_url_short/site-users"  style="color:#042c06">Site Users</a></b> page of your admin dashboard contains a list of Users that have signed up on your site, together with the priviledge to take any action you desire on them, such as delete user, view user details, view user's referee, message users, etc.
