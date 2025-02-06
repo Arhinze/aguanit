@@ -255,10 +255,10 @@ if(isset($_POST["user_code"])){
                         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
 
                         //$subject = '=?UTF-8?B?'.base64_encode(utf8_encode("Thank You for Your Referral, Enjoy Your $$token_name Bonus!")).'?=';
-                        $subject = "Thank You for Your Referral, Enjoy Your &dollar;$token_name Bonus!";
-                        $subject = str_replace('&dollar;', mb_encode_mimeheader('$', 'UTF-8'), $subject);
+                        //$subject = "Thank You for Your Referral, Enjoy Your &dollar;$token_name Bonus!";
+                        //$subject = str_replace('&dollar;', mb_encode_mimeheader('$', 'UTF-8'), $subject);
 
-                        $mail = mail($ref_data_user_email, $subject, $message, $headers);
+                        $mail = mail($ref_data_user_email, "Thank You for Your Referral, Enjoy Your $1$token_name Bonus!", $message, $headers);
 
                         if($mail){
                             echo "<br /><br />A Mail has been sent to your referer";
