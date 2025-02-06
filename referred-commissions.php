@@ -9,7 +9,7 @@ if($data){
         echo "<div class='dashboard_div' style='padding:12px'><h1>Referred Commissions: </h1><hr /><div style='line-height:23px;font-size:18px'>";
 
         $ref_com_stmt = $pdo->prepare("SELECT * FROM miners WHERE referred_by = ? LIMIT ?, ?");
-        $ref_com_stmt->execute([$data->user_id, 0, 1000]);
+        $ref_com_stmt->execute([$data->username, 0, 1000]);
         $ref_com_data = $ref_com_stmt->fetchAll(PDO::FETCH_OBJ);
 
         if(count($ref_com_data)>0){
@@ -19,8 +19,7 @@ if($data){
             <a href='/dashboard' style='color:$site_color_light'>View other earnings &nbsp;<i class='fa fa-angle-right'></i> </a><br /><br />";
 
         } else {
-            echo "Sorry, No commisions yet. Either you have not invited anyone or those you invited are yet to make an investment.
-                <br /><br /> Kindly check back later.";
+            echo "Sorry, No commisions yet. Kindly share your referral link to prospective users in order to receive a commision when they sign up.";
         }  
         
         echo "</div></div>";
