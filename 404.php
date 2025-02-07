@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"]."/views/Segments.php");
-Segments::header();
+include_once($_SERVER["DOCUMENT_ROOT"]."/views/Index_Segments.php");
+Index_Segments::header();
 ?>
 
 <div class="main">
@@ -8,5 +8,5 @@ Segments::header();
 </div>
 
 <?php
-Segments::footer();
+Index_Segments::footer();
 ?>
