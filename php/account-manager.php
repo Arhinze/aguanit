@@ -10,21 +10,21 @@ if((isset($_COOKIE["username_or_email"])) && ((isset($_COOKIE["password"])))){
 
     $stmt = $pdo->prepare("SELECT * FROM miners WHERE (username = ? OR user_email = ?) AND `password` = ?");
     $stmt->execute([$user_id, $user_id, $password]);
-    
+
     $data = $stmt->fetch(PDO::FETCH_OBJ);
 }
-
 // then call 'if data(){ ... }' for all necessary dashboard related page.
-
 
 //Updating status to 'inactive' and adding the balance for all miners after 48 hours:
 $gen_stmt = $pdo->prepare("SELECT * FROM miners WHERE mining_status = ? LIMIT ?, ?");
-$gen_stmt->execute(["active", 0, 500]);
+$gen_stmt->execute(["active", 0, 1000]);
 $gen_data = $gen_stmt->fetchAll(PDO::FETCH_OBJ);
 
 foreach($gen_data as $gd) {
     if (strtotime($gd->mining_start_time) <= (time() - (48*60*60))) {
+
+        $new_total_mined = round(($gd->total_amount_mined + 1.00224), 9);
         $gen_updt = $pdo->prepare("UPDATE miners SET mining_status = ?, total_amount_mined = ? WHERE user_id = ?");
-        $gen_updt->execute(["inactive",$gd->total_amount_mined + 1.00224, $gd->user_id]);
+        $gen_updt->execute(["inactive", $new_total_mined, $gd->user_id]);
     }
 }
